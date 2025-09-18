@@ -7,10 +7,6 @@
     "type": "git",
     "url": "https://arturo-shimabukuro.github.io/test-page/"
   },
-  "scripts": {
-  "build": "gatsby build",
-  "postbuild": "rm -rf docs && cp -r public docs"
-  },
   
   "keywords": [
     "gatsby"
@@ -19,6 +15,7 @@
   "browserslist": "> 0.25%, not dead",
   "scripts": {
     "build": "gatsby build",
+    "postbuild": "rm -rf docs && cp -r public docs",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
