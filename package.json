@@ -7,6 +7,10 @@
     "type": "git",
     "url": "https://arturo-shimabukuro.github.io/test-page/"
   },
+  "scripts": {
+  "build": "gatsby build",
+  "postbuild": "rm -rf docs && cp -r public docs"
+  },
   "keywords": [
     "gatsby"
   ],
