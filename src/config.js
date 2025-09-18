@@ -1,6 +1,6 @@
 module.exports = {
   email: 'brittany.chiang@gmail.com',
-
+  siteUrl: 'https://arturo-shimabukuro.github.io/test-page/',
   socialMedia: [
     {
       name: 'GitHub',
