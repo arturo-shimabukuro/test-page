@@ -8,6 +8,7 @@ module.exports = {
     siteUrl: 'https://arturo-shimabukuro.github.io/test-page/', // No trailing slash allowed!
     image: '/og.png', // Path to your image you placed in the 'static' folder
     twitterUsername: '@bchiang7',
+    pathPrefix: "/test-page",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

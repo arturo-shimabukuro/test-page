@@ -5,7 +5,7 @@
   "author": "Brittany Chiang <brittany.chiang@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "https://arturo-shimabukuro.github.io/test-page/"
+    "url": "https://github.com/bchiang7/v4"
   },
   "keywords": [
     "gatsby"
@@ -14,7 +14,7 @@
   "browserslist": "> 0.25%, not dead",
   "scripts": {
     "build": "gatsby build",
-    "postbuild": "rm -rf docs && cp -r public docs",
+    "deploy": "gatsby build && gh-pages -d public",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
@@ -23,6 +23,7 @@
     "prepare": "husky install",
     "lint-staged": "lint-staged"
   },
+  "homepage": "https://arturo-shimabukuro.github.io/test-page",
   "lint-staged": {
     "*.{js,css,json,md}": [
       "prettier --write"
