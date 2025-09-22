@@ -8,17 +8,15 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    env:
-      NODE_OPTIONS: --openssl-legacy-provider  
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Setup Node.js
+      - name: Setup Node.js (use Node 16 to avoid OpenSSL issues)
         uses: actions/setup-node@v4
         with:
-          node-version: 16  
+          node-version: 16
 
       - name: Cache NPM dependencies
         uses: actions/cache@v3
