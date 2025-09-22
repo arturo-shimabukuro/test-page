@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://arturo-shimabukuro.github.io/sitemap.xml
+Host: https://arturo-shimabukuro.github.io
