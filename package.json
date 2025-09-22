@@ -33,7 +33,7 @@
     ]
   },
   "overrides": {
-    "graphql": "^16.6.0"
+    "graphql": "15.8.0"
   },
   "dependencies": {
     "animejs": "^3.1.0",
