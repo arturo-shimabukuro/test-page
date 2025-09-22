@@ -32,7 +32,9 @@
       "eslint --fix"
     ]
   },
-
+  "overrides": {
+    "graphql": "^16.6.0"
+  },
   "dependencies": {
     "animejs": "^3.1.0",
     "babel-plugin-styled-components": "^1.12.0",
