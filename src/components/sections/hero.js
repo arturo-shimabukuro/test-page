@@ -60,8 +60,8 @@ const Hero = () => {
   }, []);
 
   const one = <h1>Hi, my name is</h1>;
-  const two = <h2 className="big-heading">Luis Arturo Shimabukuro Araki.</h2>;
-  const three = <h3 className="big-heading">I analyze and manage data and projects.</h3>;
+  const two = <h2 className="big-heading">Luis Arturo Shimabukuro Araki</h2>;
+  const three = <h3 className="big-heading">Data and Project Management</h3>;
   const four = (
     <>
       <p>

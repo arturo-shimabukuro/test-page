@@ -1,12 +1,12 @@
 ---
-date: '2016-12-21'
-title: 'Software Engineer Co-op'
-company: 'Starry'
-location: 'Boston, MA'
-range: 'July - December 2016'
-url: 'https://starry.com/'
+date: '2020-06-15'
+title: 'Performance and Human Resources Information Systems Intern'
+company: 'Nexa Resources Peru S.A.A.'
+location: 'Lima, Peru'
+range: 'June 2020 - July 2021'
+url: 'https://www.nexaresources.com/en/'
 ---
 
-- Engineered and improved major features of Starry's customer-facing Android web app using ES6, Handlebars, Backbone, Marionette, and CSS
-- Proposed and implemented scalable solutions to issues identified with cloud services and applications responsible for communicating with the Starry Station internet router
-- Collaborated with designers and other developers to ensure thoughtful and consistent user experiences across Starry’s iOS and Android mobile apps
+- Consolidate headcount reports from the business and suppliers in Power BI and Excel
+- Automation and improvements on Power BI and Excel
+**Achievement:** "Estagio Awards Nexa Lima 2020" winner as the best project between interns

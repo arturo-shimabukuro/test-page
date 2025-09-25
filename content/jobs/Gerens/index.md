@@ -1,11 +1,12 @@
 ---
 date: '2017-04-01'
-title: 'Developer'
-company: 'Scout Studio'
-location: 'Northeastern University'
-range: 'Spring 2016 & 2017'
-url: 'https://web.northeastern.edu/scout/'
+title: 'Consulting Assistant'
+company: 'Gerens Escuela de Gestión y Economía'
+location: 'Lima, Peru'
+range: 'November 2019 - Februrary 2020'
+url: 'https://www.gerensconsultoria.pe/'
 ---
 
-- Collaborated with other student designers and engineers on pro-bono projects to create new brands, design systems, and websites for organizations in the community
-- Built and delivered technical solutions according to stakeholder business requirements
+- Gathering, analysis and evaluation of information of an NGO
+- Develop an internal and external diagnosis of an NGO
+**Achievment:** Organization guidelines for an environmental NGO

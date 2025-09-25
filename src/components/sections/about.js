@@ -125,7 +125,7 @@ const About = () => {
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
-  const skills = ['Excel', 'SQL', 'Power BI', 'Python', 'R', 'WordPress'];
+  const skills = ['Excel', 'SQL', 'Power BI', 'Python', 'R'];
 
   return (
     <StyledAboutSection id="about" ref={revealContainer}>
@@ -138,7 +138,7 @@ const About = () => {
               Greetings! I am Luis Arturo a Bachelor in Industrial engineer from the 
               Universidad Peruana de Ciencias Aplicadas (UPC) focused on data analysis and project management 
               based on the Project Management Institute (PMI) and the SCRUM framework.
-              about HTML &amp; CSS!
+              
             </p>
 
             <p>
