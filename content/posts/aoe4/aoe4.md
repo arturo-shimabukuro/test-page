@@ -1,7 +1,6 @@
 ---
-title: "Age of Empires IV Project"
+title: Age of Empires IV Project
 draft: false
-title: Accessible Clickable Cards
 slug: /project/aoe4
 tags: 
     - Python 
