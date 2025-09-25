@@ -1,5 +1,5 @@
 ---
-date: '2017-04-01'
+date: '2019-11-12'
 title: 'Consulting Assistant'
 company: 'Gerens Escuela de Gestión y Economía'
 location: 'Lima, Peru'

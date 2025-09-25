@@ -65,10 +65,9 @@ const Hero = () => {
   const four = (
     <>
       <p>
-        I am Bachelor in Industrial engineer focus on data analysis and project management
+        I am a Bachelor in Industrial engineer focus on data analysis and project management
         to obatain insights and improve/create better processes. Always interested on new challenges and 
         improving my skills at any opportunity I get.
-        .
       </p>
     </>
   );
