@@ -3,6 +3,7 @@ date: '1'
 title: 'Data Analysis of AoE IV'
 cover: './aoe4_cover.png'
 cta: 'https://arturo-shimabukuro.github.io/test-page/project/aoe4'
+external: 'https://arturo-shimabukuro.github.io/test-page/project/aoe4'
 tech:
   - Python
   - Power BI
