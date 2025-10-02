@@ -1,0 +1,1144 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><meta name="generator" content="Gatsby 3.4.1"/><title data-react-helmet="true">COVID | LS</title><meta data-react-helmet="true" name="description" content="Brittany Chiang is a software engineer who specializes in building (and occasionally designing) exceptional digital experiences."/><meta data-react-helmet="true" name="image" content="https://arturo-shimabukuro.github.io/test-page/og.png"/><meta data-react-helmet="true" property="og:title" content="LS"/><meta data-react-helmet="true" property="og:description" content="Brittany Chiang is a software engineer who specializes in building (and occasionally designing) exceptional digital experiences."/><meta data-react-helmet="true" property="og:image" content="https://arturo-shimabukuro.github.io/test-page/og.png"/><meta data-react-helmet="true" property="og:url" content="https://arturo-shimabukuro.github.io/test-page/test-page/project/covid"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary_large_image"/><meta data-react-helmet="true" name="twitter:creator" content="@bchiang7"/><meta data-react-helmet="true" name="twitter:title" content="LS"/><meta data-react-helmet="true" name="twitter:description" content="Brittany Chiang is a software engineer who specializes in building (and occasionally designing) exceptional digital experiences."/><meta data-react-helmet="true" name="twitter:image" content="https://arturo-shimabukuro.github.io/test-page/og.png"/><meta data-react-helmet="true" name="google-site-verification" content="DCl7VAf9tcz6eD9gb67NfkNnJ1PKRNcg8qQiwpbx9Lk"/><style data-styled="" data-styled-version="5.3.0">@font-face{font-family:'Calibre';src:url(/test-page/static/Calibre-Regular-b0d4cbb1201155ddccc21d1b8059a670.woff2) format('woff2'), url(/test-page/static/Calibre-Regular-98526589fa32315c552129869e08427e.woff) format('woff');font-weight:400;font-style:normal;font-display:auto;}/*!sc*/
+@font-face{font-family:'Calibre';src:url(/test-page/static/Calibre-Medium-568dce56f869a519a015d3b69443b067.woff2) format('woff2'), url(/test-page/static/Calibre-Medium-46693d9b57a6b8a657b5393258f6e899.woff) format('woff');font-weight:500;font-style:normal;font-display:auto;}/*!sc*/
+@font-face{font-family:'Calibre';src:url(/test-page/static/Calibre-Semibold-94fc73852539d6733dc0d80252c5e3fb.woff2) format('woff2'), url(/test-page/static/Calibre-Semibold-6972688a249bd53a6c7e69a89e50cdd6.woff) format('woff');font-weight:600;font-style:normal;font-display:auto;}/*!sc*/
+@font-face{font-family:'Calibre';src:url(/test-page/static/Calibre-RegularItalic-5f875bd7b669f1e11b622d4d6d71b5b0.woff2) format('woff2'), url(/test-page/static/Calibre-RegularItalic-57371b9e514dbbe9da31dad1a298de2d.woff) format('woff');font-weight:400;font-style:italic;font-display:auto;}/*!sc*/
+@font-face{font-family:'Calibre';src:url(/test-page/static/Calibre-MediumItalic-7aa140573fd9ed30ae01e117c418b12b.woff2) format('woff2'), url(/test-page/static/Calibre-MediumItalic-aa285f95879aa2c2d26b228d5e422da6.woff) format('woff');font-weight:500;font-style:italic;font-display:auto;}/*!sc*/
+@font-face{font-family:'Calibre';src:url(/test-page/static/Calibre-SemiboldItalic-5f04bffe7ce988169806d66e417a966a.woff2) format('woff2'), url(/test-page/static/Calibre-SemiboldItalic-ad4bd95abee7bca1bdd6a93398f84a04.woff) format('woff');font-weight:600;font-style:italic;font-display:auto;}/*!sc*/
+@font-face{font-family:'SF Mono';src:url(/test-page/static/SFMono-Regular-8799e6387338d58f2f137df821c86eb4.woff2) format('woff2'), url(/test-page/static/SFMono-Regular-e36fa5257c93fc7711eae342068f9eda.woff) format('woff');font-weight:400;font-style:normal;font-display:auto;}/*!sc*/
+@font-face{font-family:'SF Mono';src:url(/test-page/static/SFMono-Semibold-6e6f6c93f4bdf9cbd090c60e97a017e2.woff2) format('woff2'), url(/test-page/static/SFMono-Semibold-ee054046915420413d0068fb1e7105c3.woff) format('woff');font-weight:600;font-style:normal;font-display:auto;}/*!sc*/
+@font-face{font-family:'SF Mono';src:url(/test-page/static/SFMono-RegularItalic-a596917f86217b40000ff1b894cd0e52.woff2) format('woff2'), url(/test-page/static/SFMono-RegularItalic-3a20a00dfdeb4ba538473fa7bf625cbd.woff) format('woff');font-weight:400;font-style:italic;font-display:auto;}/*!sc*/
+@font-face{font-family:'SF Mono';src:url(/test-page/static/SFMono-SemiboldItalic-9a0ae6382e12c5e28a7342ffb41cf4da.woff2) format('woff2'), url(/test-page/static/SFMono-SemiboldItalic-10eb596e904940cd1aebb2cc6286015c.woff) format('woff');font-weight:600;font-style:italic;font-display:auto;}/*!sc*/
+:root{--dark-navy:#020c1b;--navy:#0a192f;--light-navy:#112240;--lightest-navy:#233554;--navy-shadow:rgba(2,12,27,0.7);--dark-slate:#495670;--slate:#8892b0;--light-slate:#a8b2d1;--lightest-slate:#ccd6f6;--white:#e6f1ff;--green:#64ffda;--green-tint:rgba(100,255,218,0.1);--pink:#f57dff;--blue:#57cbff;--font-sans:'Calibre','Inter','San Francisco','SF Pro Text',-apple-system,system-ui,sans-serif;--font-mono:'SF Mono','Fira Code','Fira Mono','Roboto Mono',monospace;--fz-xxs:12px;--fz-xs:13px;--fz-sm:14px;--fz-md:16px;--fz-lg:18px;--fz-xl:20px;--fz-xxl:22px;--fz-heading:32px;--border-radius:4px;--nav-height:100px;--nav-scroll-height:70px;--tab-height:42px;--tab-width:120px;--easing:cubic-bezier(0.645,0.045,0.355,1);--transition:all 0.25s cubic-bezier(0.645,0.045,0.355,1);--hamburger-width:30px;--ham-before:top 0.1s ease-in 0.25s,opacity 0.1s ease-in;--ham-before-active:top 0.1s ease-out,opacity 0.1s ease-out 0.12s;--ham-after:bottom 0.1s ease-in 0.25s,transform 0.22s cubic-bezier(0.55,0.055,0.675,0.19);--ham-after-active:bottom 0.1s ease-out,transform 0.22s cubic-bezier(0.215,0.61,0.355,1) 0.12s;}/*!sc*/
+html{box-sizing:border-box;width:100%;-webkit-scroll-behavior:smooth;-moz-scroll-behavior:smooth;-ms-scroll-behavior:smooth;scroll-behavior:smooth;}/*!sc*/
+*,*:before,*:after{box-sizing:inherit;}/*!sc*/
+::selection{background-color:var(--lightest-navy);color:var(--lightest-slate);}/*!sc*/
+:focus{outline:2px dashed var(--green);outline-offset:3px;}/*!sc*/
+:focus:not(:focus-visible){outline:none;outline-offset:0px;}/*!sc*/
+:focus-visible{outline:2px dashed var(--green);outline-offset:3px;}/*!sc*/
+html{-webkit-scrollbar-width:thin;-moz-scrollbar-width:thin;-ms-scrollbar-width:thin;scrollbar-width:thin;-webkit-scrollbar-color:var(--dark-slate) var(--navy);-moz-scrollbar-color:var(--dark-slate) var(--navy);-ms-scrollbar-color:var(--dark-slate) var(--navy);scrollbar-color:var(--dark-slate) var(--navy);}/*!sc*/
+::-webkit-scrollbar{width:12px;}/*!sc*/
+::-webkit-scrollbar-track{background:var(--navy);}/*!sc*/
+::-webkit-scrollbar-thumb{background-color:var(--dark-slate);border:3px solid var(--navy);border-radius:10px;}/*!sc*/
+body{margin:0;width:100%;min-height:100%;overflow-x:hidden;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;background-color:var(--navy);color:var(--slate);font-family:var(--font-sans);font-size:var(--fz-xl);line-height:1.3;}/*!sc*/
+@media (max-width:480px){body{font-size:var(--fz-lg);}}/*!sc*/
+body.hidden{overflow:hidden;}/*!sc*/
+body.blur{overflow:hidden;}/*!sc*/
+body.blur header{background-color:transparent;}/*!sc*/
+body.blur #content > *{-webkit-filter:blur(5px) brightness(0.7);filter:blur(5px) brightness(0.7);-webkit-transition:var(--transition);transition:var(--transition);pointer-events:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;}/*!sc*/
+#root{min-height:100vh;display:grid;grid-template-rows:1fr auto;grid-template-columns:100%;}/*!sc*/
+main{margin:0 auto;width:100%;max-width:1600px;min-height:100vh;padding:200px 150px;}/*!sc*/
+@media (max-width:1080px){main{padding:200px 100px;}}/*!sc*/
+@media (max-width:768px){main{padding:150px 50px;}}/*!sc*/
+@media (max-width:480px){main{padding:125px 25px;}}/*!sc*/
+main.fillHeight{padding:0 150px;}/*!sc*/
+@media (max-width:1080px){main.fillHeight{padding:0 100px;}}/*!sc*/
+@media (max-width:768px){main.fillHeight{padding:0 50px;}}/*!sc*/
+@media (max-width:480px){main.fillHeight{padding:0 25px;}}/*!sc*/
+section{margin:0 auto;padding:100px 0;max-width:1000px;}/*!sc*/
+@media (max-width:768px){section{padding:80px 0;}}/*!sc*/
+@media (max-width:480px){section{padding:60px 0;}}/*!sc*/
+h1,h2,h3,h4,h5,h6{margin:0 0 10px 0;font-weight:600;color:var(--lightest-slate);line-height:1.1;}/*!sc*/
+.big-heading{margin:0;font-size:clamp(40px,8vw,80px);}/*!sc*/
+.medium-heading{margin:0;font-size:clamp(40px,8vw,60px);}/*!sc*/
+.numbered-heading{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;position:relative;margin:10px 0 40px;width:100%;font-size:clamp(26px,5vw,var(--fz-heading));white-space:nowrap;}/*!sc*/
+.numbered-heading:before{position:relative;bottom:4px;counter-increment:section;content:'0' counter(section) '.';margin-right:10px;color:var(--green);font-family:var(--font-mono);font-size:clamp(var(--fz-md),3vw,var(--fz-xl));font-weight:400;}/*!sc*/
+@media (max-width:480px){.numbered-heading:before{margin-bottom:-3px;margin-right:5px;}}/*!sc*/
+.numbered-heading:after{content:'';display:block;position:relative;top:-5px;width:300px;height:1px;margin-left:20px;background-color:var(--lightest-navy);}/*!sc*/
+@media (max-width:1080px){.numbered-heading:after{width:200px;}}/*!sc*/
+@media (max-width:768px){.numbered-heading:after{width:100%;}}/*!sc*/
+@media (max-width:600px){.numbered-heading:after{margin-left:10px;}}/*!sc*/
+img,svg,.gatsby-image-wrapper{width:100%;max-width:100%;vertical-align:middle;}/*!sc*/
+img[alt=""],img:not([alt]){-webkit-filter:blur(5px);filter:blur(5px);}/*!sc*/
+svg{width:100%;height:100%;fill:currentColor;vertical-align:middle;}/*!sc*/
+svg.feather{fill:none;}/*!sc*/
+a{display:inline-block;-webkit-text-decoration:none;text-decoration:none;-webkit-text-decoration-skip-ink:auto;text-decoration-skip-ink:auto;color:inherit;position:relative;-webkit-transition:var(--transition);transition:var(--transition);}/*!sc*/
+a:hover,a:focus{color:var(--green);}/*!sc*/
+a.inline-link{display:inline-block;position:relative;color:var(--green);-webkit-transition:var(--transition);transition:var(--transition);}/*!sc*/
+a.inline-link:hover,a.inline-link:focus-visible{color:var(--green);outline:0;}/*!sc*/
+a.inline-link:hover:after,a.inline-link:focus-visible:after{width:100%;}/*!sc*/
+a.inline-link:hover > *,a.inline-link:focus-visible > *{color:var(--green) !important;-webkit-transition:var(--transition);transition:var(--transition);}/*!sc*/
+a.inline-link:after{content:'';display:block;width:0;height:1px;position:relative;bottom:0.37em;background-color:var(--green);opacity:0.5;}/*!sc*/
+@media (prefers-reduced-motion:no-preference){a.inline-link:after{-webkit-transition:var(--transition);transition:var(--transition);}}/*!sc*/
+button{cursor:pointer;border:0;border-radius:0;}/*!sc*/
+input,textarea{border-radius:0;outline:0;}/*!sc*/
+input:focus,textarea:focus{outline:0;}/*!sc*/
+input:focus::-webkit-input-placeholder,textarea:focus::-webkit-input-placeholder,input:active::-webkit-input-placeholder,textarea:active::-webkit-input-placeholder{opacity:0.5;}/*!sc*/
+input:focus::-moz-placeholder,textarea:focus::-moz-placeholder,input:active::-moz-placeholder,textarea:active::-moz-placeholder{opacity:0.5;}/*!sc*/
+input:focus:-ms-input-placeholder,textarea:focus:-ms-input-placeholder,input:active:-ms-input-placeholder,textarea:active:-ms-input-placeholder{opacity:0.5;}/*!sc*/
+input:focus::placeholder,textarea:focus::placeholder,input:active::placeholder,textarea:active::placeholder{opacity:0.5;}/*!sc*/
+p{margin:0 0 15px 0;}/*!sc*/
+p:last-child,p:last-of-type{margin:0;}/*!sc*/
+p > a{display:inline-block;position:relative;color:var(--green);-webkit-transition:var(--transition);transition:var(--transition);}/*!sc*/
+p > a:hover,p > a:focus-visible{color:var(--green);outline:0;}/*!sc*/
+p > a:hover:after,p > a:focus-visible:after{width:100%;}/*!sc*/
+p > a:hover > *,p > a:focus-visible > *{color:var(--green) !important;-webkit-transition:var(--transition);transition:var(--transition);}/*!sc*/
+p > a:after{content:'';display:block;width:0;height:1px;position:relative;bottom:0.37em;background-color:var(--green);opacity:0.5;}/*!sc*/
+@media (prefers-reduced-motion:no-preference){p > a:after{-webkit-transition:var(--transition);transition:var(--transition);}}/*!sc*/
+p > code{background-color:var(--light-navy);color:var(--white);font-size:var(--fz-sm);border-radius:var(--border-radius);padding:0.3em 0.5em;}/*!sc*/
+ul.fancy-list{padding:0;margin:0;list-style:none;font-size:var(--fz-lg);}/*!sc*/
+ul.fancy-list li{position:relative;padding-left:30px;margin-bottom:10px;}/*!sc*/
+ul.fancy-list li:before{content:'▹';position:absolute;left:0;color:var(--green);}/*!sc*/
+blockquote{border-left-color:var(--green);border-left-style:solid;border-left-width:1px;margin-left:0px;margin-right:0px;padding-left:1.5rem;}/*!sc*/
+blockquote p{font-style:italic;font-size:24px;}/*!sc*/
+hr{background-color:var(--lightest-navy);height:1px;border-width:0px;border-style:initial;border-color:initial;border-image:initial;margin:1rem;}/*!sc*/
+code{font-family:var(--font-mono);font-size:var(--fz-md);}/*!sc*/
+.skip-to-content{color:var(--green);background-color:transparent;border:1px solid var(--green);border-radius:var(--border-radius);font-size:var(--fz-xs);font-family:var(--font-mono);line-height:1;-webkit-text-decoration:none;text-decoration:none;padding:1.25rem 1.75rem;-webkit-transition:var(--transition);transition:var(--transition);position:absolute;top:auto;left:-999px;width:1px;height:1px;overflow:hidden;z-index:-99;}/*!sc*/
+.skip-to-content:hover,.skip-to-content:focus-visible{outline:none;box-shadow:4px 4px 0 0 var(--green);-webkit-transform:translate(-5px,-5px);-ms-transform:translate(-5px,-5px);transform:translate(-5px,-5px);}/*!sc*/
+.skip-to-content:after{display:none !important;}/*!sc*/
+.skip-to-content:hover,.skip-to-content:focus{background-color:var(--green);color:var(--navy);top:0;left:0;width:auto;height:auto;overflow:auto;z-index:99;box-shadow:none;-webkit-transform:none;-ms-transform:none;transform:none;}/*!sc*/
+#logo{color:var(--green);}/*!sc*/
+.overline{color:var(--green);font-family:var(--font-mono);font-size:var(--fz-md);font-weight:400;}/*!sc*/
+.subtitle{color:var(--green);margin:0 0 20px 0;font-size:var(--fz-md);font-family:var(--font-mono);font-weight:400;line-height:1.5;}/*!sc*/
+@media (max-width:1080px){.subtitle{font-size:var(--fz-sm);}}/*!sc*/
+@media (max-width:768px){.subtitle{font-size:var(--fz-xs);}}/*!sc*/
+.subtitle a{display:inline-block;position:relative;color:var(--green);-webkit-transition:var(--transition);transition:var(--transition);line-height:1.5;}/*!sc*/
+.subtitle a:hover,.subtitle a:focus-visible{color:var(--green);outline:0;}/*!sc*/
+.subtitle a:hover:after,.subtitle a:focus-visible:after{width:100%;}/*!sc*/
+.subtitle a:hover > *,.subtitle a:focus-visible > *{color:var(--green) !important;-webkit-transition:var(--transition);transition:var(--transition);}/*!sc*/
+.subtitle a:after{content:'';display:block;width:0;height:1px;position:relative;bottom:0.37em;background-color:var(--green);opacity:0.5;}/*!sc*/
+@media (prefers-reduced-motion:no-preference){.subtitle a:after{-webkit-transition:var(--transition);transition:var(--transition);}}/*!sc*/
+.breadcrumb{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin-bottom:50px;color:var(--green);}/*!sc*/
+.breadcrumb .arrow{display:block;margin-right:10px;padding-top:4px;}/*!sc*/
+.breadcrumb a{display:inline-block;position:relative;color:var(--green);-webkit-transition:var(--transition);transition:var(--transition);font-family:var(--font-mono);font-size:var(--fz-sm);font-weight:600;line-height:1.5;text-transform:uppercase;-webkit-letter-spacing:0.1em;-moz-letter-spacing:0.1em;-ms-letter-spacing:0.1em;letter-spacing:0.1em;}/*!sc*/
+.breadcrumb a:hover,.breadcrumb a:focus-visible{color:var(--green);outline:0;}/*!sc*/
+.breadcrumb a:hover:after,.breadcrumb a:focus-visible:after{width:100%;}/*!sc*/
+.breadcrumb a:hover > *,.breadcrumb a:focus-visible > *{color:var(--green) !important;-webkit-transition:var(--transition);transition:var(--transition);}/*!sc*/
+.breadcrumb a:after{content:'';display:block;width:0;height:1px;position:relative;bottom:0.37em;background-color:var(--green);opacity:0.5;}/*!sc*/
+@media (prefers-reduced-motion:no-preference){.breadcrumb a:after{-webkit-transition:var(--transition);transition:var(--transition);}}/*!sc*/
+.gatsby-image-outer-wrapper{height:100%;}/*!sc*/
+.fadeup-enter{opacity:0.01;-webkit-transform:translateY(20px);-ms-transform:translateY(20px);transform:translateY(20px);-webkit-transition:opacity 300ms var(--easing),-webkit-transform 300ms var(--easing);-webkit-transition:opacity 300ms var(--easing),transform 300ms var(--easing);transition:opacity 300ms var(--easing),transform 300ms var(--easing);}/*!sc*/
+.fadeup-enter-active{opacity:1;-webkit-transform:translateY(0px);-ms-transform:translateY(0px);transform:translateY(0px);-webkit-transition:opacity 300ms var(--easing),-webkit-transform 300ms var(--easing);-webkit-transition:opacity 300ms var(--easing),transform 300ms var(--easing);transition:opacity 300ms var(--easing),transform 300ms var(--easing);}/*!sc*/
+.fadedown-enter{opacity:0.01;-webkit-transform:translateY(-20px);-ms-transform:translateY(-20px);transform:translateY(-20px);-webkit-transition:opacity 300ms var(--easing),-webkit-transform 300ms var(--easing);-webkit-transition:opacity 300ms var(--easing),transform 300ms var(--easing);transition:opacity 300ms var(--easing),transform 300ms var(--easing);}/*!sc*/
+.fadedown-enter-active{opacity:1;-webkit-transform:translateY(0px);-ms-transform:translateY(0px);transform:translateY(0px);-webkit-transition:opacity 300ms var(--easing),-webkit-transform 300ms var(--easing);-webkit-transition:opacity 300ms var(--easing),transform 300ms var(--easing);transition:opacity 300ms var(--easing),transform 300ms var(--easing);}/*!sc*/
+.fade-enter{opacity:0;}/*!sc*/
+.fade-enter-active{opacity:1;-webkit-transition:opacity 300ms var(--easing);transition:opacity 300ms var(--easing);}/*!sc*/
+.fade-exit{opacity:1;}/*!sc*/
+.fade-exit-active{opacity:0;-webkit-transition:opacity 300ms var(--easing);transition:opacity 300ms var(--easing);}/*!sc*/
+.gatsby-highlight{background-color:#112340;color:#a2aabc;border-radius:var(--border-radius);margin:2em 0;padding:1.25em;overflow:auto;position:relative;font-family:var(--font-mono);font-size:var(--fz-md);}/*!sc*/
+.gatsby-highlight code[class*='language-'],.gatsby-highlight pre[class*='language-']{height:auto !important;font-size:var(--fz-sm);line-height:1.5;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;tab-size:2;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none;}/*!sc*/
+.gatsby-highlight pre[class*='language-']{background-color:transparent;margin:0;padding:0;overflow:initial;float:left;min-width:100%;padding-top:2em;}/*!sc*/
+.gatsby-code-title{padding:1em 1.5em;font-family:var(--font-mono);font-size:var(--fz-xs);background-color:#112340;color:#a2aabc;border-top-left-radius:var(--border-radius);border-top-right-radius:var(--border-radius);border-bottom:1px solid #1d2d50;}/*!sc*/
+.gatsby-code-title + .gatsby-highlight{margin-top:0;border-top-left-radius:0;border-top-right-radius:0;}/*!sc*/
+.gatsby-highlight-code-line{display:block;background-color:#1d2d50;border-left:2px solid var(--green);padding-left:calc(1em + 2px);padding-right:1em;margin-right:-1.35em;margin-left:-1.35em;}/*!sc*/
+.gatsby-highlight pre[class*='language-']::before{background:var(--lightest-navy);color:var(--white);font-size:var(--fz-xxs);font-family:var(--font-mono);line-height:1.5;-webkit-letter-spacing:0.1em;-moz-letter-spacing:0.1em;-ms-letter-spacing:0.1em;letter-spacing:0.1em;text-transform:uppercase;border-radius:0 0 3px 3px;position:absolute;top:0;left:1.25rem;padding:0.25rem 0.5rem;}/*!sc*/
+.gatsby-highlight pre[class='language-javascript']::before{content:'js';}/*!sc*/
+.gatsby-highlight pre[class='language-js']::before{content:'js';}/*!sc*/
+.gatsby-highlight pre[class='language-jsx']::before{content:'jsx';}/*!sc*/
+.gatsby-highlight pre[class='language-graphql']::before{content:'GraphQL';}/*!sc*/
+.gatsby-highlight pre[class='language-html']::before{content:'html';}/*!sc*/
+.gatsby-highlight pre[class='language-css']::before{content:'css';}/*!sc*/
+.gatsby-highlight pre[class='language-mdx']::before{content:'mdx';}/*!sc*/
+.gatsby-highlight pre[class='language-shell']::before{content:'shell';}/*!sc*/
+.gatsby-highlight pre[class='language-sh']::before{content:'sh';}/*!sc*/
+.gatsby-highlight pre[class='language-bash']::before{content:'bash';}/*!sc*/
+.gatsby-highlight pre[class='language-yaml']::before{content:'yaml';}/*!sc*/
+.gatsby-highlight pre[class='language-markdown']::before{content:'md';}/*!sc*/
+.gatsby-highlight pre[class='language-json']::before,.gatsby-highlight pre[class='language-json5']::before{content:'json';}/*!sc*/
+.gatsby-highlight pre[class='language-diff']::before{content:'diff';}/*!sc*/
+.gatsby-highlight pre[class='language-text']::before{content:'text';}/*!sc*/
+.gatsby-highlight pre[class='language-flow']::before{content:'flow';}/*!sc*/
+.token{display:inline;}/*!sc*/
+.token.comment,.token.block-comment,.token.prolog,.token.doctype,.token.cdata{color:#8695b799;}/*!sc*/
+.token.punctuation{color:#a2aabc;}/*!sc*/
+.token.namespace,.token.deleted{color:#ef6b73;}/*!sc*/
+.token.function-name,.token.function,.token.class-name,.token.constant,.token.symbol{color:#ffd580;}/*!sc*/
+.token.attr-name,.token.operator,.token.rule{color:#ffae57;}/*!sc*/
+.token.keyword,.token.boolean,.token.number,.token.property{color:#c3a6ff;}/*!sc*/
+.token.tag,.token.selector,.token.important,.token.atrule,.token.builtin,.token.entity,.token.url{color:#5ccfe6;}/*!sc*/
+.token.string,.token.char,.token.attr-value,.token.regex,.token.variable,.token.inserted{color:#bae67e;}/*!sc*/
+.token.important,.token.bold{font-weight:600;}/*!sc*/
+.token.italic{font-style:italic;}/*!sc*/
+.token.entity{cursor:help;}/*!sc*/
+.namespace{opacity:0.7;}/*!sc*/
+data-styled.g1[id="sc-global-TEnKG1"]{content:"sc-global-TEnKG1,"}/*!sc*/
+.cZslOS{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;min-height:100vh;}/*!sc*/
+data-styled.g2[id="layout__StyledContent-sc-1yw8zls-0"]{content:"cZslOS,"}/*!sc*/
+.hLTFFw{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;position:fixed;top:0;z-index:11;padding:0px 50px;width:100%;height:var(--nav-height);background-color:rgba(10,25,47,0.85);-webkit-filter:none !important;filter:none !important;pointer-events:auto !important;-webkit-user-select:auto !important;-moz-user-select:auto !important;-ms-user-select:auto !important;user-select:auto !important;-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);-webkit-transition:var(--transition);transition:var(--transition);}/*!sc*/
+@media (max-width:1080px){.hLTFFw{padding:0 40px;}}/*!sc*/
+@media (max-width:768px){.hLTFFw{padding:0 25px;}}/*!sc*/
+@media (prefers-reduced-motion:no-preference){}/*!sc*/
+data-styled.g4[id="nav__StyledHeader-ghklvd-0"]{content:"hLTFFw,"}/*!sc*/
+.kFCHyX{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;position:relative;width:100%;color:var(--lightest-slate);font-family:var(--font-mono);counter-reset:item 0;z-index:12;}/*!sc*/
+.kFCHyX .logo{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}/*!sc*/
+.kFCHyX .logo a{color:var(--green);width:42px;height:42px;position:relative;z-index:1;}/*!sc*/
+.kFCHyX .logo a .hex-container{position:absolute;top:0;left:0;z-index:-1;}/*!sc*/
+@media (prefers-reduced-motion:no-preference){.kFCHyX .logo a .hex-container{-webkit-transition:var(--transition);transition:var(--transition);}}/*!sc*/
+.kFCHyX .logo a .logo-container{position:relative;z-index:1;}/*!sc*/
+.kFCHyX .logo a .logo-container svg{fill:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;}/*!sc*/
+@media (prefers-reduced-motion:no-preference){.kFCHyX .logo a .logo-container svg{-webkit-transition:var(--transition);transition:var(--transition);}}/*!sc*/
+.kFCHyX .logo a .logo-container svg polygon{fill:var(--navy);}/*!sc*/
+.kFCHyX .logo a:hover,.kFCHyX .logo a:focus{outline:0;-webkit-transform:translate(-4px,-4px);-ms-transform:translate(-4px,-4px);transform:translate(-4px,-4px);}/*!sc*/
+.kFCHyX .logo a:hover .hex-container,.kFCHyX .logo a:focus .hex-container{-webkit-transform:translate(4px,3px);-ms-transform:translate(4px,3px);transform:translate(4px,3px);}/*!sc*/
+data-styled.g5[id="nav__StyledNav-ghklvd-1"]{content:"kFCHyX,"}/*!sc*/
+.ihALZY{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}/*!sc*/
+@media (max-width:768px){.ihALZY{display:none;}}/*!sc*/
+.ihALZY ol{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;padding:0;margin:0;list-style:none;}/*!sc*/
+.ihALZY ol li{margin:0 5px;position:relative;counter-increment:item 1;font-size:var(--fz-xs);}/*!sc*/
+.ihALZY ol li a{padding:10px;}/*!sc*/
+.ihALZY ol li a:before{content:'0' counter(item) '.';margin-right:5px;color:var(--green);font-size:var(--fz-xxs);text-align:right;}/*!sc*/
+.ihALZY .resume-button{color:var(--green);background-color:transparent;border:1px solid var(--green);border-radius:var(--border-radius);padding:0.75rem 1rem;font-size:var(--fz-xs);font-family:var(--font-mono);line-height:1;-webkit-text-decoration:none;text-decoration:none;-webkit-transition:var(--transition);transition:var(--transition);margin-left:15px;font-size:var(--fz-xs);}/*!sc*/
+.ihALZY .resume-button:hover,.ihALZY .resume-button:focus-visible{outline:none;box-shadow:3px 3px 0 0 var(--green);-webkit-transform:translate(-4px,-4px);-ms-transform:translate(-4px,-4px);transform:translate(-4px,-4px);}/*!sc*/
+.ihALZY .resume-button:after{display:none !important;}/*!sc*/
+data-styled.g6[id="nav__StyledLinks-ghklvd-2"]{content:"ihALZY,"}/*!sc*/
+.dAwNpJ{display:none;}/*!sc*/
+@media (max-width:768px){.dAwNpJ{display:block;}}/*!sc*/
+data-styled.g7[id="menu__StyledMenu-sdn9y6-0"]{content:"dAwNpJ,"}/*!sc*/
+.eCxtrN{display:none;}/*!sc*/
+@media (max-width:768px){.eCxtrN{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;position:relative;z-index:10;margin-right:-15px;padding:15px;border:0;background-color:transparent;color:inherit;text-transform:none;-webkit-transition-timing-function:linear;transition-timing-function:linear;-webkit-transition-duration:0.15s;transition-duration:0.15s;-webkit-transition-property:opacity,filter;transition-property:opacity,filter;}}/*!sc*/
+.eCxtrN .ham-box{display:inline-block;position:relative;width:var(--hamburger-width);height:24px;}/*!sc*/
+.eCxtrN .ham-box-inner{position:absolute;top:50%;right:0;width:var(--hamburger-width);height:2px;border-radius:var(--border-radius);background-color:var(--green);-webkit-transition-duration:0.22s;transition-duration:0.22s;-webkit-transition-property:-webkit-transform;-webkit-transition-property:transform;transition-property:transform;-webkit-transition-delay:0s;transition-delay:0s;-webkit-transform:rotate(0deg);-ms-transform:rotate(0deg);transform:rotate(0deg);-webkit-transition-timing-function:cubic-bezier( 0.55,0.055,0.675,0.19 );transition-timing-function:cubic-bezier( 0.55,0.055,0.675,0.19 );}/*!sc*/
+.eCxtrN .ham-box-inner:before,.eCxtrN .ham-box-inner:after{content:'';display:block;position:absolute;left:auto;right:0;width:var(--hamburger-width);height:2px;border-radius:4px;background-color:var(--green);-webkit-transition-timing-function:ease;transition-timing-function:ease;-webkit-transition-duration:0.15s;transition-duration:0.15s;-webkit-transition-property:-webkit-transform;-webkit-transition-property:transform;transition-property:transform;}/*!sc*/
+.eCxtrN .ham-box-inner:before{width:120%;top:-10px;opacity:1;-webkit-transition:var(--ham-before);transition:var(--ham-before);}/*!sc*/
+.eCxtrN .ham-box-inner:after{width:80%;bottom:-10px;-webkit-transform:rotate(0);-ms-transform:rotate(0);transform:rotate(0);-webkit-transition:var(--ham-after);transition:var(--ham-after);}/*!sc*/
+data-styled.g8[id="menu__StyledHamburgerButton-sdn9y6-1"]{content:"eCxtrN,"}/*!sc*/
+.lknEs{display:none;}/*!sc*/
+@media (max-width:768px){.lknEs{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;position:fixed;top:0;bottom:0;right:0;padding:50px 10px;width:min(75vw,400px);height:100vh;outline:0;background-color:var(--light-navy);box-shadow:-10px 0px 30px -15px var(--navy-shadow);z-index:9;-webkit-transform:translateX(100vw);-ms-transform:translateX(100vw);transform:translateX(100vw);visibility:hidden;-webkit-transition:var(--transition);transition:var(--transition);}}/*!sc*/
+.lknEs nav{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;width:100%;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;color:var(--lightest-slate);font-family:var(--font-mono);text-align:center;}/*!sc*/
+.lknEs ol{padding:0;margin:0;list-style:none;width:100%;}/*!sc*/
+.lknEs ol li{position:relative;margin:0 auto 20px;counter-increment:item 1;font-size:clamp(var(--fz-sm),4vw,var(--fz-lg));}/*!sc*/
+@media (max-width:600px){.lknEs ol li{margin:0 auto 10px;}}/*!sc*/
+.lknEs ol li:before{content:'0' counter(item) '.';display:block;margin-bottom:5px;color:var(--green);font-size:var(--fz-sm);}/*!sc*/
+.lknEs ol a{display:inline-block;-webkit-text-decoration:none;text-decoration:none;-webkit-text-decoration-skip-ink:auto;text-decoration-skip-ink:auto;color:inherit;position:relative;-webkit-transition:var(--transition);transition:var(--transition);width:100%;padding:3px 20px 20px;}/*!sc*/
+.lknEs ol a:hover,.lknEs ol a:focus-visible{color:var(--green);outline:0;}/*!sc*/
+.lknEs .resume-link{color:var(--green);background-color:transparent;border:1px solid var(--green);border-radius:var(--border-radius);padding:1.25rem 1.75rem;font-size:var(--fz-sm);font-family:var(--font-mono);line-height:1;-webkit-text-decoration:none;text-decoration:none;-webkit-transition:var(--transition);transition:var(--transition);padding:18px 50px;margin:10% auto 0;width:-webkit-max-content;width:-moz-max-content;width:max-content;}/*!sc*/
+.lknEs .resume-link:hover,.lknEs .resume-link:focus-visible{outline:none;box-shadow:4px 4px 0 0 var(--green);-webkit-transform:translate(-5px,-5px);-ms-transform:translate(-5px,-5px);transform:translate(-5px,-5px);}/*!sc*/
+.lknEs .resume-link:after{display:none !important;}/*!sc*/
+data-styled.g9[id="menu__StyledSidebar-sdn9y6-2"]{content:"lknEs,"}/*!sc*/
+.hOvuuP{width:40px;position:fixed;bottom:0;left:40px;right:auto;z-index:10;color:var(--light-slate);}/*!sc*/
+@media (max-width:1080px){.hOvuuP{left:20px;right:auto;}}/*!sc*/
+@media (max-width:768px){.hOvuuP{display:none;}}/*!sc*/
+.jSIwrL{width:40px;position:fixed;bottom:0;left:auto;right:40px;z-index:10;color:var(--light-slate);}/*!sc*/
+@media (max-width:1080px){.jSIwrL{left:auto;right:20px;}}/*!sc*/
+@media (max-width:768px){.jSIwrL{display:none;}}/*!sc*/
+data-styled.g10[id="side__StyledSideElement-sc-1duznzb-0"]{content:"hOvuuP,jSIwrL,"}/*!sc*/
+.dVLQAC{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin:0;padding:0;list-style:none;}/*!sc*/
+.dVLQAC:after{content:'';display:block;width:1px;height:90px;margin:0 auto;background-color:var(--light-slate);}/*!sc*/
+.dVLQAC li:last-of-type{margin-bottom:20px;}/*!sc*/
+.dVLQAC li a{padding:10px;}/*!sc*/
+.dVLQAC li a:hover,.dVLQAC li a:focus{-webkit-transform:translateY(-3px);-ms-transform:translateY(-3px);transform:translateY(-3px);}/*!sc*/
+.dVLQAC li a svg{width:20px;height:20px;}/*!sc*/
+data-styled.g11[id="social__StyledSocialList-anu6nt-0"]{content:"dVLQAC,"}/*!sc*/
+.jJFfEJ{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;position:relative;}/*!sc*/
+.jJFfEJ:after{content:'';display:block;width:1px;height:90px;margin:0 auto;background-color:var(--light-slate);}/*!sc*/
+.jJFfEJ a{margin:20px auto;padding:10px;font-family:var(--font-mono);font-size:var(--fz-xxs);line-height:var(--fz-lg);-webkit-letter-spacing:0.1em;-moz-letter-spacing:0.1em;-ms-letter-spacing:0.1em;letter-spacing:0.1em;-webkit-writing-mode:vertical-rl;-ms-writing-mode:tb-rl;writing-mode:vertical-rl;}/*!sc*/
+.jJFfEJ a:hover,.jJFfEJ a:focus{-webkit-transform:translateY(-3px);-ms-transform:translateY(-3px);transform:translateY(-3px);}/*!sc*/
+data-styled.g12[id="email__StyledLinkWrapper-sc-2epoq-0"]{content:"jJFfEJ,"}/*!sc*/
+.earxGk{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;height:auto;min-height:70px;padding:15px;text-align:center;}/*!sc*/
+data-styled.g13[id="footer__StyledFooter-sc-4jwnt4-0"]{content:"earxGk,"}/*!sc*/
+.iKeBGp{display:none;}/*!sc*/
+@media (max-width:768px){.iKeBGp{display:block;width:100%;max-width:270px;margin:0 auto 10px;color:var(--light-slate);}}/*!sc*/
+.iKeBGp ul{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;padding:0;margin:0;list-style:none;}/*!sc*/
+.iKeBGp ul a{padding:10px;}/*!sc*/
+.iKeBGp ul a svg{width:20px;height:20px;}/*!sc*/
+data-styled.g14[id="footer__StyledSocialLinks-sc-4jwnt4-1"]{content:"iKeBGp,"}/*!sc*/
+.fLSMpu{color:var(--light-slate);font-family:var(--font-mono);font-size:var(--fz-xxs);line-height:1;}/*!sc*/
+.fLSMpu a{padding:10px;}/*!sc*/
+.fLSMpu .github-stats{margin-top:10px;}/*!sc*/
+.fLSMpu .github-stats > span{display:-webkit-inline-box;display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin:0 7px;}/*!sc*/
+.fLSMpu .github-stats svg{display:inline-block;margin-right:5px;width:14px;height:14px;}/*!sc*/
+data-styled.g15[id="footer__StyledCredit-sc-4jwnt4-2"]{content:"fLSMpu,"}/*!sc*/
+.fxwTfe{max-width:1000px;}/*!sc*/
+data-styled.g41[id="post__StyledPostContainer-sc-8858gx-0"]{content:"fxwTfe,"}/*!sc*/
+.hfhtkj{margin-bottom:50px;}/*!sc*/
+.hfhtkj .tag{margin-right:10px;}/*!sc*/
+data-styled.g42[id="post__StyledPostHeader-sc-8858gx-1"]{content:"hfhtkj,"}/*!sc*/
+.ewCocl{margin-bottom:100px;}/*!sc*/
+.ewCocl h1,.ewCocl h2,.ewCocl h3,.ewCocl h4,.ewCocl h5,.ewCocl h6{margin:2em 0 1em;}/*!sc*/
+.ewCocl p{margin:1em 0;line-height:1.5;color:var(--light-slate);}/*!sc*/
+.ewCocl a{display:inline-block;position:relative;color:var(--green);-webkit-transition:var(--transition);transition:var(--transition);}/*!sc*/
+.ewCocl a:hover,.ewCocl a:focus-visible{color:var(--green);outline:0;}/*!sc*/
+.ewCocl a:hover:after,.ewCocl a:focus-visible:after{width:100%;}/*!sc*/
+.ewCocl a:hover > *,.ewCocl a:focus-visible > *{color:var(--green) !important;-webkit-transition:var(--transition);transition:var(--transition);}/*!sc*/
+.ewCocl a:after{content:'';display:block;width:0;height:1px;position:relative;bottom:0.37em;background-color:var(--green);opacity:0.5;}/*!sc*/
+@media (prefers-reduced-motion:no-preference){.ewCocl a:after{-webkit-transition:var(--transition);transition:var(--transition);}}/*!sc*/
+.ewCocl code{background-color:var(--lightest-navy);color:var(--lightest-slate);border-radius:var(--border-radius);font-size:var(--fz-sm);padding:0.2em 0.4em;}/*!sc*/
+.ewCocl pre code{background-color:transparent;padding:0;}/*!sc*/
+data-styled.g43[id="post__StyledPostContent-sc-8858gx-2"]{content:"ewCocl,"}/*!sc*/
+</style><style>.gatsby-image-wrapper{position:relative;overflow:hidden}.gatsby-image-wrapper img{bottom:0;height:100%;left:0;margin:0;max-width:none;padding:0;position:absolute;right:0;top:0;width:100%;object-fit:cover}.gatsby-image-wrapper [data-main-image]{opacity:0;transform:translateZ(0);transition:opacity .25s linear;will-change:opacity}.gatsby-image-wrapper-constrained{display:inline-block}</style><noscript><style>.gatsby-image-wrapper noscript [data-main-image]{opacity:1!important}.gatsby-image-wrapper [data-placeholder-image]{opacity:0!important}</style></noscript><script type="module">const e="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;e&&document.body.addEventListener("load",(function(e){if(void 0===e.target.dataset.mainImage)return;if(void 0===e.target.dataset.gatsbyImageSsr)return;const t=e.target;let a=null,n=t;for(;null===a&&n;)void 0!==n.parentNode.dataset.gatsbyImageWrapper&&(a=n.parentNode),n=n.parentNode;const o=a.querySelector("[data-placeholder-image]"),r=new Image;r.src=t.currentSrc,r.decode().catch((()=>{})).then((()=>{t.style.opacity=1,o&&(o.style.opacity=0,o.style.transition="opacity 500ms linear")}))}),!0);</script><link rel="sitemap" type="application/xml" href="/test-page/sitemap/sitemap-index.xml"/><link rel="icon" href="/test-page/favicon-32x32.png?v=dedd91ab2778735e31d0a7ccbb422fb7" type="image/png"/><link rel="manifest" href="/test-page/manifest.webmanifest" crossorigin="anonymous"/><meta name="theme-color" content="#0a192f"/><link rel="apple-touch-icon" sizes="48x48" href="/test-page/icons/icon-48x48.png?v=dedd91ab2778735e31d0a7ccbb422fb7"/><link rel="apple-touch-icon" sizes="72x72" href="/test-page/icons/icon-72x72.png?v=dedd91ab2778735e31d0a7ccbb422fb7"/><link rel="apple-touch-icon" sizes="96x96" href="/test-page/icons/icon-96x96.png?v=dedd91ab2778735e31d0a7ccbb422fb7"/><link rel="apple-touch-icon" sizes="144x144" href="/test-page/icons/icon-144x144.png?v=dedd91ab2778735e31d0a7ccbb422fb7"/><link rel="apple-touch-icon" sizes="192x192" href="/test-page/icons/icon-192x192.png?v=dedd91ab2778735e31d0a7ccbb422fb7"/><link rel="apple-touch-icon" sizes="256x256" href="/test-page/icons/icon-256x256.png?v=dedd91ab2778735e31d0a7ccbb422fb7"/><link rel="apple-touch-icon" sizes="384x384" href="/test-page/icons/icon-384x384.png?v=dedd91ab2778735e31d0a7ccbb422fb7"/><link rel="apple-touch-icon" sizes="512x512" href="/test-page/icons/icon-512x512.png?v=dedd91ab2778735e31d0a7ccbb422fb7"/><link rel="preconnect" href="https://www.google-analytics.com"/><link rel="dns-prefetch" href="https://www.google-analytics.com"/><link as="script" rel="preload" href="/test-page/webpack-runtime-c932af9eae4d658aa6cf.js"/><link as="script" rel="preload" href="/test-page/framework-b2d6e508d75a672689cc.js"/><link as="script" rel="preload" href="/test-page/app-9ab5712f8e07f444cb09.js"/><link as="script" rel="preload" href="/test-page/546641dfde76ed00139ea2c3eae09499c5f2164a-3997cef2ca49e61b2a41.js"/><link as="script" rel="preload" href="/test-page/component---src-templates-post-js-6f6dcb95f8ccabc76fb8.js"/><link as="fetch" rel="preload" href="/test-page/page-data/project/covid/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/test-page/page-data/sq/d/1994492073.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/test-page/page-data/sq/d/2009693873.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/test-page/page-data/sq/d/2031412112.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/test-page/page-data/sq/d/3825832676.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/test-page/page-data/app-data.json" crossorigin="anonymous"/></head><body class=""><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div id="root"><a class="skip-to-content" href="#content">Skip to Content</a><div class="layout__StyledContent-sc-1yw8zls-0 cZslOS"><header class="nav__StyledHeader-ghklvd-0 hLTFFw"><nav class="nav__StyledNav-ghklvd-1 kFCHyX"><div class="logo" tabindex="-1"><a aria-label="home" href="/test-page/"><div class="hex-container"><svg id="hex" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 84 96"><title>Hexagon</title><g transform="translate(-8.000000, -2.000000)"><g transform="translate(11.000000, 5.000000)"><polygon stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" points="39 0 0 22 0 67 39 90 78 68 78 23" fill="currentColor"></polygon></g></g></svg></div><div class="logo-container"><svg id="logo" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 84 96"><title>Logo</title><g transform="translate(-8.000000, -2.000000)"><g transform="translate(11.000000, 5.000000)"><polygon id="Shape" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" points="39 0 0 22 0 67 39 90 78 68 78 23"></polygon><path d="M45.691667,45.15 C48.591667,46.1 50.691667,48.95 50.691667,52.2 C50.691667,57.95 46.691667,61 40.291667,61 L28.541667,61 L28.541667,30.3 L39.291667,30.3 C45.691667,30.3 49.691667,33.15 49.691667,38.65 C49.691667,41.95 47.941667,44.35 45.691667,45.15 Z M33.591667,43.2 L39.241667,43.2 C42.791667,43.2 44.691667,41.85 44.691667,38.95 C44.691667,36.05 42.791667,34.8 39.241667,34.8 L33.591667,34.8 L33.591667,43.2 Z M33.591667,47.5 L33.591667,56.5 L40.191667,56.5 C43.691667,56.5 45.591667,54.75 45.591667,52 C45.591667,49.2 43.691667,47.5 40.191667,47.5 L33.591667,47.5 Z" fill="currentColor"></path></g></g></svg></div></a></div><div class="nav__StyledLinks-ghklvd-2 ihALZY"><ol><li><a href="/test-page/#about">About</a></li><li><a href="/test-page/#jobs">Experience</a></li><li><a href="/test-page/#projects">Work</a></li><li><a href="/test-page/#contact">Contact</a></li></ol><div><a class="resume-button" href="/resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></div></div><div class="menu__StyledMenu-sdn9y6-0 dAwNpJ"><div><button aria-label="Menu" class="menu__StyledHamburgerButton-sdn9y6-1 eCxtrN"><div class="ham-box"><div class="ham-box-inner"></div></div></button><aside aria-hidden="true" tabindex="-1" class="menu__StyledSidebar-sdn9y6-2 lknEs"><nav><ol><li><a href="/test-page/#about">About</a></li><li><a href="/test-page/#jobs">Experience</a></li><li><a href="/test-page/#projects">Work</a></li><li><a href="/test-page/#contact">Contact</a></li></ol><a href="/resume.pdf" class="resume-link">Resume</a></nav></aside></div></div></nav></header><div orientation="left" class="side__StyledSideElement-sc-1duznzb-0 hOvuuP"><ul class="social__StyledSocialList-anu6nt-0 dVLQAC"><li><a href="https://github.com/bchiang7" aria-label="GitHub" target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><title>GitHub</title><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a></li><li><a href="https://www.instagram.com/bchiang7" aria-label="Instagram" target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram"><title>Instagram</title><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a></li><li><a href="https://twitter.com/bchiang7" aria-label="Twitter" target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-twitter"><title>Twitter</title><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a></li><li><a href="https://www.linkedin.com/in/bchiang7" aria-label="Linkedin" target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin"><title>LinkedIn</title><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a></li><li><a href="https://codepen.io/bchiang7" aria-label="Codepen" target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-codepen"><title>CodePen</title><polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2"></polygon><line x1="12" y1="22" x2="12" y2="15.5"></line><polyline points="22 8.5 12 15.5 2 8.5"></polyline><polyline points="2 15.5 12 8.5 22 15.5"></polyline><line x1="12" y1="2" x2="12" y2="8.5"></line></svg></a></li></ul></div><div orientation="right" class="side__StyledSideElement-sc-1duznzb-0 jSIwrL"><div class="email__StyledLinkWrapper-sc-2epoq-0 jJFfEJ"><a href="mailto:brittany.chiang@gmail.com">brittany.chiang@gmail.com</a></div></div><div id="content"><main class="post__StyledPostContainer-sc-8858gx-0 fxwTfe"><span class="breadcrumb"><span class="arrow">←</span><a href="/test-page/pensieve">All memories</a></span><header class="post__StyledPostHeader-sc-8858gx-1 hfhtkj"><h1 class="medium-heading">COVID</h1><p class="subtitle"><time>January 1, 1970</time><span> — </span><a class="tag" href="/test-page/pensieve/tags/sql/">#<!-- -->SQL</a><a class="tag" href="/test-page/pensieve/tags/power-bi/">#<!-- -->Power BI</a></p></header><div class="post__StyledPostContent-sc-8858gx-2 ewCocl"><h1>COVID 19 Project</h1>
+<h2>1. Project Overview</h2>
+<h3>1.1 Scope</h3>
+<p>This project has the purpose to observe the evolution of the data of COVID, which countries have controlled better or worst the pandemic and analyze potential factors that might have affected the results.</p>
+<h3>1.2 Goals</h3>
+<ul>
+<li>Analyze the countries that had more death based on population (also this based on certain period)</li>
+<li>Compare countries also by continent</li>
+<li>Which dates were the worst for each country</li>
+</ul>
+<h3>1.3 Limitations</h3>
+<ul>
+<li>The data is not live so data need to be updated manually</li>
+<li>The database only used locally</li>
+</ul>
+<h3>1.4 Considerations</h3>
+<p>The data that was managed could have been worked all in one table as the original dataset was created that way. Here data was split to relate working with SQL functions like JOIN.</p>
+<p>This project was worked specifically with PostgreSQL.</p>
+<p>This project was based on the following project idea / tutorial from the YouTube channel "Alex The Analyst".</p>
+<h3>1.5 Points of improvement</h3>
+<ul>
+<li>The data could be connected with the Python library created by the organization so most recent data could be connected.</li>
+</ul>
+<h3>1.6 Tools used</h3>
+<ul>
+<li>Postgres SQL</li>
+<li>Power BI</li>
+</ul>
+<h2>2. Inspiration and Metadata</h2>
+<p>This project was based on the following project idea / tutorial from the YouTube channel "Alex The Analyst". This channel is oriented on different aspects of Data Analytics like overviews of what is Data Analytics, how you can start on it, tutorials etcetera. This is the link for the specific video. <a href="https://www.youtube.com/watch?v=qfyynHBFOsM" target="_blank" rel="nofollow noopener noreferrer">Data Analyst Portafolio Project | SQL Data Exploration | Project 1/4 - Alex The Analyst</a></p>
+<p>The information worked on this project is based on the site 'Our World in Data'. Here is the link for the specific section were data can be obtained. <a href="https://ourworldindata.org/covid-deaths" target="_blank" rel="nofollow noopener noreferrer">Our World in Data - Covid</a></p>
+<h2>Reviewing Data before working on it</h2>
+<h3>Data ROCCC</h3>
+<p><strong>Reliable</strong>
+The information depends on the numbers that are presented by governments of each country. Any problems from the information depends on how countries have reported their information.</p>
+<p><strong>Original</strong>
+This is not the original data source as they obtain the information is gathered from Johns Hopkins University of Medicine and more specifically from their Coronavirus Research Center. And this information is gathered based on the information they obtain from the governments around the world.</p>
+<p><strong>Comprehensive</strong></p>
+<p><strong>Current</strong>
+The information is current as they have update of information until one the day before the data was downloaded. Any insights taken can be considered with the current information. Take into consideration that from time to time the information has been updated as some data that was presented at a start was not the correct one.</p>
+<p><strong>Cited</strong>
+The dataset has been obtained from Johns Hopkins University of Medicine. The information that is gathered by Johns Hopkins University of Medicine, depends on the data that is presented by the different governments worldwide.</p>
+<h2>3. Data Structure</h2>
+<h3>3.1 Structuring Data on PostgreSQL</h3>
+<h4>3.1.1 Adding Tables in PostgreSQL</h4>
+<p>As mentioned before the data was divided in two tables based on the table that can be downloaded from Our World in Data.</p>
+<p>The first step was to create a Database in PostgreSQL. The database was created with SQL Shell (psql), for practicing using the commands in that environment. This is the code for creating the database:</p>
+<div class="gatsby-highlight" data-language="postgresql"><pre class="language-postgresql"><code class="language-postgresql">CREATE DATABASE covid_project;</code></pre></div>
+<p>After that the first table was created also in psql but by running a SQL file that was created using an Excel template I created and Sublime text so the information can be changed to a SQL file. The tittle of this table is <strong>covid_death</strong>. Here is the code:</p>
+<div class="gatsby-highlight" data-language="postgresql"><pre class="language-postgresql"><code class="language-postgresql">CREATE TABLE covid_death(
+	iso_code varchar(50),
+	continent varchar(50),
+	location varchar(50),
+	date date,
+	population bigint,
+	total_cases bigint,
+	new_cases integer,
+	new_cases_smoothed double precision,
+	total_deaths bigint,
+	new_deaths bigint,
+	new_deaths_smoothed double precision,
+	total_cases_per_million double precision,
+	new_cases_per_million double precision,
+	new_cases_smoothed_per_million double precision,
+	total_deaths_per_million double precision,
+	new_deaths_per_million double precision,
+	new_deaths_smoothed_per_million double precision,
+	reproduction_rate double precision,
+	icu_patients bigint,
+	icu_patients_per_million double precision,
+	hosp_patients bigint,
+	hosp_patients_per_million double precision,
+	weekly_icu_admissions bigint,
+	weekly_icu_admissions_per_million double precision,
+	weekly_hosp_admissions bigint,
+	weekly_hosp_admissions_per_million double precision
+);</code></pre></div>
+<p>After that the vaccination table was created but with the own pdAdmin4 by running a Query directly. The table was named <strong>covid_vaccination</strong>. Here is the code used:</p>
+<div class="gatsby-highlight" data-language="postgresql"><pre class="language-postgresql"><code class="language-postgresql">
+CREATE TABLE covid_vaccination(
+	iso_code varchar(50)  ,
+	continent varchar(50)  ,
+	location varchar(50)  ,
+	date date  ,
+	new_tests int  ,
+	total_tests bigint  ,
+	total_tests_per_thousand double precision  ,
+	new_tests_per_thousand double precision  ,
+	new_tests_smoothed int  ,
+	new_tests_smoothed_per_thousand double precision  ,
+	positive_rate double precision  ,
+	tests_per_case double precision  ,
+	tests_units varchar(50)  ,
+	total_vaccinations bigint  ,
+	people_vaccinated bigint  ,
+	people_fully_vaccinated bigint  ,
+	total_boosters bigint  ,
+	new_vaccinations int  ,
+	new_vaccinations_smoothed bigint  ,
+	total_vaccinations_per_hundred double precision  ,
+	people_vaccinated_per_hundred double precision  ,
+	people_fully_vaccinated_per_hundred double precision  ,
+	total_boosters_per_hundred double precision  ,
+	new_vaccinations_smoothed_per_million int  ,
+	new_people_vaccinated_smoothed bigint  ,
+	new_people_vaccinated_smoothed_per_hundred double precision  ,
+	stringency_index double precision  ,
+	population_density double precision  ,
+	median_age double precision  ,
+	aged_65_older double precision  ,
+	aged_70_older double precision  ,
+	gdp_per_capita double precision  ,
+	extreme_poverty double precision  ,
+	cardiovasc_death_rate double precision  ,
+	diabetes_prevalence double precision  ,
+	female_smokers double precision  ,
+	male_smokers double precision  ,
+	handwashing_facilities double precision  ,
+	hospital_beds_per_thousand double precision  ,
+	life_expectancy double precision  ,
+	human_development_index double precision  ,
+	excess_mortality_cumulative_absolute double precision  ,
+	excess_mortality_cumulative double precision  ,
+	excess_mortality double precision  ,
+	excess_mortality_cumulative_per_million double precision
+);</code></pre></div>
+<p>After adding the 2 datasets to PostgreSQL, then some insights could be obtained.</p>
+<h3>3.1.2 Exploring the information</h3>
+<p>After adding the information to PostgreSQL a review of the information was done. Some of the important points to consider are the following:</p>
+<ul>
+<li>The data is structured by each specific country but also there are aggregation groups by continents, worldwide and also by income levels or others like the European Union.</li>
+<li>There are multiple entries for population for every date, it is a constant value between all dates. (Static values that repeat themselves)</li>
+<li>In the covid death table in the column "new_deaths" there are some values that are negative. Most likely were adjustment from deaths that initially were considered due to covid but then corrected. These values are going to be considered as there would not be a way to distribute the deaths in the correct days or to be ignored as it would affect the total amount of deaths, but it is important to realize that they would be in the data to be analyzed.</li>
+</ul>
+<p>Here are the queries and examples while the information was being reviewed in order of being mentioned.</p>
+<p><strong>Structure for countries and continents</strong></p>
+<p>The following query would show all the locations, based on population.</p>
+<div class="gatsby-highlight" data-language="postgresql"><pre class="language-postgresql"><code class="language-postgresql">SELECT location, continent, cast(avg(population) as bigint) as population
+FROM covid_death
+GROUP BY location, continent
+ORDER BY population DESC</code></pre></div>
+<p>With this query, it can be observed that the location could be used for other aggregations as explained:</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 331px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/test-page/static/808b5db5593cd99b0148199b3b6b2596/9c5c8/COVID19_Query_Location.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 118.28571428571428%; position: relative; bottom: 0; left: 0; background-image: url('data:image/svg+xml,%3csvg%20xmlns=\'http://www.w3.org/2000/svg\'%20width=\'400\'%20height=\'473\'%20viewBox=\'0%200%20400%20473\'%20preserveAspectRatio=\'none\'%3e%3cpath%20d=\'M0%204c0%202%201%202%2057%202%2055%200%2056%200%2056-2s-1-2-56-2C1%202%200%202%200%204m45%2017c0%205%201%207%202%204h10l8%201h6v-3l1-3%201%203c0%203%200%203%203%203s3%200%203-5l-1-6-1%201c1%204%200%209-1%208l-1-3c1-4-1-6-2-4-2%202-2%202-4%201-1-1-2-1-4%201-2%201-2%201-3-1-1-1-2-1-4%201h-8c-2%202-3%201-3-1l-1-3-1%206m291-1c0%203%200%205-1%204l-1-3c1-4-1-6-2-4-2%202-2%202-4%201-3-1-5%201-5%205%200%202%201%203%204%203s3%200%203-3l1-3%201%203c0%203%200%203%203%203s3%200%203-5l-1-6-1%205m-40-1c-1%202-1%202-2%201l-4-2c-3%200-3%200-3%206%200%205%201%207%203%204l2-2%202-2h2c1%203%206%203%207%200%201-5-4-8-7-5m53-1l-4%201c-2-3-7%201-6%204s6%204%207%202h1c0%203%203%201%203-2l1-3%201%203c0%202%201%203%202%203%202%200%201-5-1-7-1-2-1-2-4-1m-45%206l1%205%201-1%202-2%203-1h1l4%201c3%200%203%200%203-4-1-4-2-4-3-1%200%204-2%204-2%200%200-2%200-3-5-3h-5v6m-43%200l-1%203-1%203-1%204c0%203%202%204%209%204%203%200%204-1%204-5l-1-4-1-2c0-2-2-4-4-4l-4%201m112%202l-2%204c-3%204%200%208%206%208%208%200%209-2%205-11-3-5-7-6-9-1m-42%20129c-3%206%201%2012%205%209%202-2%205-1%206%200h2c1-2%206-2%206%200h1c1-2%206-2%207%200s3-1%202-3v-4c0-4-1-4-4%201-3%204-5%204-5%200%201-5-1-5-4-1-2%205-3%205-3%201%200-5-2-5-4-1-1%203-1%203%201%202h1c0%202-1%202-3%202-3-1-3-1-3-4-1-3-5-5-5-2m40%2032l2%202c2%200%203%202%202%204h-4c1%202%204%202%206%200h2c3%204%206%202%206-4%200-4-1-5-3-5s-2%201-3%203-2%203-4%202c-2-2-3-3-1-3l3-1-3-1c-3%200-3%200-3%203m-46%2059c-2%203-2%204%200%203%201%200%202%202%200%203l-2-1h-1l-1%201-1-3c0-5-2-5-5%200-2%204-2%204%200%204l3%201h2c0-2%205-1%205%201h2c1-3%207-3%207%200h1c2-1%201-9%200-10l-3%203c-3%205-4%205-5-1v-3l-2%202M73%20374l1%205%201-1%201-1%203-2c1-2%201-2%203%200s4%202%205%200h-2l-2-1%203-1c2%200%203-2%201-4s-5-1-6%201l-1%202v-2l-4-2c-3%200-3%200-3%206m307%2023l-2%204-1%202-1-3c0-5-1-5-4-1-2%205-2%205%200%205l2%202c1%201%201%201%203-1l2-1c0%206%206%203%206-3%200-5-2-7-5-4M73%20464l1%205%201-1%202-1%203-2v-2l1%202c1%202%206%203%206%201l-1-1h-3l2-1c3%200%203-1%202-4s-3-3-5%200l-2%202-1-2-4-2c-2%200-2%201-2%206\'%20fill=\'%2364ffda\'%20fill-rule=\'evenodd\'/%3e%3c/svg%3e'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="COVID19 Query Location"
+        title="COVID19 Query Location"
+        src="/test-page/static/808b5db5593cd99b0148199b3b6b2596/9c5c8/COVID19_Query_Location.png"
+        srcset="/test-page/static/808b5db5593cd99b0148199b3b6b2596/1aaec/COVID19_Query_Location.png 175w,
+/test-page/static/808b5db5593cd99b0148199b3b6b2596/9c5c8/COVID19_Query_Location.png 331w"
+        sizes="(max-width: 331px) 100vw, 331px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>Something that also shows up its that "Northern Cyprus" and "International" have null population. In the case of "Northern Cyprus" no information was added to the database and for "International" no population is shown but it also had other columns with data.</p>
+<p>To only query the information per country, the following query was done:</p>
+<div class="gatsby-highlight" data-language="postgresql"><pre class="language-postgresql"><code class="language-postgresql">SELECT location, continent, cast(avg(population) as bigint) as population
+FROM covid_death
+WHERE continent is not null
+GROUP BY location, continent
+ORDER BY population DESC</code></pre></div>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 494px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/test-page/static/a4a6052a57620597f8901ae4fb9f67c2/11eb2/COVID19_Query_Location1.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 79.42857142857143%; position: relative; bottom: 0; left: 0; background-image: url('data:image/svg+xml,%3csvg%20xmlns=\'http://www.w3.org/2000/svg\'%20width=\'400\'%20height=\'318\'%20viewBox=\'0%200%20400%20318\'%20preserveAspectRatio=\'none\'%3e%3cpath%20d=\'M43%205v7l1-1h1l8%201c6%200%207%200%207-2%201-2%201-2%201%200%200%203%2011%203%2013%200%200-2%200-2%201%200%200%202%202%203%202%200%200-2-2-4-4-3h-7V6l-1-1-1%203c0%203%200%203-1%201%200-3-2-5-2-3l-2%201H46c-2%202-2%202-2-1l-1-1m308%201l-1%201-2%202c-1%202-1%202-1%200l-1-2h-13c-2-2-4%200-4%204%200%203%200%203%202%202%201-1%203-2%205-1l3-1c1-1%201-1%201%201s0%202%202%201c1-1%204-2%206-1h4V4l-1%202M243%206l-2%201h-10c-1-2-7%200-7%202-1%202-1%202-1%200%200-3%200-3-3-3l-4%201h-10c-3%203-1%205%205%205%205%200%206%200%206-2%200-3%202-2%202%200s0%202%201%200%201-2%201%200c0%203%207%203%207%200%201-2%201-2%201%200%201%202%206%203%207%201h1c0%202%202%201%202-1l1-2v2l1%202%201-2%201-2v2c0%203%202%202%202-1s-1-5-2-3m116%200l-2%201c-3%200-4%200-4%202%200%203%200%203%209%203%208%200%209%200%209-2%201-2%201-2%201%200%200%203%202%203%202%200s-1-4-4-3h-5c-2%201-2%201-2-1h-4\'%20fill=\'%2364ffda\'%20fill-rule=\'evenodd\'/%3e%3c/svg%3e'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="COVID19 Query Location1"
+        title="COVID19 Query Location1"
+        src="/test-page/static/a4a6052a57620597f8901ae4fb9f67c2/11eb2/COVID19_Query_Location1.png"
+        srcset="/test-page/static/a4a6052a57620597f8901ae4fb9f67c2/1aaec/COVID19_Query_Location1.png 175w,
+/test-page/static/a4a6052a57620597f8901ae4fb9f67c2/98287/COVID19_Query_Location1.png 350w,
+/test-page/static/a4a6052a57620597f8901ae4fb9f67c2/11eb2/COVID19_Query_Location1.png 494w"
+        sizes="(max-width: 494px) 100vw, 494px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p><strong>Constant in Population value</strong></p>
+<p>The following query shows the maximum, average and difference between both in population.</p>
+<div class="gatsby-highlight" data-language="postgresql"><pre class="language-postgresql"><code class="language-postgresql">
+SELECT location, MAX(population), cast(AVG(population) as bigint), cast((MAX(population)-AVG(population)) as bigint) as max_avg
+FROM covid_death
+GROUP BY location
+ORDER BY max_avg DESC 
+</code></pre></div>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 516px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/test-page/static/1a6bb2b93528f0d8e2fb904601781009/11ce1/COVID19_Query_Population.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 75.99999999999999%; position: relative; bottom: 0; left: 0; background-image: url('data:image/svg+xml,%3csvg%20xmlns=\'http://www.w3.org/2000/svg\'%20width=\'400\'%20height=\'304\'%20viewBox=\'0%200%20400%20304\'%20preserveAspectRatio=\'none\'%3e%3cpath%20d=\'M42%2010l1%203h7l5%201c4%200%204%200%204-3%200-2%200-2%201%200%201%203%202%203%202%200%200-4-1-5-2-3h-5l-5%201h-1l-2-1-2%201c-1%201-1%200-1-1%200-4-2-2-2%202m248%20241h1v6l1-3%202-1%201%202c-1%201%202%203%203%202l9-1c7%200%207%200%207-4v-2l-3%203-2%203v-6l-3%203c-2%202-2%202-2%200%200-3-2-3-3%200-1%202-3%202-2%200%200-2-2-3-4-2h-1l-3-1c-1%200-2%200-1%201\'%20fill=\'%2364ffda\'%20fill-rule=\'evenodd\'/%3e%3c/svg%3e'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="COVID19 Query Population"
+        title="COVID19 Query Population"
+        src="/test-page/static/1a6bb2b93528f0d8e2fb904601781009/11ce1/COVID19_Query_Population.png"
+        srcset="/test-page/static/1a6bb2b93528f0d8e2fb904601781009/1aaec/COVID19_Query_Population.png 175w,
+/test-page/static/1a6bb2b93528f0d8e2fb904601781009/98287/COVID19_Query_Population.png 350w,
+/test-page/static/1a6bb2b93528f0d8e2fb904601781009/11ce1/COVID19_Query_Population.png 516w"
+        sizes="(max-width: 516px) 100vw, 516px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>As it can be shown by the table, there is on difference between values of the population so maximum or average can be used on aggregation. This would obviously consider a constant through the years of analysis even though deaths due to the virus is being analyzed.</p>
+<p><strong>Negative deaths values</strong></p>
+<p>The following query displays the negative values found from the 'new_deaths' field.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 434px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/test-page/static/7bee2b66a8a5a26bcf8daabbb2c47598/a7d84/COVID19_Query_Negative_Deaths.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 90.85714285714286%; position: relative; bottom: 0; left: 0; background-image: url('data:image/svg+xml,%3csvg%20xmlns=\'http://www.w3.org/2000/svg\'%20width=\'400\'%20height=\'363\'%20viewBox=\'0%200%20400%20363\'%20preserveAspectRatio=\'none\'%3e%3cpath%20d=\'M333%2011c-2%202-2%203-1%204%201%203%205%203%205%200h1c1%202%205%203%205%201h1l3%201c2%200%202-1%202-3v-2l1%202c1%204%205%204%205%201l1-3%201%203%201%202c2%200%201-6-1-7l-2-1h-4l-1%201h-2c-2%200-3%200-4%202l-1%202v-2c-1-2-2-3-4%200-2%201-2%201-2-1%200-4-1-4-4%200M71%2010h-2l-3%201h-9c-1-2-4%200-4%203%200%202%202%204%204%202h2l6%201c5%200%205%200%205-3v-2l1%202c1%204%203%203%203-1-1-3-3-6-3-3\'%20fill=\'%2364ffda\'%20fill-rule=\'evenodd\'/%3e%3c/svg%3e'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="COVID19 Query Negative Deaths"
+        title="COVID19 Query Negative Deaths"
+        src="/test-page/static/7bee2b66a8a5a26bcf8daabbb2c47598/a7d84/COVID19_Query_Negative_Deaths.png"
+        srcset="/test-page/static/7bee2b66a8a5a26bcf8daabbb2c47598/1aaec/COVID19_Query_Negative_Deaths.png 175w,
+/test-page/static/7bee2b66a8a5a26bcf8daabbb2c47598/98287/COVID19_Query_Negative_Deaths.png 350w,
+/test-page/static/7bee2b66a8a5a26bcf8daabbb2c47598/a7d84/COVID19_Query_Negative_Deaths.png 434w"
+        sizes="(max-width: 434px) 100vw, 434px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<h3>3.2 Querying information in PostgreSQL</h3>
+<p>After adding the information to PostgreSQL, some queries were made to answer some of the following questions:</p>
+<ul>
+<li>Day in which most deaths due to COVID occurred per country.</li>
+<li>Total deaths per country by COVID comparted to its population</li>
+<li>Death Ratio based on the amount of cases reported by country</li>
+<li>Hospitalization and Intensive Care Unit (ICU) patients ratio</li>
+<li>Vaccination ratio</li>
+</ul>
+<p><strong>Day in which most deaths due to COVID occurred per Country</strong></p>
+<div class="gatsby-highlight" data-language="postgresql"><pre class="language-postgresql"><code class="language-postgresql">
+	SELECT cdmd.location, cdmd.new_deaths, cd.date
+	FROM covid_death AS cd
+	RIGHT JOIN 
+		(
+		SELECT location, max(new_deaths) as new_deaths
+		FROM covid_death
+		WHERE continent IS NOT NULL
+		GROUP BY location) cdmd
+		ON cd.location = cdmd.location
+		AND cd.new_deaths = cdmd.new_deaths
+	WHERE continent IS NOT NULL</code></pre></div>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 420px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/test-page/static/3ed9ed0d402d3d64502e53a25534686c/266f9/COVID19_Query_Days_with_most_deceased_per_country_1.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 93.71428571428571%; position: relative; bottom: 0; left: 0; background-image: url('data:image/svg+xml,%3csvg%20xmlns=\'http://www.w3.org/2000/svg\'%20width=\'400\'%20height=\'374\'%20viewBox=\'0%200%20400%20374\'%20preserveAspectRatio=\'none\'%3e%3cpath%20d=\'M39%207c0%205%200%205%201%204%202-2%202-2%203%200h11c2%203%205%201%205-2V5h-5l-6%201h-5c-2%201-2%201-2-1l-1-2c-1-1-1%201-1%204m221-4l-2%202-2%203c0%204%202%205%205%203h2l6%201c4-1%205-1%205-4l1-2v3c1%203%205%204%205%200l1-2%201%202%201%202c2%200%201-5-1-6l-2-2h-1c-1%201-2%202-3%201l-1%201h-6l-6%201-1%201-1-2V2l-1%201m69%200l-2%202c-3%201-3%206%200%207l3-1h3c2%202%204%200%204-2s0-2%201%200%203%204%203%202h5l-1-1c-2-1-2-1%200-1%203%200%202-3-1-4l-3%203-1%203V8c1-3%200-5-2-3-2%201-7%201-7-1l-1-1h-1\'%20fill=\'%2364ffda\'%20fill-rule=\'evenodd\'/%3e%3c/svg%3e'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="COVID19 Query Days with most deceased per country 1"
+        title="COVID19 Query Days with most deceased per country 1"
+        src="/test-page/static/3ed9ed0d402d3d64502e53a25534686c/266f9/COVID19_Query_Days_with_most_deceased_per_country_1.png"
+        srcset="/test-page/static/3ed9ed0d402d3d64502e53a25534686c/1aaec/COVID19_Query_Days_with_most_deceased_per_country_1.png 175w,
+/test-page/static/3ed9ed0d402d3d64502e53a25534686c/98287/COVID19_Query_Days_with_most_deceased_per_country_1.png 350w,
+/test-page/static/3ed9ed0d402d3d64502e53a25534686c/266f9/COVID19_Query_Days_with_most_deceased_per_country_1.png 420w"
+        sizes="(max-width: 420px) 100vw, 420px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>For looking at the countries that had multiple peaks the following query was added.</p>
+<div class="gatsby-highlight" data-language="postgresql"><pre class="language-postgresql"><code class="language-postgresql">
+	SELECT a.location, count(a.location)
+	FROM(
+	SELECT cdmd.location, cdmd.new_deaths, cd.date
+	FROM covid_death AS cd
+	RIGHT JOIN 
+		(
+		SELECT location, max(new_deaths) as new_deaths
+		FROM covid_death
+		WHERE continent IS NOT NULL
+		GROUP BY location) cdmd
+		ON cd.location = cdmd.location
+		AND cd.new_deaths = cdmd.new_deaths
+	WHERE continent IS NOT NULL
+	) a
+	GROUP BY a.location
+	ORDER BY count DESC
+</code></pre></div>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 299px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/test-page/static/98ebef209247436e76e901d9035e6b21/a1a67/COVID19_Query_Days_with_most_deceased_per_country_2.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 130.85714285714286%; position: relative; bottom: 0; left: 0; background-image: url('data:image/svg+xml,%3csvg%20xmlns=\'http://www.w3.org/2000/svg\'%20width=\'400\'%20height=\'524\'%20viewBox=\'0%200%20400%20524\'%20preserveAspectRatio=\'none\'%3e%3cpath%20d=\'M47%2016c0%205%200%206%202%206l1-2v-2l1%202c1%202%206%203%208%201h1l9%201h7v-4c0-2%200-3%201-2l1%203c0%203%200%203%204%203h3v-6l-1-6-2%209c0%201%200%202-1%201l-1-4c1-4-1-6-3-4%200%202-2%202-3%201l-5%201h-2c-2-1-7-1-7%201h-2c-2-3-7-2-7%201-1%201-1%200-1-2l-1-4c-2%200-2%201-2%206m304-4l-7%201-5%201-1%203c0%204-3%204-3%200s-2-5-2-2v3l-2-3c-1-2-5-3-7-1h-3c-4-2-7%201-6%206%201%202%206%203%208%201h1c1%202%206%201%207-1h2c1%202%203%202%206%202%205%200%205%200%205-3%201-4%202-4%203%200%200%204%203%203%202-1%200-4%202-4%202%200l2%204c1%200%202-4%201-10h-3m-65%209l-1%203-1%202-1%204%201%205h4c9%200%2010%200%2010-5l-1-4-2-4c-1-3-1-3-4-3s-4%201-5%202m90-1l-1%204-1%202-1%204%201%205h13v-5l-1-4-1-2c0-3-2-5-5-5l-4%201M49%2066c-3%204-4%2011-2%209s6-3%206-1c1%203%205%201%205-3%200-5%203-4%204%202l1%202c1-1%200-7-1-8-2-3-5-1-6%204-1%204-1%203-3-3-2-5-3-6-4-2\'%20fill=\'%2364ffda\'%20fill-rule=\'evenodd\'/%3e%3c/svg%3e'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="COVID19 Query Days with most deceased per country 2"
+        title="COVID19 Query Days with most deceased per country 2"
+        src="/test-page/static/98ebef209247436e76e901d9035e6b21/a1a67/COVID19_Query_Days_with_most_deceased_per_country_2.png"
+        srcset="/test-page/static/98ebef209247436e76e901d9035e6b21/1aaec/COVID19_Query_Days_with_most_deceased_per_country_2.png 175w,
+/test-page/static/98ebef209247436e76e901d9035e6b21/a1a67/COVID19_Query_Days_with_most_deceased_per_country_2.png 299w"
+        sizes="(max-width: 299px) 100vw, 299px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p><strong>Total deaths per country by COVID comparted to its population</strong></p>
+<div class="gatsby-highlight" data-language="postgresql"><pre class="language-postgresql"><code class="language-postgresql">
+	SELECT location, max(population), max(total_deaths) as total_death, 
+	cast((cast(max(total_deaths) AS float)/max(population))*100 as DECIMAL(4,2)) as death_ratio
+	FROM covid_death
+	WHERE continent IS NOT NULL
+	GROUP BY location
+	HAVING max(total_deaths) IS NOT NULL 
+	ORDER BY death_ratio DESC
+	</code></pre></div>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 526px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/test-page/static/25be7ac404229de4ffb3634830461d6f/aae1f/COVID19_Query_Death_Ratio_per_Population.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 74.28571428571428%; position: relative; bottom: 0; left: 0; background-image: url('data:image/svg+xml,%3csvg%20xmlns=\'http://www.w3.org/2000/svg\'%20width=\'400\'%20height=\'297\'%20viewBox=\'0%200%20400%20297\'%20preserveAspectRatio=\'none\'%3e%3cpath%20d=\'M275%207c-4%204-2%205%205%206%206%200%207%200%207-2s0-2%201%200l3%202%202-2%201-2v2l1%202c2-2%201-4-1-6l-2-2-1%204c-1%203-1%203-1%200%200-2-2-5-2-2%200%201-9%201-10-1-1-1-2%200-3%201m50%201c-2%202-2%202-1%203%201%202%204%203%204%201h1c3%202%209%201%209-1l1-2v2c0%202%204%203%204%200l1-2v1c0%202%203%204%205%203h2l1-2%201-2%201%202c0%201%200%202%202%202s2%200%202-2%200-2%201-1c1%202%204%204%204%202h2c2%202%205-1%203-4h-3c-2%201-2%201-2-1h-9c-3%200-3%200-3%202%200%203%200%203-2%203s-3-1-3-2c0-2-4-5-5-4l-1%201h-4l-2%201h-4c-2%201-2%201-2-1s-1-2-3%201\'%20fill=\'%2364ffda\'%20fill-rule=\'evenodd\'/%3e%3c/svg%3e'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="COVID19 Query Death Ratio per Population"
+        title="COVID19 Query Death Ratio per Population"
+        src="/test-page/static/25be7ac404229de4ffb3634830461d6f/aae1f/COVID19_Query_Death_Ratio_per_Population.png"
+        srcset="/test-page/static/25be7ac404229de4ffb3634830461d6f/1aaec/COVID19_Query_Death_Ratio_per_Population.png 175w,
+/test-page/static/25be7ac404229de4ffb3634830461d6f/98287/COVID19_Query_Death_Ratio_per_Population.png 350w,
+/test-page/static/25be7ac404229de4ffb3634830461d6f/aae1f/COVID19_Query_Death_Ratio_per_Population.png 526w"
+        sizes="(max-width: 526px) 100vw, 526px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p><strong>Death Ratio based on the amount of cases reported by country</strong></p>
+<div class="gatsby-highlight" data-language="postgresql"><pre class="language-postgresql"><code class="language-postgresql">
+	SELECT location, MAX(total_cases) AS total_cases, MAX(total_deaths) AS total_deaths, CAST(((CAST(MAX(total_deaths) AS FLOAT)/MAX(total_cases))*100) AS DECIMAL(5,2)) AS ratio
+	FROM covid_death
+	WHERE continent IS NOT NULL
+	GROUP BY location
+	HAVING  ((CAST(MAX(total_deaths) AS FLOAT)/MAX(total_cases))*100) IS NOT NULL
+	ORDER BY ratio DESC
+</code></pre></div>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 555px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/test-page/static/d54635f5f63a73ea9ca0ec5dfb19adcd/1abaa/COVID19_Query_Death_Ratio_per_Cases_by_Country.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 70.85714285714285%; position: relative; bottom: 0; left: 0; background-image: url('data:image/svg+xml,%3csvg%20xmlns=\'http://www.w3.org/2000/svg\'%20width=\'400\'%20height=\'284\'%20viewBox=\'0%200%20400%20284\'%20preserveAspectRatio=\'none\'%3e%3cpath%20d=\'M39%208v6l1-1h1l7%201c5%200%206%200%206-2%201-2%201-2%201%200s4%203%204%201h1c1%202%205%201%206-1s1-2%201%200c0%203%202%203%202-1%200-2%200-2-5-2l-5-1c-1-1-1%200-1%202l-1%203v-3c0-2%200-2-2-1-5%201-15%201-15-1h-1m159%200c0%201-1%202-2%201-1%200-2%200-2%202-1%201-1%201-1-1s0-2-2-2l-3%201-2%202c0%203%203%204%204%202h1l2%201h22c12%200%2012%200%2011-3%200-2-8-3-8%200h-1c0-3-12-2-13%200-1%203-4%202-4-1l-1-3-1%201m78%201c-4%203-2%205%205%205%206%200%207%200%207-2%201-2%201-2%201%200l2%202%202-2c0-2%200-2%201%200%201%203%206%203%206%200%200-2-1-3-2-3-2%200-2%200-2%202v1l-1-1c0-2-3-4-4-3l-2%201c-8%201-10%201-10-1%200-1-1-1-3%201\'%20fill=\'%2364ffda\'%20fill-rule=\'evenodd\'/%3e%3c/svg%3e'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="COVID19 Query Death Ratio per Cases by Country"
+        title="COVID19 Query Death Ratio per Cases by Country"
+        src="/test-page/static/d54635f5f63a73ea9ca0ec5dfb19adcd/1abaa/COVID19_Query_Death_Ratio_per_Cases_by_Country.png"
+        srcset="/test-page/static/d54635f5f63a73ea9ca0ec5dfb19adcd/1aaec/COVID19_Query_Death_Ratio_per_Cases_by_Country.png 175w,
+/test-page/static/d54635f5f63a73ea9ca0ec5dfb19adcd/98287/COVID19_Query_Death_Ratio_per_Cases_by_Country.png 350w,
+/test-page/static/d54635f5f63a73ea9ca0ec5dfb19adcd/1abaa/COVID19_Query_Death_Ratio_per_Cases_by_Country.png 555w"
+        sizes="(max-width: 555px) 100vw, 555px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p><strong>Hospitalization patients ratio</strong></p>
+<div class="gatsby-highlight" data-language="postgresql"><pre class="language-postgresql"><code class="language-postgresql">
+SELECT location, SUM(icu_patients) AS total_icu_patients, SUM(hosp_patients) AS total_hosp_patients, CAST((SUM(icu_patients)/SUM(hosp_patients))*100 AS DECIMAL (4,2)) AS icu_pct
+	FROM covid_death
+	WHERE icu_patients IS NOT NULL and hosp_patients IS NOT NULL
+	GROUP BY location
+	ORDER BY icu_pct DESC
+</code></pre></div>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 571px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/test-page/static/88b2c11aca94b54d50b0957459b33958/0766b/COVID19_Query_Hospitalization_Ratio_per_Cases_by_Country.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 68.57142857142857%; position: relative; bottom: 0; left: 0; background-image: url('data:image/svg+xml,%3csvg%20xmlns=\'http://www.w3.org/2000/svg\'%20width=\'400\'%20height=\'275\'%20viewBox=\'0%200%20400%20275\'%20preserveAspectRatio=\'none\'%3e%3cpath%20d=\'M33%207l-1%203v3h14c10%200%2013-1%2013-2%200-2%202-1%202%201%201%201%201%200%201-1%200-3%200-3-5-3h-5l-2-1-2%201c0%201-13%201-14-1h-1m122%200c-1%201-2%202-4%201h-10c-1-1-2%200-1%202%200%202%201%203%208%203h16l7%201h7c0-1%202-2%203-1%202%200%203%200%203-2h1c0%203%2010%203%2010%200h1l1%202%201-2h1c0%202%201%202%203%202%203%200%203%200%203-3%200-2%200-2-2-2h-24c-3%200-4%200-4%202l-2%202-2-2c0-3-2-3-2%200%200%202%200%202-1%200%200-1-1-2-3-2h-3l-1-1-1%203c0%204-4%203-4-1l-1-2m91%200c-1%201-2%202-4%201h-9c-1-2-3%200-2%202%200%203%201%203%204%203h9c7%201%209%201%209-2l1-2v2c0%202%201%202%205%202l6%201c0%201%201%201%203-1%204-4%202-5-6-5-5%201-8%200-9-1-2-2-2-1-2%202%200%204-4%204-4%200l-1-2m40%202c0%203%200%203-1%201%200-3-2-4-2-2h-4c-4%200-5%200-5%202l-2%202c-3%200-3%202%200%202h3l10-1c8%200%209%200%209-2h1c1%202%206%203%208%202%202-2%200-5-2-5h-4c-6%201-10%201-10-1-1-1-1%200-1%202m44-1c-1%204-1%205%203%205l7%201h7c0-1%202-2%205-1%203%200%204%200%204-3l-2-2h-6c-3%200-4%201-4%202%200%203-4%203-4%200%200-2%200-2-1-1%200%202-2%203-2%201l-2-1-4-2c0-1-1-1-1%201M196%20245v1l1%202-1%201-1%201h27v-4l-2-2-1%203c-1%202-1%202-2%200l-1-1v2h-2c-1%201-1%201-1-1l-1-2-2%202-2%203v-3c0-2-2-3-3%200l-2-1c-1-2-1-2-3-1h-4\'%20fill=\'%2364ffda\'%20fill-rule=\'evenodd\'/%3e%3c/svg%3e'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="COVID19 Query Hospitalization Ratio per Cases by Country"
+        title="COVID19 Query Hospitalization Ratio per Cases by Country"
+        src="/test-page/static/88b2c11aca94b54d50b0957459b33958/0766b/COVID19_Query_Hospitalization_Ratio_per_Cases_by_Country.png"
+        srcset="/test-page/static/88b2c11aca94b54d50b0957459b33958/1aaec/COVID19_Query_Hospitalization_Ratio_per_Cases_by_Country.png 175w,
+/test-page/static/88b2c11aca94b54d50b0957459b33958/98287/COVID19_Query_Hospitalization_Ratio_per_Cases_by_Country.png 350w,
+/test-page/static/88b2c11aca94b54d50b0957459b33958/0766b/COVID19_Query_Hospitalization_Ratio_per_Cases_by_Country.png 571w"
+        sizes="(max-width: 571px) 100vw, 571px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p><strong>Vaccination ratio</strong></p>
+<div class="gatsby-highlight" data-language="postgresql"><pre class="language-postgresql"><code class="language-postgresql">
+SELECT cd.location, MAX((cv.people_fully_vaccinated)) as fully_vaccinated, MAX((cd.population)) as population, 
+	CAST((((MAX(cv.people_fully_vaccinated)))/(cast(MAX(cd.population)as float))*100) AS DECIMAL (7,3)) AS vac_ratio
+	FROM covid_death AS cd
+		FULL JOIN covid_vaccination AS cv
+		ON cd.location = cv.location
+		AND cd.date = cv.date
+	WHERE cd.continent IS NOT NULL 
+	GROUP BY cd.location
+	ORDER BY vac_ratio DESC
+	</code></pre></div>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 571px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/test-page/static/7bdf2498fbbc40bea66ebf8fe9214b80/0766b/COVID19_Query_Vaccination_Ratio_per_Population_by_Country_1.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 69.14285714285714%; position: relative; bottom: 0; left: 0; background-image: url('data:image/svg+xml,%3csvg%20xmlns=\'http://www.w3.org/2000/svg\'%20width=\'400\'%20height=\'277\'%20viewBox=\'0%200%20400%20277\'%20preserveAspectRatio=\'none\'%3e%3cpath%20d=\'M37%209v4h14c11%200%2013-1%2013-2l1%201c2%201%202%201%202-1%200-3%200-3-5-3-4%201-5%200-5-1h-3l-1%201-7%201c-5%200-7-1-7-2l-1-1-1%203m178-2l-9%201c-9%200-9%201-8%202%200%203%201%204%202%202h1c1%202%2016%201%2017-1h1c0%203%2018%202%2019%200%200-4-1-5-3-4-1%201-2%202-3%201l-3%201h-1l-1-2-1%201h-2c-1%200-2%200-2%202h-1c-1-2-2-2-3-2-1%201-2%200-2-1h-1m66%200l-1%204c-1%201-1%201-1-1%200-1-1-2-8-2h-8v4c0%203%201%204%202%202s8-2%208%200h2l7-1c5%200%206%200%206-2h1c0%203%2011%202%2011%200%201-2%201-2%201%200l1%202%201-2c0-2-1-2-5-2s-5-1-5-2l-1%202c-1%203-1%203-1%201V7l-4%201c-2%201-3%201-3-1h-3m71%201h-4c-2%200-3%200-3%202s-1%202-3%202c-3%200-5-2-3-2%205%200%201-2-3-2l-5%201h-1c-1-2-2-1-1%202%200%202%202%203%202%201h1l4%201h4c4%201%207%200%207-2l1-2v2l2%202%202-2%201-2v2c0%203%209%203%209%200%200-2-1-2-3-2l-2-1h-5M100%2047\'%20fill=\'%2364ffda\'%20fill-rule=\'evenodd\'/%3e%3c/svg%3e'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="COVID19 Query Vaccination Ratio per Population by Country 1"
+        title="COVID19 Query Vaccination Ratio per Population by Country 1"
+        src="/test-page/static/7bdf2498fbbc40bea66ebf8fe9214b80/0766b/COVID19_Query_Vaccination_Ratio_per_Population_by_Country_1.png"
+        srcset="/test-page/static/7bdf2498fbbc40bea66ebf8fe9214b80/1aaec/COVID19_Query_Vaccination_Ratio_per_Population_by_Country_1.png 175w,
+/test-page/static/7bdf2498fbbc40bea66ebf8fe9214b80/98287/COVID19_Query_Vaccination_Ratio_per_Population_by_Country_1.png 350w,
+/test-page/static/7bdf2498fbbc40bea66ebf8fe9214b80/0766b/COVID19_Query_Vaccination_Ratio_per_Population_by_Country_1.png 571w"
+        sizes="(max-width: 571px) 100vw, 571px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 570px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/test-page/static/6a813c8493aff7fd43e5280e57ba3c5f/2cee3/COVID19_Query_Vaccination_Ratio_per_Population_by_Country_2.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 68.57142857142857%; position: relative; bottom: 0; left: 0; background-image: url('data:image/svg+xml,%3csvg%20xmlns=\'http://www.w3.org/2000/svg\'%20width=\'400\'%20height=\'274\'%20viewBox=\'0%200%20400%20274\'%20preserveAspectRatio=\'none\'%3e%3cpath%20d=\'M37%208c0%204%200%204%203%204h11l1-2h1c0%202%201%202%202%202h7l2-2h1l1%202v-2c0-2-1-3-4-3l-4%201h-1c0-2-2-2-4-1h-5l-4%201h-4c-2%201-2%201-2-1-1-2-1-1-1%201m177-1l-3%201h-13c-1-1-1%200-1%201%201%203%203%204%203%201l1%201c1%202%201%202%203%201h2c1%201%2012%200%2012-2h1c0%202%201%202%203%202s3%200%203-2l1%201c1%201%203%202%206%201h3c2%200%202%200%202-3s0-3-2-2l-3%201-2-1h-14l-1-1-1%201m68%200l-1%201c-1-1-1%200-1%201%200%202%200%202-1%201-1-3-6-4-6-2h-6c-2-2-4-1-4%203%200%203%201%204%202%202s8-2%208%200h2l3-1h9l1-2h1c0%202%201%202%202%202h7l2-2h1c0%202%202%203%202%201%200-3-2-4-6-4h-13l-1-1-1%201\'%20fill=\'%2364ffda\'%20fill-rule=\'evenodd\'/%3e%3c/svg%3e'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="COVID19 Query Vaccination Ratio per Population by Country 2"
+        title="COVID19 Query Vaccination Ratio per Population by Country 2"
+        src="/test-page/static/6a813c8493aff7fd43e5280e57ba3c5f/2cee3/COVID19_Query_Vaccination_Ratio_per_Population_by_Country_2.png"
+        srcset="/test-page/static/6a813c8493aff7fd43e5280e57ba3c5f/1aaec/COVID19_Query_Vaccination_Ratio_per_Population_by_Country_2.png 175w,
+/test-page/static/6a813c8493aff7fd43e5280e57ba3c5f/98287/COVID19_Query_Vaccination_Ratio_per_Population_by_Country_2.png 350w,
+/test-page/static/6a813c8493aff7fd43e5280e57ba3c5f/2cee3/COVID19_Query_Vaccination_Ratio_per_Population_by_Country_2.png 570w"
+        sizes="(max-width: 570px) 100vw, 570px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<h3>3.3 Transforming Data in Power Query</h3>
+<p>The table structure is worked mostly without change except for the table "people_vaccinated". In this case an extra column was added (even though it could be replaced) values from the the vaccination.</p>
+<p>This added column was created to fill data because the data from vaccination updates had the cumulative values from the vaccination, but when no new update from the values was 'blank'. The transformation of the data was to fill the dates were vaccination was null/blank to have the  last date available. To generate that specific point, the following code in Power Query was added:</p>
+<div class="gatsby-highlight" data-language="powerquery"><pre class="language-powerquery"><code class="language-powerquery"><span class="token operator">=</span> <span class="token function">Table.Group</span><span class="token punctuation">(</span><span class="token quoted-identifier">#"Columna duplicada"</span><span class="token punctuation">,</span> <span class="token punctuation">{</span><span class="token string">"location"</span><span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span><span class="token punctuation">{</span><span class="token string">"Recuento"</span><span class="token punctuation">,</span> <span class="token keyword">each</span> <span class="token function">Table.FillDown</span><span class="token punctuation">(</span><span class="token function">Table.Sort</span><span class="token punctuation">(</span>_<span class="token punctuation">,</span> <span class="token punctuation">{</span><span class="token string">"date"</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token punctuation">{</span><span class="token string">"people_fully_vaccinated - Copia"</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token keyword">type</span> <span class="token data-type class-name">table</span> <span class="token punctuation">[</span>location<span class="token operator">=</span><span class="token keyword">nullable</span> <span class="token data-type class-name">text</span><span class="token punctuation">,</span> <span class="token data-type class-name">date</span><span class="token operator">=</span><span class="token keyword">nullable</span> <span class="token data-type class-name">date</span><span class="token punctuation">,</span> people_vaccinated<span class="token operator">=</span><span class="token keyword">nullable</span> <span class="token data-type class-name">number</span><span class="token punctuation">,</span> people_fully_vaccinated<span class="token operator">=</span><span class="token keyword">nullable</span> <span class="token data-type class-name">number</span><span class="token punctuation">,</span> <span class="token quoted-identifier">#"people_fully_vaccinated - Copia"</span><span class="token operator">=</span><span class="token keyword">nullable</span> <span class="token data-type class-name">number</span><span class="token punctuation">]</span><span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token punctuation">)</span></code></pre></div>
+<p>Just as note, this can not be done just by using the fill down option as data can get filled in the wrong position.</p>
+<p>For some of the visualization of general data, a temp table could have been done to obtain this information, but the information would not have been useful for a graph to show the evolution of the vaccination world wide. That is the reason why data needed to be filled.</p>
+<p>This could also been done in SQL.</p>
+<h3>3.4 Connecting the tables in Power BI</h3>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 700px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/test-page/static/2adf0ca8650149a3f3c0f5f29998f862/ff2de/COVID19_Database_connection_scheme_Power_BI.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 61.71428571428571%; position: relative; bottom: 0; left: 0; background-image: url('data:image/svg+xml,%3csvg%20xmlns=\'http://www.w3.org/2000/svg\'%20width=\'400\'%20height=\'247\'%20viewBox=\'0%200%20400%20247\'%20preserveAspectRatio=\'none\'%3e%3cpath%20d=\'M0%20124v123h401V0H0v124M65%2011v33l1%2031h118V10h-59l-60%201m129-1v53h118V40h4c4%200%204%200%204-4%200-3-1-3-4-3h-4V10H194M70%2015l-1%206%201%205h5l6-1V15H70m128%200v9c0%203%2011%203%2011%200v-9h-11m22%203l-3%201c-3%200-4%200-4%202s1%202%207%202l7-1h1l6%201c5%200%206%200%206-2%200-1-1-2-3-2l-3-1h-2c-2%202-9%202-10%200h-2M68%20113v4H14l-1%2044v44h118v-88H76v-4c0-4%200-4-4-4s-4%200-4%204m123%200v4h-51v101h118V117h-49v-4c0-4%200-4-4-4-3%200-4%201-4%204s-1%204-2%204l-1-4-1-4-2%201%201%202c1-1%201%200%201%201%200%202-2%203-4%202l-1-2c0-1%200-2%201-1l1-1-1-2c-2%200-2%201-2%204m123%200v4h-50v89h118v-89h-50v-4l-1-4-2%202%201%201c1-1%201%200%201%201%200%202-2%203-4%202l-1-2c0-1%200-2%201-1l1-2-2-1-1%204-1%204c-2%200-2-1-2-4l-2-4c-2-1-3%201-1%202%202%202%202%203%201%204-2%201-5%200-5-2l1-1%201-1-1-2c-2%200-2%201-2%204m-296%208c-2%200-1%2011%201%2011h9v-11H18m126%201v6l1%205h11v-11l-6-1-6%201m124%200v6l1%205h11v-11l-6-1-6%201m-222%203h-7c-7%200-10%202-5%204%203%201%2014%200%2015-1h1c1%202%2015%202%2016%200h1c1%201%201%201%201-1s0-2-4-2H46m115%200l-2%203c0%203%2016%203%2016%200l1%201c1%202%201%202%205%201l12%201c3%200%203%200%204-2l1-1c0%202%205%203%205%201h1c0%202%204%201%204-1l1-2h-12c-1%200-2%200-2%202l-1%202-1-2c0-3-1-4-3-3-1%201-2%202-5%201s-3-1-4%202c-1%202-3%203-3%201%200-3-4-5-6-4l-4%201h-5c0-2-1-2-2-1m161%200l-2%201h-5c-1-1-7%200-7%201l1%202h3l15%201h15v-3c1-2%200-4-1-2l-7%201c-4-1-5%200-5%201h-1l-2-1-2-1-1-1-1%201m-195%2037l1%2027%201-26-1-27-1%2026m127%207l1%2031%201-31-1-32-1%2032M28%20142l-1%202c0%203%203%203%207%202h2v2l1-1h1c0%201%203%202%203%200h7l7-1h1l7%201h6v-3c0-3%200-3-2-2-1%202-2%202-4%201H49c-7%200-9%201-8%202l-1%201-2-1-1-2-2-1-3%201c-2%202-2%202-3%200l-1-1m12%2028h-1l-6-1c-6%200-6%200-6%203%200%201%200%202%201%201h17l9-1h1c1%201%201%201%201-1s0-2-3-2h-4c0-1-8-1-9%201m260%2012l-1%202-2%202v-1c0-1-4-3-5-2h-7c-7%200-7%200-7%203%200%201%200%202%201%201h20l5-1h4c-1%201%200%202%202%202l3-1h7l7-1h1l7%201h6v-3c0-3%200-3-2-2-1%201-2%202-3%201h-4c-3%201-6%200-6-1h-1l-7%201c-4%200-6%201-5%202l-1%201c-2%200-2-1-2-2v-1l-3-1-3%201c-2%202-2%202-3%200l-1-1m-132%2015c-2%202-3%203-3%201%200-1-1-2-5-2-5%200-6%200-6%202s0%202%201%201h6l2%201h2l2%201%201-1h8l9-1c1%200%200-3-2-3h-12l-3%201\'%20fill=\'%2364ffda\'%20fill-rule=\'evenodd\'/%3e%3c/svg%3e'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="COVID19 Database connection scheme Power BI"
+        title="COVID19 Database connection scheme Power BI"
+        src="/test-page/static/2adf0ca8650149a3f3c0f5f29998f862/39600/COVID19_Database_connection_scheme_Power_BI.png"
+        srcset="/test-page/static/2adf0ca8650149a3f3c0f5f29998f862/1aaec/COVID19_Database_connection_scheme_Power_BI.png 175w,
+/test-page/static/2adf0ca8650149a3f3c0f5f29998f862/98287/COVID19_Database_connection_scheme_Power_BI.png 350w,
+/test-page/static/2adf0ca8650149a3f3c0f5f29998f862/39600/COVID19_Database_connection_scheme_Power_BI.png 700w,
+/test-page/static/2adf0ca8650149a3f3c0f5f29998f862/ff2de/COVID19_Database_connection_scheme_Power_BI.png 790w"
+        sizes="(max-width: 700px) 100vw, 700px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>The primary tables in this case are "code_and_country" and "calendar". The "code_and_country" table key is the "location" field, which contains the country. The "calendar" table align the dates between the "death_and_new_cases_by_date" and "people_vaccinated".</p>
+<p>The connections of the tables are as follows:</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 700px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/test-page/static/c631a4e66a9ea218f6dab14154465256/473d6/COVID19_Database_connection_keys_links_Power_BI.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 55.99999999999999%; position: relative; bottom: 0; left: 0; background-image: url('data:image/svg+xml,%3csvg%20xmlns=\'http://www.w3.org/2000/svg\'%20width=\'400\'%20height=\'225\'%20viewBox=\'0%200%20400%20225\'%20preserveAspectRatio=\'none\'%3e%3cpath%20d=\'M16%2042l-1%205v5h37V41H34l-18%201m75%203v4l1%201%2013-1c13%201%2014%200%2012-4h-2l-2%201h-7l-6-1-1-1c-2%202-7%202-7%201h-1m158%200l-1%202c0%203%201%203%2021%202l5%201%201-1v-4c-1-1-1-1-1%201h-4l-7-1h-14m-11%2013h-7c-6%200-6%200-5%202s1%202%202%201h1c0%202%2012%201%2012-1h1c1%202%2014%202%2014%200l1%201c1%201%201%201%201-1l-2-2h-18\'%20fill=\'%2364ffda\'%20fill-rule=\'evenodd\'/%3e%3c/svg%3e'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="COVID19 Database connection keys links Power BI"
+        title="COVID19 Database connection keys links Power BI"
+        src="/test-page/static/c631a4e66a9ea218f6dab14154465256/39600/COVID19_Database_connection_keys_links_Power_BI.png"
+        srcset="/test-page/static/c631a4e66a9ea218f6dab14154465256/1aaec/COVID19_Database_connection_keys_links_Power_BI.png 175w,
+/test-page/static/c631a4e66a9ea218f6dab14154465256/98287/COVID19_Database_connection_keys_links_Power_BI.png 350w,
+/test-page/static/c631a4e66a9ea218f6dab14154465256/39600/COVID19_Database_connection_keys_links_Power_BI.png 700w,
+/test-page/static/c631a4e66a9ea218f6dab14154465256/473d6/COVID19_Database_connection_keys_links_Power_BI.png 736w"
+        sizes="(max-width: 700px) 100vw, 700px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<h2>4. Dashboard</h2>
+<p>This is the final project visual:</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 700px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/test-page/static/cabe30e1cf39a7bff29d393c111e80ba/d1566/COVID19_Dashboard.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 55.99999999999999%; position: relative; bottom: 0; left: 0; background-image: url('data:image/svg+xml,%3csvg%20xmlns=\'http://www.w3.org/2000/svg\'%20width=\'400\'%20height=\'225\'%20viewBox=\'0%200%20400%20225\'%20preserveAspectRatio=\'none\'%3e%3cpath%20d=\'M0%20113v112h401V112c0-62%200-111-1-109%200%203%200%203-3%203s-3%200-3-3l1-3H0v113M22%2012c-2%201-1%206%200%207%203%202%207%200%208-3v-2l2%203c1%204%203%204%205-1l2-4v3c1%206%203%206%203%201s0-5-3-5-4%201-4%203-2%202-2-1l-1-2-2%202h-1c-1-2-6-3-7-1m190%2038v4h1a2711%202711%200%2001173-2c0-2%200-3-1-2a2711%202711%200%2001-173%200M78%2073c-3%202-3%204-2%206%202%202%203%203%203%201%200-3%205%204%205%207%201%204%201%205%205%201l3-6%201-6v-1c-1%200-2%200-1-1%201-2-3-2-5-1h-9m-8%208v4c1%202%201%202-3%202-4-1-4-1-4%202l1%202c1%200%205%204%205%206s4%207%205%207l1-1%202-2%203-3%203-2c2%201%201-2-1-3-2-2-3-2-3%200h-2c-2-1-2-1-1-2l2-3%201-1%201%202%201%201c3%200%200-6-3-6-2%200-2%200-1-1%201%200%200-2-2-2v5h-2l-1-3-1-2h-1m46%202l-4%202-1%201c0%201-5%202-7%200-1-1-2-1-5%202-2%202-2%203-1%204l-1%203c-4%205-5%2011-1%2012%202%200%202%201%203%206l2%203c2%200%204-4%204-7l1-1%201-1%202-3c1-2%201-2%203%200%201%202%202%202%203%200h3l2%201%202-2%201-2%201-2%202-2c2-2%202-2%201-3s-1-1%201-2l4-1%203-1c3-2%203-2%201-3h-2l-3-1-8-2-2-1c0-3-2-2-5%200m199%2032l-5%203c-3%203-6%202-10-1-2-1-3-2-4-1l-5%201-8%202-10%202-11%201-20%202-2%201a226%20226%200%200050-5h11c4%203%208%202%2012%200%204-3%205-3%2010%200%203%202%204%202%2010%201h11c8%202%2020%200%2020-4%200-2%200-2-5%200-6%202-12%202-15%201-3-2-7-2-11%200-4%203-6%203-10%200-5-4-5-4-8-3\'%20fill=\'%2364ffda\'%20fill-rule=\'evenodd\'/%3e%3c/svg%3e'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="COVID19 Dashboard"
+        title="COVID19 Dashboard"
+        src="/test-page/static/cabe30e1cf39a7bff29d393c111e80ba/39600/COVID19_Dashboard.png"
+        srcset="/test-page/static/cabe30e1cf39a7bff29d393c111e80ba/1aaec/COVID19_Dashboard.png 175w,
+/test-page/static/cabe30e1cf39a7bff29d393c111e80ba/98287/COVID19_Dashboard.png 350w,
+/test-page/static/cabe30e1cf39a7bff29d393c111e80ba/39600/COVID19_Dashboard.png 700w,
+/test-page/static/cabe30e1cf39a7bff29d393c111e80ba/57cd1/COVID19_Dashboard.png 1050w,
+/test-page/static/cabe30e1cf39a7bff29d393c111e80ba/4af54/COVID19_Dashboard.png 1400w,
+/test-page/static/cabe30e1cf39a7bff29d393c111e80ba/d1566/COVID19_Dashboard.png 1435w"
+        sizes="(max-width: 700px) 100vw, 700px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>After the title, in the top section it can be seen 3 slicers for the project.</p>
+<h3>Slicers</h3>
+<p>The slicers correspond to</p>
+<ul>
+<li>Continent</li>
+<li>Country</li>
+<li>Dates</li>
+</ul>
+<h3>Visualizations</h3>
+<p>In the visualizations the following field can be seen</p>
+<ul>
+<li>Death Ratios Worldwide</li>
+<li>Cases and death per day</li>
+<li>General information of the country</li>
+<li>People fully vaccinated</li>
+</ul>
+<p>The general information of the country contains:</p>
+<ul>
+<li>Total Cases</li>
+<li>Total Deaths</li>
+<li>Death per Case Ratio</li>
+<li>Population</li>
+<li>Fully Vaccinated</li>
+<li>Vaccination Rate</li>
+</ul>
+<h4>Death Ratios Worldwide</h4>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 675px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/test-page/static/acb2ce493fc9d12d4bb409f79f30697d/51005/COVID19_Dashboard_Map_with_global_name.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 43.42857142857143%; position: relative; bottom: 0; left: 0; background-image: url('data:image/svg+xml,%3csvg%20xmlns=\'http://www.w3.org/2000/svg\'%20width=\'400\'%20height=\'174\'%20viewBox=\'0%200%20400%20174\'%20preserveAspectRatio=\'none\'%3e%3cpath%20d=\'M0%2087v87h401V0H0v87M393%205l1%2070v69H3V74a1552%201552%200%2000-1%2013%201556%201556%200%20003%2058c2-2%20386-1%20388%200l1%2012%201%2011a3141%203141%200%2000-2-164v1M167%2032l-3%202-3%201c-3%201-3%201-3-1%201-3-6-4-10-1l-3%204-1%201c-1%200-2%203-1%205l3%203v2c0%202%200%202%202%202s3-1%203-3l2-4%202-2c0-2%200-2%201%200%201%201%200%202-1%203-2%202-2%202-1%203v2l2%201c4%200%207%206%206%2013l4%208%202-2%201-3%204-3c4-3%204-4%205-11%200-9%201-11%203-13%201-2%200-4-2-3-2%202-4%200-3-2v-2c-3-3-6-3-9%200m68%2016l-4%202-6%205-4%202c-1-2-3%201-3%203%201%201%200%202-3%202l-5%201c-3%202-3%202-6-1-5-4-6-4-13%205-2%203-2%207%200%205v2c-1%204-5%204-5%200l-1-1%201%206v3c0%201%200%202-2%202l-1%203c1%202%200%203-1%205-5%205-3%2012%204%2012%205%200%205%200%207%207%201%209%202%2012%205%2012s9-9%208-13c-1-1%200-2%202-5l3-3-2-1-1-1c2%200%207-4%206-5l2-1c2%200%206%204%206%207%200%202%201%201%203-1%201-4%204-5%207-1l4%203c2%200%202-2%201-4l-1-1%202-1c5%200%207-7%205-9v-1l3%202c1%201%201%201%201-1l2-3c2-1%205-6%203-8-3-1%200-4%204-4l3-1%202-1%201%201h2c4-1%206-2%206-4l2-1c4%201%203-1%200-4-3-1-5-2-7-1l-4-1-2-1-2-1-3-2h-2c0%203-5%203-5%201l-4-2c-4%200-5-1-4-3%201-1%201-3-1-3l-2-1h-1m-106%206l2%205%202%201h-15c-2-1-2-1-2%205s1%206%203%206c5%200%2011%208%2011%2014%200%202%201%204%203%205l2%202%203%204%205%203%204%202h2l-2-2-1-2h-2c-2%200-2%200-2-2s4-4%205-3l5-4c0-2%203-5%206-5v-3h2l2%201v-2l-6-7-1-1v-2c2%200%204-5%202-6l-1-1c0-3-5-7-8-7h-3c-1-1-5%200-5%202l1%201c1%201%200%205-1%205l-1-2c0-6%200-6-2-5l-4-2h-4m23%2048l-1%203c-1%203-1%203%201%202%202%200%202%200%202%202v14c-2%209-2%2011-1%2013h3c-1-3%201-8%204-12l9-10%201-2c2-2%201-3-2-4l-6-4c-3-3-9-4-10-2m93%2012l-4%202v6c0%202%200%202%204%201%203-1%203-1%206%201l4%202c1%200%203-3%203-6%200-2-4-9-5-7h-3c0-2-3-1-5%201m-38%2039c0%202-1%202-3%202-3%200-3%200-3%204%201%205%202%206%203%201%201-4%203-4%203%200%200%203%202%205%204%203h1c4%202%205%201%206-5l-1-6-2%201-2%202-2%204-1-2c0-4-3-7-3-4M3%20168c1%201%2023%202%20196%202h195l-194-1a4302%204302%200%2001-197-1\'%20fill=\'%2364ffda\'%20fill-rule=\'evenodd\'/%3e%3c/svg%3e'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="COVID19 Dashboard Map with global name"
+        title="COVID19 Dashboard Map with global name"
+        src="/test-page/static/acb2ce493fc9d12d4bb409f79f30697d/51005/COVID19_Dashboard_Map_with_global_name.png"
+        srcset="/test-page/static/acb2ce493fc9d12d4bb409f79f30697d/1aaec/COVID19_Dashboard_Map_with_global_name.png 175w,
+/test-page/static/acb2ce493fc9d12d4bb409f79f30697d/98287/COVID19_Dashboard_Map_with_global_name.png 350w,
+/test-page/static/acb2ce493fc9d12d4bb409f79f30697d/51005/COVID19_Dashboard_Map_with_global_name.png 675w"
+        sizes="(max-width: 675px) 100vw, 675px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span>
+The map colors for each country depends in the ratio of deaths per million habitants in a specific country. The ones with lighter colors have a lower ratio and the ones with darker color a higher one.</p>
+<p>For calculating the death per million the following measure was created:</p>
+<div class="gatsby-highlight" data-language="dax"><pre class="language-dax"><code class="language-dax">
+death_per_millions <span class="token operator">=</span> 
+	<span class="token punctuation">(</span><span class="token function">SUM</span><span class="token punctuation">(</span><span class="token data-field symbol">death_and_new_cases_by_date[new_deaths]</span><span class="token punctuation">)</span>
+	<span class="token operator">/</span>
+	<span class="token function">SUM</span><span class="token punctuation">(</span><span class="token data-field symbol">vaccination_ratio[population]</span><span class="token punctuation">)</span>
+	<span class="token operator">*</span>
+	<span class="token number">1000000</span><span class="token punctuation">)</span></code></pre></div>
+<p>Based on the selection from the slicer, the map would show the specific section with the name. If nothing is selected from the map or the slicers, then it would display "World".  If a "Continent" (in the slicer) is selected then it would display the continent in the map and below the name of the selection.</p>
+<p>Finally if a country is selected, the country would be displayed. In the case multi-select using the map it would take into consideration the last one picked. If it by using the "Country" slicer, then it would display the last alphabetical country selected, and all the non selected country would be displayed as gray in the map.</p>
+<p>The map was obtained based on the YouTube channel Curbal with her video <a href="https://youtube.com/watch?v=Hzy1YbTjDaA" target="_blank" rel="nofollow noopener noreferrer">Map locations using Power BI shape maps (Part 1)</a> which uses a json map created / recollected by David Eldersveld in his <a href="app://obsidian.md/%5Bhttps://github.com/deldersveld/topojson%5D" target="_blank" rel="nofollow noopener noreferrer">GitHub</a>. The map downloaded was this specific <a href="https://github.com/deldersveld/topojson/blob/master/world-continents.json" target="_blank" rel="nofollow noopener noreferrer">World Map json</a>.</p>
+<p>For the name selection, a measure was used to display the information of "World", a specific continent or country that was selected.</p>
+<div class="gatsby-highlight" data-language="dax"><pre class="language-dax"><code class="language-dax">country_if_filtered <span class="token operator">=</span>
+	<span class="token function">IF</span><span class="token punctuation">(</span>
+		<span class="token function">OR</span><span class="token punctuation">(</span>
+			<span class="token function">ISFILTERED</span><span class="token punctuation">(</span><span class="token data-field symbol">code_and_country[iso_code]</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+			<span class="token function">ISFILTERED</span><span class="token punctuation">(</span><span class="token data-field symbol">code_and_country[location]</span><span class="token punctuation">)</span>
+		<span class="token punctuation">)</span><span class="token punctuation">,</span>
+		<span class="token function">LASTNONBLANK</span><span class="token punctuation">(</span><span class="token data-field symbol">code_and_country[location]</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+		<span class="token function">IF</span><span class="token punctuation">(</span>
+			<span class="token function">ISFILTERED</span><span class="token punctuation">(</span><span class="token data-field symbol">code_and_country[continent]</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+			<span class="token function">LASTNONBLANK</span><span class="token punctuation">(</span><span class="token data-field symbol">code_and_country[continent]</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">,</span> 
+			<span class="token string">"World"</span>
+	<span class="token punctuation">)</span>
+</code></pre></div>
+<h4>Functions used</h4>
+<p><a href="IF()%20-%20DAX.md">IF() - DAX</a>
+<a href="OR()%20-%20DAX.md">OR() - DAX</a>
+<a href="LASTNONBLANK()%20-%20DAX.md">LASTNONBLANK() - DAX</a>
+<a href="ISFILTERED()%20-%20DAX.md">ISFILTERED() - DAX</a></p>
+<h4>Cases and death per day</h4>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 683px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/test-page/static/b01608d7d2bc3f13da59c32024891055/66d45/COVID19_Dashboard_Cases_and_death_per_day.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 42.857142857142854%; position: relative; bottom: 0; left: 0; background-image: url('data:image/svg+xml,%3csvg%20xmlns=\'http://www.w3.org/2000/svg\'%20width=\'400\'%20height=\'170\'%20viewBox=\'0%200%20400%20170\'%20preserveAspectRatio=\'none\'%3e%3cpath%20d=\'M0%2085v85h401V0H0v85M6%203L4%205h1l194-1A14544%2014544%200%20006%203m386%2082v81l1-75a2867%202867%200%2000-1-6M3%2085l1%2080a19077%2019077%200%20001-1L4%2086%203%206v79m337-27l-1%2010-2%2014-1%2011c-2%201-2%208%200%2010%202%201%203%200%203-5%200-3%200-4%202-4%201%200%202%200%201-1-2%200-1-13%200-13%202-1%202-9%200-23%200-7-2-6-2%201m-147%2062l-1%201-2%201-5%201-14%201-7%204c-5%203-9%204-26%205l-19%202-22%202c-13%200-21%201-23%203-1%201%201%201%205%201l6-1h8l15-1%208-1%202-1h5l18-2c17%200%2018%200%2021-2h2l1-1c2-2%203-2%208-3h7l8%201c2%201%202%201%204-1s5-3%205-1l3%202%203%201%201%201%203%201%203%201h5l4-1h2l1-1%204-2%204-2c0-2%206-4%208-4l6%203%201%201%202%202%202%201h1l2%201%201%201%2016-1%203-1%202-1c0-1%203-1%204%201l2-1h7l5%202h4l4%201%206%201%207-1h3l3-1%203-1h5l3-1h2l1-1%202-2%201-1-1-2-1-2c0-4-2-5-2-2l-3%202-5%201h-2l-4%202c-6%203-12%204-14%203l-5-1-3-1-1-1-3-1-6-2-4-1-2-1-3%201c0%201-1%202-3%201l-3%202-1%202-3%201c-3%202-9%203-10%202l-3-1c-2%200-5-2-10-7-3-3-14-3-15%201l-1%201-5%202c-2%202-6%203-7%203l-4%201c-1%201-5%200-5-1l-1-1-2-1-1-1-5-4c-5-3-5-4-5-1\'%20fill=\'%2364ffda\'%20fill-rule=\'evenodd\'/%3e%3c/svg%3e'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="COVID19 Dashboard Cases and death per day"
+        title="COVID19 Dashboard Cases and death per day"
+        src="/test-page/static/b01608d7d2bc3f13da59c32024891055/66d45/COVID19_Dashboard_Cases_and_death_per_day.png"
+        srcset="/test-page/static/b01608d7d2bc3f13da59c32024891055/1aaec/COVID19_Dashboard_Cases_and_death_per_day.png 175w,
+/test-page/static/b01608d7d2bc3f13da59c32024891055/98287/COVID19_Dashboard_Cases_and_death_per_day.png 350w,
+/test-page/static/b01608d7d2bc3f13da59c32024891055/66d45/COVID19_Dashboard_Cases_and_death_per_day.png 683w"
+        sizes="(max-width: 683px) 100vw, 683px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>For the graph in the X-Axis the date is used and for the principal Y-Axis the number of person that have been diagnosed with COVID-19 and in the secondary Y-Axis the people who have died due to this decease. No DAX calculations were needed and for both of the Y-Axis calculations, the sum aggregation of 'new_cases' and 'new_deaths' from the 'death_and_new_cases_by_date' table were used for the principal and secondary axis respectively.</p>
+<h4>Cases and death per day</h4>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 678px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/test-page/static/b975b1c268d77aff1165f5b2fb9b1763/34428/COVID19_Dashboard_People_fully_vaccinated.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 42.285714285714285%; position: relative; bottom: 0; left: 0; background-image: url('data:image/svg+xml,%3csvg%20xmlns=\'http://www.w3.org/2000/svg\'%20width=\'400\'%20height=\'169\'%20viewBox=\'0%200%20400%20169\'%20preserveAspectRatio=\'none\'%3e%3cpath%20d=\'M0%2085v84h401V0H0v85M7%205L5%206v78A2082%202082%200%20007%206l194-1c191%200%20193%200%20194%202l1%2079a1942%201942%200%20001-2V6l-2-1C391%202%2011%202%207%205m366%2024l-9%203a130%20130%200%2000-25%2013%20142%20142%200%2001-28%2011l-10%205a199%20199%200%2000-34%2017l-4%204-6%203-4%202-1%205-1%2011v6l-4%201-6%202-41%2011a525%20525%200%2001-106%2015%20404%20404%200%2000103-13c14-2%2030-6%2047-12l9-3v-4l1-11v-7l5-1c3-1%205-3%205-4%201-1%202-3%205-3l5-4%202-2%203-1a133%20133%200%200130-14%2048%2048%200%200113-5%20339%20339%200%200118-7c4-4%2016-10%2026-13l10-5v-1l-3%201M8%20164\'%20fill=\'%2364ffda\'%20fill-rule=\'evenodd\'/%3e%3c/svg%3e'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="COVID19 Dashboard People fully vaccinated"
+        title="COVID19 Dashboard People fully vaccinated"
+        src="/test-page/static/b975b1c268d77aff1165f5b2fb9b1763/34428/COVID19_Dashboard_People_fully_vaccinated.png"
+        srcset="/test-page/static/b975b1c268d77aff1165f5b2fb9b1763/1aaec/COVID19_Dashboard_People_fully_vaccinated.png 175w,
+/test-page/static/b975b1c268d77aff1165f5b2fb9b1763/98287/COVID19_Dashboard_People_fully_vaccinated.png 350w,
+/test-page/static/b975b1c268d77aff1165f5b2fb9b1763/34428/COVID19_Dashboard_People_fully_vaccinated.png 678w"
+        sizes="(max-width: 678px) 100vw, 678px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>For the graph in the X-Axis the date is used and for the  Y-Axis the number of person that have been fully vaccinated against COVID-19. No DAX calculations were needed and for the Y-Axis calculation, the sum aggregation of 'people_fully_vaccinated - copia' from the 'people_vaccinated' table. This is column had a rework in Power Query which has already been described.</p>
+<h4>General Information of the country</h4>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 681px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/test-page/static/da7bbd82b9eb682bcee87d7b25b819a5/ad007/COVID19_Dashboard_General_Information.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 41.714285714285715%; position: relative; bottom: 0; left: 0; background-image: url('data:image/svg+xml,%3csvg%20xmlns=\'http://www.w3.org/2000/svg\'%20width=\'400\'%20height=\'167\'%20viewBox=\'0%200%20400%20167\'%20preserveAspectRatio=\'none\'%3e%3cpath%20d=\'M0%2084v83h401V0H0v84M393%204c2%202%202%2041%200%2043l-91%201-89%201h90l91-1c2-3%201-44-1-45v1M270%2030c-2%202-3%209-1%2010%202%202%203%202%205%201%201-2%204-1%207%200h12l1%202c2-1%202-3%201-3-2%200-5-7-4-9%201-4-2-2-4%203-3%204-4%205-4%202l-1-2v-2c1-5-2-3-4%202-2%204-4%204-3%200%200-3-3-6-5-4M7%2061c-2%201-1%2043%200%2044l91%201h91l-90-1-91-1a167%20167%200%20010-44l-1%201m273%2026l-4%209%202%201%203%201h3l2-1c0%202%204%202%206%200%202-3%200-11-3-11-2%200-4%203-4%206s0%203-1%201l-2-2v-2c2-3%200-4-2-2m48%204l-4%205c-2%201-3%204-1%204l2-1c0-2%205-3%205-1h2l4-1%203%201h2c2-2%201-7-1-7v-2l1-3c-1-1-3%201-5%205l-2%204-2-3v-4c1-4-2-2-4%203M97%20117a1003%201003%200%20011-1H8l89%201m13%2029c0%203%201%204%202%204l1%203c-1%202%201%203%202%200h1c2%203%205%202%206-1%200-2%200-3-2-4-1-1-2-2-1-3%200-2-2-2-3%200h-1c-2-4-5-2-5%201m209%200c0%203%201%204%202%204l1%203c-1%202%201%203%202%200l1%201%204%201c2-1%203-6%200-7-1-1-2-2-1-3%200-3-2-3-2%200h-2c-2-3-5-2-5%201m-131%2014l-91%201-89%201h90a1375%201375%200%200090-2m23%200c1%201%2012%202%2092%202h91l-90-1a1003%201003%200%2001-93-1\'%20fill=\'%2364ffda\'%20fill-rule=\'evenodd\'/%3e%3c/svg%3e'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="COVID19 Dashboard General Information"
+        title="COVID19 Dashboard General Information"
+        src="/test-page/static/da7bbd82b9eb682bcee87d7b25b819a5/ad007/COVID19_Dashboard_General_Information.png"
+        srcset="/test-page/static/da7bbd82b9eb682bcee87d7b25b819a5/1aaec/COVID19_Dashboard_General_Information.png 175w,
+/test-page/static/da7bbd82b9eb682bcee87d7b25b819a5/98287/COVID19_Dashboard_General_Information.png 350w,
+/test-page/static/da7bbd82b9eb682bcee87d7b25b819a5/ad007/COVID19_Dashboard_General_Information.png 681w"
+        sizes="(max-width: 681px) 100vw, 681px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p><strong>Total Cases</strong>
+"Total Cases" does not have a DAX measurement, it is the sum of the 'new_cases' from the 'death_and_new_cases_by_date' table.</p>
+<p><strong>Population</strong>
+"Total Cases" does not have a DAX measurement, it is the max value of 'population' from the 'vaccination_ratio' table.</p>
+<p><strong>Total Deaths</strong>
+"Total Deaths" does not have a DAX measurement, it is the sum value of 'new_deaths' from the 'death_and_new_cases_by_date' table.</p>
+<p><strong>Fully Vaccinated</strong>
+"Fully Vaccinated" had the following measurement:</p>
+<div class="gatsby-highlight" data-language="dax"><pre class="language-dax"><code class="language-dax">
+fully_vacc_max_val <span class="token operator">=</span> 
+	<span class="token function">CALCULATE</span><span class="token punctuation">(</span>
+		<span class="token function">SUM</span><span class="token punctuation">(</span>people_vaccinated<span class="token punctuation">[</span>people_fully_vaccinated <span class="token operator">-</span> Copia<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+		<span class="token function">LASTDATE</span><span class="token punctuation">(</span><span class="token data-field symbol">people_vaccinated[date]</span><span class="token punctuation">)</span> 
+	<span class="token punctuation">)</span>
+</code></pre></div>
+<p><strong>Death per Case Ratio</strong>
+"Death per Case Ratio" had following measurement:</p>
+<div class="gatsby-highlight" data-language="dax"><pre class="language-dax"><code class="language-dax">
+death_ratio_val <span class="token operator">=</span>
+	<span class="token function">SUM</span><span class="token punctuation">(</span><span class="token data-field symbol">death_and_new_cases_by_date[new_deaths]</span><span class="token punctuation">)</span>
+	<span class="token operator">/</span>
+	<span class="token function">SUM</span><span class="token punctuation">(</span><span class="token data-field symbol">death_and_new_cases_by_date[new_cases]</span><span class="token punctuation">)</span>
+</code></pre></div>
+<p><strong>Vaccination Rate</strong>
+"Vaccination Rate" had the following measurement:</p>
+<div class="gatsby-highlight" data-language="dax"><pre class="language-dax"><code class="language-dax">
+fully_vacc_ratio_val <span class="token operator">=</span>
+	<span class="token data-field symbol">people_vaccinated[fully_vacc_max_val]</span>
+	<span class="token operator">/</span>
+	<span class="token punctuation">(</span><span class="token function">SUM</span><span class="token punctuation">(</span><span class="token data-field symbol">vaccination_ratio[population]</span><span class="token punctuation">)</span><span class="token punctuation">)</span></code></pre></div>
+<p><a href="CALCULATE()%20-%20DAX.md">CALCULATE() - DAX</a>
+<a href="SUM()%20-%20DAX.md">SUM() - DAX</a>
+<a href="LASTDATE()%20-%20DAX.md">LASTDATE() - DAX</a></p></div></main><footer class="footer__StyledFooter-sc-4jwnt4-0 earxGk"><div class="footer__StyledSocialLinks-sc-4jwnt4-1 iKeBGp"><ul><li><a href="https://github.com/bchiang7" aria-label="GitHub"><svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><title>GitHub</title><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a></li><li><a href="https://www.instagram.com/bchiang7" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram"><title>Instagram</title><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a></li><li><a href="https://twitter.com/bchiang7" aria-label="Twitter"><svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-twitter"><title>Twitter</title><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a></li><li><a href="https://www.linkedin.com/in/bchiang7" aria-label="Linkedin"><svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin"><title>LinkedIn</title><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a></li><li><a href="https://codepen.io/bchiang7" aria-label="Codepen"><svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-codepen"><title>CodePen</title><polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2"></polygon><line x1="12" y1="22" x2="12" y2="15.5"></line><polyline points="22 8.5 12 15.5 2 8.5"></polyline><polyline points="2 15.5 12 8.5 22 15.5"></polyline><line x1="12" y1="2" x2="12" y2="8.5"></line></svg></a></li></ul></div><div class="footer__StyledCredit-sc-4jwnt4-2 fLSMpu"><a href="https://github.com/bchiang7/v4"><div>Designed &amp; Built by Brittany Chiang</div></a></div></footer></div></div></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script>
+  
+  
+  if(true) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  }
+  if (typeof ga === "function") {
+    ga('create', 'UA-45666519-2', 'auto', {});
+      
+      
+      
+      
+      
+      }</script><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/project/covid";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-5113c0697428749a4656.js"],"app":["/app-9ab5712f8e07f444cb09.js"],"component---cache-caches-gatsby-plugin-offline-app-shell-js":["/component---cache-caches-gatsby-plugin-offline-app-shell-js-e84596c37790733d100e.js"],"component---src-pages-404-js":["/component---src-pages-404-js-8d87be5f7995e29e1b3e.js"],"component---src-pages-archive-js":["/component---src-pages-archive-js-32158c9c87815dd411f9.js"],"component---src-pages-index-js":["/component---src-pages-index-js-e0d57e6779aaa6bb8ba2.js"],"component---src-pages-pensieve-index-js":["/component---src-pages-pensieve-index-js-e59bb2c25269ef8dc261.js"],"component---src-pages-pensieve-tags-js":["/component---src-pages-pensieve-tags-js-db027d6bb7e9729839f9.js"],"component---src-templates-post-js":["/component---src-templates-post-js-6f6dcb95f8ccabc76fb8.js"],"component---src-templates-tag-js":["/component---src-templates-tag-js-3c830ebe5edf34918cb2.js"]};/*]]>*/</script><script src="/test-page/polyfill-5113c0697428749a4656.js" nomodule=""></script><script src="/test-page/component---src-templates-post-js-6f6dcb95f8ccabc76fb8.js" async=""></script><script src="/test-page/546641dfde76ed00139ea2c3eae09499c5f2164a-3997cef2ca49e61b2a41.js" async=""></script><script src="/test-page/app-9ab5712f8e07f444cb09.js" async=""></script><script src="/test-page/framework-b2d6e508d75a672689cc.js" async=""></script><script src="/test-page/webpack-runtime-c932af9eae4d658aa6cf.js" async=""></script></body></html>
