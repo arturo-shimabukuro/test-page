@@ -9,4 +9,4 @@ tech:
   - Power BI
 ---
 
-Analysis of a dataset of COVID-19 pandemic to analyze which countries had controlled better or worst the pandemic and analyze potential factors that might have affected the results.
+Analysis of the COVID-19 pandemic to get insight of which countries had controlled better or worst the pandemic and analyze potential factors that might have affected the results.
