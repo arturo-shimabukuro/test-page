@@ -79,7 +79,7 @@ As mentioned before the data was divided in two tables based on the table that c
 
 The first step was to create a Database in PostgreSQL. The database was created with SQL Shell (psql), for practicing using the commands in that environment. This is the code for creating the database: 
 
-``` PostgreSQL
+```PostgreSQL
 CREATE DATABASE covid_project;
 ```
 
