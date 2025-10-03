@@ -79,7 +79,7 @@ As mentioned before the data was divided in two tables based on the table that c
 
 The first step was to create a Database in PostgreSQL. The database was created with SQL Shell (psql), for practicing using the commands in that environment. This is the code for creating the database: 
 
-```PostgreSQL
+```postgresql
 CREATE DATABASE covid_project;
 ```
 
@@ -118,7 +118,7 @@ CREATE TABLE covid_death(
 
 After that the vaccination table was created but with the own pdAdmin4 by running a Query directly. The table was named **covid_vaccination**. Here is the code used: 
 
-```html
+``` PostgreSQL
 
 CREATE TABLE covid_vaccination(
 	iso_code varchar(50)  ,
