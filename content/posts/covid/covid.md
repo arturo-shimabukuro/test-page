@@ -59,7 +59,7 @@ The information worked on this project is based on the site 'Our World in Data'.
 The information depends on the numbers that are presented by governments of each country. Any problems from the information depends on how countries have reported their information.
 
 **Original**
-This is not the original data source as they obtain the information is gathered from Johns Hopkins University of Medicine and more specifically from their Coronavirus Research Center. And this information is gathered based on the information they obtain from the governments around the world.
+This is not the original data source as they obtain the information is gathered from Johns Hopkins University of Medicine and more specifically from their Coronavirus Research Center. Plus this information is gathered based on the information they obtain from the governments around the world.
 
 **Comprehensive**
 
@@ -118,7 +118,7 @@ CREATE TABLE covid_death(
 
 After that the vaccination table was created but with the own pdAdmin4 by running a Query directly. The table was named **covid_vaccination**. Here is the code used: 
 
-``` PostgreSQL
+```html
 
 CREATE TABLE covid_vaccination(
 	iso_code varchar(50)  ,
