@@ -1,9 +1,9 @@
 ---
 date: '3'
-title: 'Earned Value in Projects'
+title: 'Earned Value'
 cover: './earned_value_cover.png'
-cta: 'https://arturo-shimabukuro.github.io/test-page/project/earned-value'
-external: 'https://arturo-shimabukuro.github.io/test-page/project/earned-value'
+cta: 'https://arturo-shimabukuro.github.io/test-page/project/earnedvalue'
+external: 'https://arturo-shimabukuro.github.io/test-page/project/earnedvalue'
 tech:
   - SQL
   - Power BI
