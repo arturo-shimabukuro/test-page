@@ -1,9 +1,9 @@
 ---
-date: '2'
-title: 'COVID 19 Analysis'
-cover: './covid19_cover.png'
-cta: 'https://arturo-shimabukuro.github.io/test-page/project/covid'
-external: 'https://arturo-shimabukuro.github.io/test-page/project/covid'
+date: '3'
+title: 'Earned Value in Projects'
+cover: './earned_value_cover.png'
+cta: 'https://arturo-shimabukuro.github.io/test-page/project/earned-value'
+external: 'https://arturo-shimabukuro.github.io/test-page/project/earned-value'
 tech:
   - SQL
   - Power BI
