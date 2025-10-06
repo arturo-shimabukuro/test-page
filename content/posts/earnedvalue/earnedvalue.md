@@ -1,6 +1,6 @@
 ---
 title: "Earn Value Project"
-
+slug: /project/earnedvalue
 draft: false
 tags: ["Excel", "Power BI"]
 
@@ -235,20 +235,20 @@ Here are the other columns formulas which have the same structure from the % Phy
 
 ### 2.3 Connecting the tables in Power BI
 
-![](/images/earned_value/Earned_Value_Database_connection_scheme_Power%20BI.png)
+![](./earned_value/Earned_Value_Database_connection_scheme_Power%20BI.png)
 
 
 The primary tables in this case are  'Calendar', 'Projects' and ''Project Location', where the general and unique data is added. The primary Key for "Projects" and "Project Location" were the field "Project". Here as a point of improvement of the project, the information of the two tables described before could have been stored all in one table instead. As for the calendar it standardize the dates from all tables. 
 
 The connections of the tables are as follows: 
 
-![](/images/earned_value/Earned_Value_Database_connection_keys_links_Power_BI.png)
+![](./earned_value/Earned_Value_Database_connection_keys_links_Power_BI.png)
 
 ## 3. Dashboard
 
 This is the final project visual. 
 
-![](/images/earned_value/Earned_Value_Dashboard.png)
+![](./earned_value/Earned_Value_Dashboard.png)
 
 We can observe that in the top there are 3 slicers and when the last date of update for a specific project. 
 
@@ -274,12 +274,12 @@ In the visualization the following fields can be seen:
 
 #### 3.2.1 District Visual
 
-![](/images/earned_value/Earned_Value_Dashboard_District.png)
+![](./earned_value/Earned_Value_Dashboard_District.png)
 
 The District visualization shows all the districts from each Department from the country. This was used with a custom file that was found. Here is the link for reference: 
 #### 3.2.2 S- Curve Visual
 
-![](/images/earned_value/Earned_Value_Dashboard_S_Curve.png)
+![](./earned_value/Earned_Value_Dashboard_S_Curve.png)
 
 For the S-Curve line graph,  measures were used to show the data. If no project is selected, no graph will show as it would not be consistent information being shown. The information will also depend on the slicer 'Financial or Execution' were the project progress and the financial progress will be shown depending on the filter. In this case it has been set up for it to only select 1 of the options. 
 
@@ -326,7 +326,7 @@ Programado Finan o Ejec =
 
 #### 3.3.3 Physical Progress Gauge
 
-![](/images/earned_value/Earned_Value_Dashboard_Physical_Gauge.png)
+![](./earned_value/Earned_Value_Dashboard_Physical_Gauge.png)
 
 For this visualization, it was only two measures that used the last data from the updated physical progress status and the calculated value (in Excel) of planned progress. Here the goal is the planned value versus the real progress. 
 
@@ -365,7 +365,7 @@ Avance Físico Ultimo =
 
 #### 3.3.4 Project Table
 
-![](/images/earned_value/Earned_Value_Dashboard_Projects_Table.png)
+![](./earned_value/Earned_Value_Dashboard_Projects_Table.png)
 
 For the table it show all the projects initially with the projects Key Performance Index (KPI) to have an overview of the project progress. The fields for the table are:
 
@@ -404,7 +404,7 @@ Avance Financiero-Último =
 
 For the SPI and CPI this are measures based on KPI's of earned value and are calculated as follows: 
 
-![](/images/earned_value/Earned%20Value%20Formulas%20and%20Meanings.png)
+![](./earned_value/Earned%20Value%20Formulas%20and%20Meanings.png)
 
 This table with definitions and the calculations was found at this [link](https://planningengineer.net/project-management-general-definitions/ ). 
 
@@ -462,7 +462,7 @@ CPI = [EV]/[AC]
 
 For SPI the following conditional formatting was used: 
 
-![](/images/earned_value/Earned_Value_Dashboard_Table_SPI_conditional_formatting.png)
+![](./earned_value/Earned_Value_Dashboard_Table_SPI_conditional_formatting.png)
 
 **Schedule Performance Index (SPI)**
 
@@ -473,10 +473,10 @@ SPI = [EV]/[PV]
 
 For CPI the following conditional formatting was used: 
 
-![](/images/earned_value/Earned_Value_Dashboard_Table_CPI_Conditional_Formatting.png)
+![](./earned_value/Earned_Value_Dashboard_Table_CPI_Conditional_Formatting.png)
 #### General Information
 
-![](/images/earned_value/Earned_Value_Dashboard_General_Information.png)
+![](./earned_value/Earned_Value_Dashboard_General_Information.png)
 
 It contains information from specific projects. Here we can see the following: 
 - Start Date
@@ -556,7 +556,7 @@ Supervisor =
 
 #### Comments
 
-![](/images/earned_value/Earned_Value_Dashboard_Comments.png)
+![](./earned_value/Earned_Value_Dashboard_Comments.png)
 
 It displays the last comment that have been registered from the project. This also depend on the project that have been selected.
 
