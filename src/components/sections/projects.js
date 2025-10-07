@@ -22,7 +22,7 @@ const StyledProjectsSection = styled.section`
     &:after {
       bottom: 0.1em;
     }
-  }z
+  }
 
   .projects-grid {
     ${({ theme }) => theme.mixins.resetList};
