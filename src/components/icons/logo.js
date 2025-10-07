@@ -15,6 +15,7 @@ const IconLogo = () => (
         />
         <text x="47%" y="47%" text-anchor="middle" dy=".3em" font-size="40" font-weight="bold" fill="white">
         AS
+        </text>
       </g>
     </g>
   </svg>
