@@ -5,8 +5,8 @@ cover: './earned_value_cover.png'
 cta: 'https://arturo-shimabukuro.github.io/test-page/project/earnedvalue'
 external: 'https://arturo-shimabukuro.github.io/test-page/project/earnedvalue'
 tech:
-  - SQL
+  - Excel
   - Power BI
 ---
 
-Analysis of the COVID-19 pandemic to get insight of which countries had controlled better or worst the pandemic and analyze potential factors that might have affected the results.
+Dashboard designed to track the earned value of multiple projects in Peru using a interactive map that contains the department and its respective districts.
