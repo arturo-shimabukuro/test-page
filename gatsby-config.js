@@ -23,7 +23,7 @@ module.exports = {
       options: {
         name: 'Brittany Chiang',
         short_name: 'Brittany Chiang',
-        start_url: '/',
+        start_url: 'https://arturo-shimabukuro.github.io/test-page/',
         background_color: config.colors.darkNavy,
         theme_color: config.colors.navy,
         display: 'minimal-ui',
