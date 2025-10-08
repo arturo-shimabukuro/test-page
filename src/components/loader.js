@@ -1,9 +1,9 @@
+// loader.js
 import React, { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 import PropTypes from 'prop-types';
 import anime from 'animejs';
 import styled from 'styled-components';
-import { IconLoader } from '@components/icons';
 
 const StyledLoader = styled.div`
   ${({ theme }) => theme.mixins.flexCenter};
@@ -19,19 +19,17 @@ const StyledLoader = styled.div`
 
   .logo-wrapper {
     width: max-content;
-    max-width: 100px;
+    max-width: 150px;
     transition: var(--transition);
     opacity: ${props => (props.isMounted ? 1 : 0)};
-    svg {
+    
+    img {
       display: block;
       width: 100%;
-      height: 100%;
+      height: auto;
       margin: 0 auto;
-      fill: none;
       user-select: none;
-      #B {
-        opacity: 0;
-      }
+      filter: drop-shadow(0 0 20px rgba(100, 255, 218, 0.5));
     }
   }
 `;
@@ -46,20 +44,15 @@ const Loader = ({ finishLoading }) => {
 
     loader
       .add({
-        targets: '#logo path',
+        targets: '.logo-wrapper img',
         delay: 300,
         duration: 1500,
         easing: 'easeInOutQuart',
-        strokeDashoffset: [anime.setDashoffset, 0],
+        opacity: [0, 1],
+        scale: [0.8, 1],
       })
       .add({
-        targets: '#logo #B',
-        duration: 700,
-        easing: 'easeInOutQuart',
-        opacity: 1,
-      })
-      .add({
-        targets: '#logo',
+        targets: '.logo-wrapper img',
         delay: 500,
         duration: 300,
         easing: 'easeInOutQuart',
@@ -86,7 +79,7 @@ const Loader = ({ finishLoading }) => {
       <Helmet bodyAttributes={{ class: `hidden` }} />
 
       <div className="logo-wrapper">
-        <IconLoader />
+        <img src="/icons/as-logo.png" alt="AS Logo" />
       </div>
     </StyledLoader>
   );
