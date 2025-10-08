@@ -79,7 +79,7 @@ const Loader = ({ finishLoading }) => {
       <Helmet bodyAttributes={{ class: `hidden` }} />
 
       <div className="logo-wrapper">
-        <img src="/icons/as-logo.png" alt="AS Logo" />
+        <img src="/as-logo.png" alt="AS Logo" />
       </div>
     </StyledLoader>
   );
