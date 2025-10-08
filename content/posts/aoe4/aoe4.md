@@ -89,8 +89,7 @@ This returns as a result the following:
 
 This takes into consideration if all the available information from the API is intended to be gather that would be the last 1000 games. 
 
-The following is the link were the data dumps since season 3 that are available. Data can be worked with this basis but the data structure is not exactly the same as the one from the information downloaded by the API.
-https://aoe4world.com/dumps
+This is the [link](https://aoe4world.com/dumps) were the data dumps since season 3 that are available. Data can be worked with this basis but the data structure is not exactly the same as the one from the information downloaded by the API. 
 
 ```python
 import json

@@ -37,7 +37,7 @@ const StyledLoader = styled.div`
 `;
 
 const Loader = ({ finishLoading }) => {
-  
+  const [isMounted, setIsMounted] = useState(false);
 
   const animate = () => {
     const loader = anime.timeline({
