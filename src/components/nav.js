@@ -184,7 +184,7 @@ const Nav = ({ isHome }) => {
   const Logo = (
     <div className="logo" tabIndex="-1">
       {isHome ? (
-        <a href="/" aria-label="home">
+        <Link to="/" aria-label="home">
           <div className="hex-container">
             <IconHex />
           </div>
