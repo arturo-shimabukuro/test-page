@@ -191,7 +191,7 @@ const Nav = ({ isHome }) => {
           <div className="logo-container">
             <IconLogo />
           </div>
-        </a>
+        </Link>
       ) : (
         <Link to="/" aria-label="home">
           <div className="hex-container">
