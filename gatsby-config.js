@@ -1,12 +1,12 @@
 const config = require('./src/config');
 
 module.exports = {
-  pathPrefix: "/test-page",
+  pathPrefix: "/test-page/",
   siteMetadata: {
     title: 'LS',
     description:
       'Brittany Chiang is a software engineer who specializes in building (and occasionally designing) exceptional digital experiences.',
-    siteUrl: 'https://arturo-shimabukuro.github.io/test-page', // No trailing slash allowed!
+    siteUrl: 'https://arturo-shimabukuro.github.io/test-page/', // No trailing slash allowed!
     image: '/og.png', // Path to your image you placed in the 'static' folder
     twitterUsername: '@bchiang7',
   },
