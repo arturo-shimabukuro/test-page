@@ -45,7 +45,7 @@ const Loader = ({ finishLoading }) => {
 
     loader
       .add({
-        targets: '.logo-wrapper img',
+        targets: '.logo-wrapper .gatsby-image-wrapper',
         delay: 300,
         duration: 1500,
         easing: 'easeInOutQuart',
@@ -53,7 +53,7 @@ const Loader = ({ finishLoading }) => {
         scale: [0.8, 1],
       })
       .add({
-        targets: '.logo-wrapper img',
+        targets: '.logo-wrapper .gatsby-image-wrapper',
         delay: 500,
         duration: 300,
         easing: 'easeInOutQuart',
@@ -85,6 +85,8 @@ const Loader = ({ finishLoading }) => {
               src="../images/as-logo.png"
               quality={100}              
               alt="logo"
+              backgroundColor="transparent"
+              placeholder="none"
             />
         
       </div>
