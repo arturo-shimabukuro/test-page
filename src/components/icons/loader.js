@@ -1,7 +1,7 @@
 import React from 'react';
 
 const IconLoader = () => (
-  <svg id="logo" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 456 497">
+  <svg id="logo" xmlns="http://www.w3.org/2000/svg" width="95" height="95" viewBox="0 0 456 497">
     <title>Loader Logo</title>
     <g>
       <g id="B" transform="translate(11.000000, 5.000000)">  
