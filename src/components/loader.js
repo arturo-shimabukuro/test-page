@@ -48,6 +48,7 @@ const StyledLoader = styled.div`
         stroke-width: 2;
         stroke-linecap: round;
         stroke-linejoin: round;
+        opacity: 0;
       }
     }
   }
@@ -69,6 +70,7 @@ const Loader = ({ finishLoading }) => {
         duration: 1500,
         easing: 'easeInOutQuart',
         strokeDashoffset: [anime.setDashoffset, 0],
+        opacity: [0, 1],
       })
       // Fade in the logo image
       .add({
