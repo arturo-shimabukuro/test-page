@@ -19,7 +19,7 @@ const StyledLoader = styled.div`
 
   .logo-wrapper {
     width: max-content;
-    max-width: 500px;
+    max-width: 150px;
     transition: var(--transition);
     opacity: ${props => (props.isMounted ? 1 : 0)};
     
@@ -79,7 +79,7 @@ const Loader = ({ finishLoading }) => {
       <Helmet bodyAttributes={{ class: `hidden` }} />
 
       <div className="logo-wrapper">
-        <img src="/as-logo.png" alt="AS Logo" />
+        <img src="src/images/as-logo.png" alt="AS Logo" />
       </div>
     </StyledLoader>
   );
