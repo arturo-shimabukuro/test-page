@@ -4,6 +4,7 @@ import { Helmet } from 'react-helmet';
 import PropTypes from 'prop-types';
 import anime from 'animejs';
 import styled from 'styled-components';
+import { StaticImage } from 'gatsby-plugin-image';
 
 const StyledLoader = styled.div`
   ${({ theme }) => theme.mixins.flexCenter};
