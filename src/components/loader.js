@@ -1,10 +1,9 @@
-// loader.js
 import React, { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 import PropTypes from 'prop-types';
 import anime from 'animejs';
 import styled from 'styled-components';
-import { StaticImage } from 'gatsby-plugin-image';
+import { IconLoader } from '@components/icons';
 
 const StyledLoader = styled.div`
   ${({ theme }) => theme.mixins.flexCenter};
@@ -19,35 +18,18 @@ const StyledLoader = styled.div`
   z-index: 99;
 
   .logo-wrapper {
-    position: relative;
     width: max-content;
-    max-width: 150px;
+    max-width: 100px;
     transition: var(--transition);
     opacity: ${props => (props.isMounted ? 1 : 0)};
-    
-    .gatsby-image-wrapper,
-    img {
+    svg {
       display: block;
       width: 100%;
-      height: auto;
-      margin: 0 auto;
-      user-select: none;
-    }
-
-    svg {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
       height: 100%;
-      pointer-events: none;
-      
-      path {
-        fill: none;
-        stroke: var(--green);
-        stroke-width: 2;
-        stroke-linecap: round;
-        stroke-linejoin: round;
+      margin: 0 auto;
+      fill: none;
+      user-select: none;
+      #B {
         opacity: 0;
       }
     }
@@ -63,32 +45,27 @@ const Loader = ({ finishLoading }) => {
     });
 
     loader
-      // Animate the hexagon stroke drawing
       .add({
-        targets: '#hex-outline',
+        targets: '#logo path',
         delay: 300,
         duration: 1500,
         easing: 'easeInOutQuart',
         strokeDashoffset: [anime.setDashoffset, 0],
-        opacity: [0, 1],
       })
-      // Fade in the logo image
       .add({
-        targets: '.logo-wrapper .gatsby-image-wrapper',
+        targets: '#logo #B',
         duration: 700,
         easing: 'easeInOutQuart',
-        opacity: [0, 1],
-      }, '-=1000') // Start 1000ms before previous animation ends
-      // Scale out everything
+        opacity: 1,
+      })
       .add({
-        targets: '.logo-wrapper',
+        targets: '#logo',
         delay: 500,
         duration: 300,
         easing: 'easeInOutQuart',
         opacity: 0,
         scale: 0.1,
       })
-      // Hide loader
       .add({
         targets: '.loader',
         duration: 200,
@@ -109,28 +86,7 @@ const Loader = ({ finishLoading }) => {
       <Helmet bodyAttributes={{ class: `hidden` }} />
 
       <div className="logo-wrapper">
-        <StaticImage
-          className="img"
-          src="../images/as-logo.png"
-          quality={100}
-          alt="logo"
-          backgroundColor="transparent"
-          placeholder="none"
-          style={{ opacity: 0 }}
-        />
-        
-        {/* Animated hexagon overlay */}
-        <svg viewBox="0 0 120 110" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
-          <path
-            id="hex-outline"
-            d="M 60, 8
-               L 15, 32
-               L 15, 80
-               L 60, 104
-               L 105, 80
-               L 105, 32 z"
-          />
-        </svg>
+        <IconLoader />
       </div>
     </StyledLoader>
   );
