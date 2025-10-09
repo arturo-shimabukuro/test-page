@@ -87,8 +87,19 @@ const Loader = ({ finishLoading }) => {
               alt="logo"
               backgroundColor="transparent"
               placeholder="none"
+              style={{ opacity: 0 }}
             />
-        
+       <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <path
+            id="hex-outline"
+            d="M 50, 5
+               L 11, 27
+               L 11, 72
+               L 50, 95
+               L 89, 73
+               L 89, 28 z"
+          />
+        </svg> 
       </div>
     </StyledLoader>
   );
