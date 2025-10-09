@@ -82,10 +82,8 @@ const Loader = ({ finishLoading }) => {
       <div className="logo-wrapper">
         <StaticImage
               className="img"
-              src="../../images/as-logo.png"
-              width={100}
-              quality={95}
-              formats={['AUTO', 'WEBP', 'AVIF']}
+              src="../images/as-logo.png"
+              quality={100}              
               alt="logo"
             />
         
