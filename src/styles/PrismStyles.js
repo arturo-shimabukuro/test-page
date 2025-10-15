@@ -155,7 +155,19 @@ const PrismStyles = css`
   .gatsby-highlight pre[class='language-flow']::before {
     content: 'flow';
   }
-
+  .gatsby-highlight pre[class='language-python']::before {
+    content: 'python';
+  }
+  .gatsby-highlight pre[class='language-sql']::before {
+    content: 'sql';
+  }
+  .gatsby-highlight pre[class='language-powerquery']::before,
+  .gatsby-highlight pre[class='language-m']::before {
+    content: 'powerquery';
+  }  
+  .gatsby-highlight pre[class='language-excel']::before {
+    content: 'excel';
+  }
   /* Prism Styles */
   .token {
     display: inline;
