@@ -161,19 +161,11 @@ const About = () => {
         </StyledText>
 
         <StyledPic>
-          <div 
-            className="wrapper"
-            style={{
-              width: '50%',
-              aspectRatio: '331 / 669',  
-              margin: '0 auto',
-              overflow: 'hidden',
-            }}
-          >            
+          <div className="wrapper">
             <StaticImage
               className="img"
               src="../../images/me.jpg"
-              height={334}
+              
               width={165}
               quality={95}
               formats={['AUTO', 'WEBP', 'AVIF']}
