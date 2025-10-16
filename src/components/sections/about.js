@@ -170,6 +170,10 @@ const About = () => {
               quality={95}
               formats={['AUTO', 'WEBP', 'AVIF']}
               alt="Headshot"
+              style={{
+                width: '50%',
+                height: 'auto',
+              }}
             />
           </div>
         </StyledPic>
