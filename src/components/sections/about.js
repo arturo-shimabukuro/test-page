@@ -166,13 +166,13 @@ const About = () => {
               className="img"
               src="../../images/me.jpg"
               
-              width={165}
+              width={50}
               quality={95}
               formats={['AUTO', 'WEBP', 'AVIF']}
               alt="Headshot"
               placeholder="none"
               style={{
-                width: '75%',
+                width: '50%',
                 height: 'auto',
                 display: 'block',
                 margin: '0 auto',
