@@ -172,7 +172,7 @@ const About = () => {
               alt="Headshot"
               placeholder="none"
               style={{
-                width: '50%',
+                width: '75%',
                 height: 'auto',
                 display: 'block',
                 margin: '0 auto',
