@@ -165,18 +165,10 @@ const About = () => {
             <StaticImage
               className="img"
               src="../../images/me.jpg"
-              height={334}
-              width={165}
+              width={500}
               quality={95}
               formats={['AUTO', 'WEBP', 'AVIF']}
               alt="Headshot"
-              placeholder="none"
-              style={{
-                width: '50%',
-                height: 'auto',
-                display: 'block',
-                margin: '0 auto',
-              }} 
             />
           </div>
         </StyledPic>
