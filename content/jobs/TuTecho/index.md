@@ -7,7 +7,6 @@ range: 'May 2025 - September 2025'
 
 ---
 
-- Development of project documentation 
-- Optimizations on the process of project documentation using Python reducing times from 20 minute per document to 2 minutes per batch documentation
-- Development of reports and dashboard on Excel and Sheets for project status
-**Achievment:** Optimization on the documentation process with an importan reduction in cost and time
+- Developed Excel and Google Sheets dashboards to track and analyze project status KPIs 
+- Created and validated project documentation to support progression to next project phase
+- Automated Word and PDF documentation workflows using Python, reducing processing time
