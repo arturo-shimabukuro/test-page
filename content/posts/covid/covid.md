@@ -12,7 +12,7 @@ tags: ["SQL", "Power BI"]
 
 ### 1.1 Scope
 
-This project has the purpose to observe the evolution of the data of COVID, which countries have controlled better or worst the pandemic and analyze potential factors that might have affected the results.
+This project has the purpose to observe the evolution of the data of COVID, which countries have controlled better or worse the pandemic and analyze potential factors that might have affected the results.
 
 ### 1.2 Goals
 
@@ -49,7 +49,7 @@ This project was based on the following project idea / tutorial from the YouTube
 
 This project was based on the following project idea / tutorial from the YouTube channel "Alex The Analyst". This channel is oriented on different aspects of Data Analytics like overviews of what is Data Analytics, how you can start on it, tutorials etcetera. This is the link for the specific video. [Data Analyst Portafolio Project | SQL Data Exploration | Project 1/4 - Alex The Analyst](https://www.youtube.com/watch?v=qfyynHBFOsM)
 
-The information worked on this project is based on the site 'Our World in Data'. Here is the link for the specific section were data can be obtained. [Our World in Data - Covid](https://ourworldindata.org/covid-deaths)
+The information worked on this project is based on the site 'Our World in Data'. Here is the link for the specific section where data can be obtained. [Our World in Data - Covid](https://ourworldindata.org/covid-deaths)
 
 ## Reviewing Data before working on it 
 
@@ -59,10 +59,10 @@ The information worked on this project is based on the site 'Our World in Data'.
 The information depends on the numbers that are presented by governments of each country. Any problems from the information depends on how countries have reported their information.
 
 **Original**
-This is not the original data source as they obtain the information is gathered from Johns Hopkins University of Medicine and more specifically from their Coronavirus Research Center. Plus this information is gathered based on the information they obtain from the governments around the world.
+This is not the original data source as they obtain the information is gathered from Johns Hopkins University of Medicine and more specifically from their Coronavirus Research Center. Plus, this information is gathered based on the information they obtain from the governments around the world.
 
 **Comprehensive**
-
+It contains the information from different countries about the number of people that has been infected, deaths and vaccination so the base information on how this affected between each other is helpful enough to gain insight about the management of the pandemic.
 
 **Current**
 The information is current as they have update of information until one the day before the data was downloaded. Any insights taken can be considered with the current information. Take into consideration that from time to time the information has been updated as some data that was presented at a start was not the correct one. 
@@ -242,8 +242,8 @@ After adding the information to PostgreSQL, some queries were made to answer som
 
 - Day in which most deaths due to COVID occurred per country.
 - Total deaths per country by COVID comparted to its population
-- Death Ratio based on the amount of cases reported by country
-- Hospitalization and Intensive Care Unit (ICU) patients ratio
+- Death Ratio based on the number of cases reported by country
+- Hospitalization and Intensive Care Unit (ICU) patient's ratio
 - Vaccination ratio
 
 
@@ -306,7 +306,7 @@ For looking at the countries that had multiple peaks the following query was add
 
 ![](./covid/data_structure/query/COVID19_Query_Death_Ratio_per_Population.png)
 
-**Death Ratio based on the amount of cases reported by country**
+**Death Ratio based on the number of cases reported by country**
 
 ``` PostgreSQL
 
@@ -321,7 +321,7 @@ For looking at the countries that had multiple peaks the following query was add
 
 ![](./covid/data_structure/query/COVID19_Query_Death_Ratio_per_Cases_by_Country.png)
 
-**Hospitalization patients ratio**
+**Hospitalization patient's ratio**
 
 ``` PostgreSQL
 
@@ -360,19 +360,19 @@ SELECT cd.location, MAX((cv.people_fully_vaccinated)) as fully_vaccinated, MAX((
 
 ### 3.3 Transforming Data in Power Query
 
-The table structure is worked mostly without change except for the table "people_vaccinated". In this case an extra column was added (even though it could be replaced) values from the the vaccination. 
+The table structure is worked mostly without change except for the table "people_vaccinated". In this case an extra column was added (even though it could be replaced) values from the vaccination. 
 
-This added column was created to fill data because the data from vaccination updates had the cumulative values from the vaccination, but when no new update from the values was 'blank'. The transformation of the data was to fill the dates were vaccination was null/blank to have the  last date available. To generate that specific point, the following code in Power Query was added:
+This added column was created to fill data because the data from vaccination updates had the cumulative values from the vaccination, but when no new update from the values was 'blank'. The transformation of the data was to fill the dates where vaccination was null/blank to have the last date available. To generate that specific point, the following code in Power Query was added:
 
 ``` powerquery
 = Table.Group(#"Columna duplicada", {"location"}, {{"Recuento", each Table.FillDown(Table.Sort(_, {"date"}),{"people_fully_vaccinated - Copia"}), type table [location=nullable text, date=nullable date, people_vaccinated=nullable number, people_fully_vaccinated=nullable number, #"people_fully_vaccinated - Copia"=nullable number]}})
 ```
 
-Just as note, this can not be done just by using the fill down option as data can get filled in the wrong position.
+Just as note, this cannot be done just by using the fill down option as data can get filled in the wrong position.
 
-For some of the visualization of general data, a temp table could have been done to obtain this information, but the information would not have been useful for a graph to show the evolution of the vaccination world wide. That is the reason why data needed to be filled. 
+For some of the visualization of general data, a temp table could have been done to obtain this information, but the information would not have been useful for a graph to show the evolution of the vaccination worldwide. That is the reason why data needed to be filled. 
 
-This could also been done in SQL.
+This could also be done in SQL.
 
 ### 3.4 Connecting the tables in Power BI
 
@@ -439,7 +439,7 @@ death_per_millions =
 Based on the selection from the slicer, the map would show the specific section with the name. If nothing is selected from the map or the slicers, then it would display "World".  If a "Continent" (in the slicer) is selected then it would display the continent in the map and below the name of the selection. 
 
 
-Finally if a country is selected, the country would be displayed. In the case multi-select using the map it would take into consideration the last one picked. If it by using the "Country" slicer, then it would display the last alphabetical country selected, and all the non selected country would be displayed as gray in the map. 
+Finally, if a country is selected, the country would be displayed. In the case multi-select using the map it would take into consideration the last one picked. If it by using the "Country" slicer, then it would display the last alphabetical country selected, and all the non-selected country would be displayed as gray in the map. 
 
 The map was obtained based on the YouTube channel Curbal with her video [Map locations using Power BI shape maps (Part 1)](https://youtube.com/watch?v=Hzy1YbTjDaA) which uses a json map created / recollected by David Eldersveld in his [GitHub](app://obsidian.md/%5Bhttps://github.com/deldersveld/topojson%5D). The map downloaded was this specific [World Map json](https://github.com/deldersveld/topojson/blob/master/world-continents.json).
 
@@ -473,14 +473,14 @@ country_if_filtered =
 
 ![](./covid/COVID19_Dashboard_Cases_and_death_per_day.png)
 
-For the graph in the X-Axis the date is used and for the principal Y-Axis the number of person that have been diagnosed with COVID-19 and in the secondary Y-Axis the people who have died due to this decease. No DAX calculations were needed and for both of the Y-Axis calculations, the sum aggregation of 'new_cases' and 'new_deaths' from the 'death_and_new_cases_by_date' table were used for the principal and secondary axis respectively.
+For the graph in the X-Axis the date is used and for the principal Y-Axis the number of people that have been diagnosed with COVID-19 and in the secondary Y-Axis the people who have died due to this decease. No DAX calculations were needed and for both of the Y-Axis calculations, the sum aggregation of 'new_cases' and 'new_deaths' from the 'death_and_new_cases_by_date' table were used for the principal and secondary axis respectively.
 
 
 #### Cases and death per day
 
 ![](./covid/COVID19_Dashboard_People_fully_vaccinated.png)
 
-For the graph in the X-Axis the date is used and for the  Y-Axis the number of person that have been fully vaccinated against COVID-19. No DAX calculations were needed and for the Y-Axis calculation, the sum aggregation of 'people_fully_vaccinated - copia' from the 'people_vaccinated' table. This is column had a rework in Power Query which has already been described. 
+For the graph in the X-Axis the date is used and for the Y-Axis the number of people that have been fully vaccinated against COVID-19. No DAX calculations were needed and for the Y-Axis calculation, the sum aggregation of 'people_fully_vaccinated - copia' from the 'people_vaccinated' table. This is column had a rework in Power Query which has already been described. 
 
 
 #### General Information of the country
@@ -489,13 +489,13 @@ For the graph in the X-Axis the date is used and for the  Y-Axis the number of p
 ![](./covid/COVID19_Dashboard_General_Information.png)
 
 **Total Cases**
-"Total Cases" does not have a DAX measurement, it is the sum of the 'new_cases' from the 'death_and_new_cases_by_date' table. 
+"Total Cases" does not have a DAX measurement; it is the sum of the 'new_cases' from the 'death_and_new_cases_by_date' table. 
 
 **Population**
-"Total Cases" does not have a DAX measurement, it is the max value of 'population' from the 'vaccination_ratio' table. 
+"Total Cases" does not have a DAX measurement; it is the max value of 'population' from the 'vaccination_ratio' table. 
 
 **Total Deaths**
-"Total Deaths" does not have a DAX measurement, it is the sum value of 'new_deaths' from the 'death_and_new_cases_by_date' table. 
+"Total Deaths" does not have a DAX measurement; it is the sum value of 'new_deaths' from the 'death_and_new_cases_by_date' table. 
 
 **Fully Vaccinated**
 "Fully Vaccinated" had the following measurement:

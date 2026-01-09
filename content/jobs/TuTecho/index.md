@@ -3,7 +3,7 @@ date: '2025-05-14'
 title: 'Operations Assistant'
 company: 'TuTecho'
 location: 'Lima, Peru'
-range: 'May 2025 - August 2025'
+range: 'May 2025 - September 2025'
 
 ---
 

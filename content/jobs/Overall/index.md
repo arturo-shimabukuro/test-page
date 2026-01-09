@@ -7,6 +7,6 @@ range: 'May 2022 - November 2022'
 url: 'https://www.overall.pe/'
 ---
 
-- Data Validation for CRM migration
-- Develop reports for the commercial and administrative areas in Excel and Power BI
-**Achievment:** Member of a team succesfully implemented a CRM
+- Validated over 150,000 customer records for CRM migration, ensuring data accuracy and integrity
+- Developed reports for the commercial and administrative teams in Excel and Power BI from SQL queries
+- Collaborated on the successful implementation of a CRM to enable better data-driven decision making

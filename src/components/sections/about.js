@@ -143,7 +143,7 @@ const About = () => {
 
             <p>
               I had the opportunity to work on different type of enterprises from startups, small, medium and big and 
-              in different type of industries like app development, telecommunications, consulting, minning and construction.           
+              in different type of industries like app development, telecommunications, consulting, mining and construction.           
             </p>
 
             <p>
@@ -152,7 +152,7 @@ const About = () => {
                           
             </p>
 
-            <p>Here are a few technologies I’ve been working with recently:</p>
+            <p>Here are a few technologies I have been working with recently:</p>
           </div>
 
           <ul className="skills-list">

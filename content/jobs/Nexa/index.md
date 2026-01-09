@@ -7,6 +7,6 @@ range: 'June 2020 - July 2021'
 url: 'https://www.nexaresources.com/en/'
 ---
 
-- Consolidate headcount reports from the business and suppliers in Power BI and Excel
-- Automation and improvements on Power BI and Excel
-**Achievement:** "Estagio Awards Nexa Lima 2020" winner as the best project between interns
+- Consolidated headcount reports from business units and suppliers across different teams
+- Automated and optimized reports in Excel and Power BI, improving efficiency and design
+- Received the “Estagio Awards Nexa Lima 2020” for best intern project

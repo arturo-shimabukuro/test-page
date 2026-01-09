@@ -10,4 +10,4 @@ tech:
   
 ---
 
-An analysis over 3.8 millions rows of data via data dumps and API's using Python and Power BI to analyze games from Age of Empires IV to get different insights on the game. 
+Analyzed over 3.8 million rows of data from data dumps and APIs using Python and Power BI to derive insight into Age of Empires IV games played. 

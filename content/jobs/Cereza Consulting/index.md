@@ -7,7 +7,6 @@ range: 'December 2017 - April 2018'
 url: ''
 ---
 
-- Plan, monitor and control of technology projects using SCRUM framework
-- Document the progress  in the projects and higlight the critical points for develepment
-- Coordination between clients and programmers 
-**Achievment:** Member of a team that developed an app to the Play Store
+- Planned, monitored and controlled technology projects to ensure on time delivery 
+- Documented the project progress and highlighted critical development issues 
+- Collaborated on a team that developed an app to the Play Store

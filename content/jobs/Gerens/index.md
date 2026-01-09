@@ -7,6 +7,6 @@ range: 'November 2019 - Februrary 2020'
 url: 'https://www.gerensconsultoria.pe/'
 ---
 
-- Gathering, analysis and evaluation of information of an NGO
-- Develop an internal and external diagnosis of an NGO
-**Achievment:** Organization guidelines for an environmental NGO
+- Gathered, analyzed and evaluated NGO data to support organizational assessment
+- Conducted an internal and external diagnoses to support core processes improvements
+- Collaborated with a team to improve an environmental NGO by developing organizational guidelines

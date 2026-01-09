@@ -37,7 +37,7 @@ As in the time of writing, there are 16 civilizations available to play:
 - Order of the Dragon
 - Zhu Xi's Legacy
 
-In the competitive mode of this game, it can be played as 1 vs 1, or in teams  2 vs 2, 3 vs 3 or 4 vs 4. Based on the results of playing you can get ranking in game which are from worst to best as follows: 
+In the competitive mode of this game, it can be played as 1 vs 1, or in teams 2 vs 2, 3 vs 3 or 4 vs 4. Based on the results of playing you can get ranking in game which are from worst to best as follows: 
 - Bronze
 - Silver
 - Gold
@@ -45,7 +45,7 @@ In the competitive mode of this game, it can be played as 1 vs 1, or in teams  2
 - Diamond
 - Conqueror
 
-And each of this have 3 subdivisions from 1, 2 and 3 where 1 is the lowest ranked from the ranking. So a Conqueror 3 has a higher ranking than a Conqueror 2.
+And each of this have 3 subdivisions from 1, 2 and 3 where 1 is the lowest ranked from the ranking. So, a Conqueror 3 has a higher ranking than a Conqueror 2.
 
 ### 1.2 Scope & Goals
 
@@ -60,8 +60,8 @@ From Ranked List:
 - What is the ranking of a specific player to the total players and from my country. 
 
 Games List:
-- What are the wining/loss rate between the best players in Ranked 1v1 matches taking in consideration the civilizations used?
-- What are the average game time per civilization in each map?
+- What is the wining/loss rate between the best players in Ranked 1v1 matches taking in consideration the civilizations used?
+- What is the average game time per civilization in each map?
 - What is the average game duration per rank?
 - How many games in average are played by the high ranked players compared to the average rank. 
 
@@ -70,13 +70,13 @@ Games List:
 #### 1.4.1 Limitations
 - Not all the information can be obtained from AoE4 World with the API.
 - The details from the actions of the players per specific games are not obtainable via the specific API.
-- Only the last 1000 games from a specific player can be obtained from the API. For consideration: If player 1 have a 1001 games, his last 1000 games can be obtained, but the 1st game could be obtained if his 1st opponent does not have a 1000 games. This information can be obtain later when the historical data is added to the data dumps.
+- Only the last 1000 games from a specific player can be obtained from the API. For consideration: If player 1 have 1001 games, his last 1000 games can be obtained, but the 1st game could be obtained if his 1st opponent does not have 1000 games. This information can be obtain later when the historical data is added to the data dumps, so the 1000 game limit would be for players that have 1000 games in the current season which is unlikely.
 - Data from games played on season 1 and 2 are not easily available as there are no data dumps on this specific seasons.
 
 
 #### 1.4.2 Considerations
 - The data would not be always be updated as it is not intended to call the API repeatedly to obtain or download all the information at once. If the information is needed you can enter AOE4 World and most likely you should have the information that you need.
-- The value obtained at certain time for the statistics can be volatile as the players ranking can change easily their ranks based on their results so the values can change and give various result. It could be also be done based on the value of the players elo but it can also have a similar volatility. 
+- The value obtained at certain time for the statistics can be volatile as the players ranking can change easily their ranks based on their results so the values can change and give various result. It could be also be done based on the value of the players Elo but it can also have a similar volatility. 
 
 
 ## 2. Extracting Data
@@ -150,7 +150,7 @@ for i in range(len(df['profile_id'])):
         page = 1
         while True:
                 try:
-                    if page >= 21: ## take into consideration that the max amount of pages that can be obtained are 20
+                    if page >= 21: ## take into consideration that the max number of pages that can be obtained are 20
                         break
                     else:    
                         aoe_games_parameters = {'page': page, 'leaderboard': 'rm_1v1', 'profile_ids':1270139, 'since':last_date}
@@ -175,7 +175,7 @@ for i in range(len(df['profile_id'])):
     else:
         while True:
             try:
-                if page >= 21: ## take into consideration that the max amount of pages that can be obtained are 20
+                if page >= 21: ## take into consideration that the max number of pages that can be obtained are 20
                     break
                 else:    
                     aoe_games_parameters = {'page': page, 'leaderboard': 'rm_1v1', 'profile_ids':profile_id}
@@ -252,7 +252,7 @@ From the initial request the JSON the following information is obtained:
 - offset (int)
 
 
-Reviewing the 'players' list, it can be seen each players with a dictionary can be observed. In the dictionary the following can found:
+Reviewing the 'players' list, it can be seen each player with a dictionary can be observed. In the dictionary the following can found:
 
 - name (string)
 - profile_id (int)
@@ -295,7 +295,7 @@ Reviewing the 'social' list, it can be seen different social medias within a dic
 
 Data structure from the Game Information
 
-From the initial reques the JSON we get have the following information
+From the initial request the JSON we get have the following information
 - page (int)
 - per_page (int)
 - count (int)
@@ -324,7 +324,7 @@ Reviewing the 'games' list, it can be seen each individual game with a dictionar
 
 Inside the teams there are two list from the opposing teams, and then another list that contain the players of the team detail. 
 
-Some of the information that can be obtain from each individual players is: 
+Some of the information that can be obtain from each individual player is: 
 - profile_id (int)
 - name (string)
 - result (string)
@@ -336,7 +336,7 @@ Some of the information that can be obtain from each individual players is:
 ### 3.3 Data Structure from Players Games from Data Dumps
 
 
-Data structure from the Game Information form the Data Dumps that are the games obtained from past seasons (does not include current)
+Data structure from the Game Information from the Data Dumps that are the games obtained from past seasons (does not include current)
 
 Reviewing the 'games' list, it can be seen each individual game with a dictionary. In the dictionary the following can found
 
@@ -353,7 +353,7 @@ Reviewing the 'games' list, it can be seen each individual game with a dictionar
 
 Inside the teams there are two list from the opposing teams, and then another list that contain the players of the team detail. 
 
-Some of the information that can be obtain from each individual players is: 
+Some of the information that can be obtain from each individual player is: 
 - profile_id (int)
 - result (string)
 - civilization (string)
@@ -571,13 +571,13 @@ players_b.to_csv(final_file_path_dir+final_file_name_b, index=False)
 
 #### 5.3.1 Reviewing information from the transformed tables
 
-After transforming all the information that was obtained from the API, an evaluation of the information was made in the Power BI table editor. Most of the data had the expected values, but there were some cases were some of the field contained some unexpected values as invalid games appeared that might be caused by the game before the match was starting or during the match. This information events must not be analyzed for making a profile of how players performed, but can be useful to observe how many games had problems as the game were starting or while it was in progress. 
+After transforming all the information that was obtained from the API, an evaluation of the information was made in the Power BI table editor. Most of the data had the expected values, but there were some cases were some of the fields contained some unexpected values as invalid games appeared that might be caused by the game before the match was starting or during the match. This information events must not be analyzed for making a profile of how players performed, but can be useful to observe how many games had problems as the game were starting or while it was in progress. 
 
-An example of this unexpected values can be seen in fields like the players result of the game not being either win or loss while the game was not ongoing, or that the civilization of the player or the opponent appeared as blank or as "unknown". 
+An example of these unexpected values can be seen in fields like the players result of the game not being either win or loss while the game was not ongoing, or that the civilization of the player or the opponent appeared as blank or as "unknown". 
 
-### 5.4 Strucutring informations from past seasons - Data Dumps
+### 5.4 Structuring information from past seasons - Data Dumps
 
-The information from past season have most of all players games except the ones played in seasons 1 and 2. It is already a JSON file to analyze directly without making constants calls to the API that would end with the same result based on the restrictions added. As recalled before, the data is similar to the one obtained with the API and the data missing can be added with other methods.  The only  work needed to be done is to structure the information as the one obtain from the API. 
+The information from past season has most of all players games except the ones played in seasons 1 and 2. It is already a JSON file to analyze directly without making constants calls to the API that would end with the same result based on the restrictions added. As recalled before, the data is similar to the one obtained with the API and the data missing can be added with other methods.  The only work needed to be done is to structure the information as the one obtain from the API. 
 
 The information missing is just the players name, which can be added as there is the players 'id' but no name and can be added via the players list. In this case it needs to be considered that 
 
@@ -637,7 +637,7 @@ df=pd.DataFrame(dictionary_games_played)
 print(df.shape)
 
 
-# Even though it is not necesary, an inner join is going to be used with players obtained from the leaderboard so less information needs to be added to the model for this project.
+# Even though it is not necessary, an inner join is going to be used with players obtained from the leaderboard so less information needs to be added to the model for this project.
 
 # Obtaining leaderboard information
 g = open(os.getenv('path_dir_source_leaderboard'), 'r')
@@ -652,13 +652,13 @@ df3 = df3[['game_id', 'profile_id', 'name', 'result', 'civilization', 'civilizat
 df3.to_csv(os.getenv('path_dir_end_game_details'), index=False)
 ```
 
-### 5.5 Strucuring Data for Ranked Team Games
+### 5.5 Structuring Data for Ranked Team Games
 
 The data show a list of the team ranking data has the same structure as the one used for 1v1. Here based on the initial visualization project and some considerations some data transformation was needed. In this case, the data transformation was made not in Python but it was made on PowerQuery from Power BI.  The base data from the ranked team list is intended to be used as a data source from the Python script so the data could be updated as desired by the user.
 
 From the base table obtained from the API, some fields were change via Power Query. The changes made were in the "rank_level" to obtain the final result of the ranking by changing the how the string is constructed. This could have been also worked with another table like the one used in the 1v1. 
 
-Additionally, the name of the country was added to the base table by merging the iso code country table via the "country" column from the base table and the "ISO2 CODE" from the "countries-code" table, therefore the final country name will be  with the base API table. When loading the data, it was verified that no blank countries were found, and in this case one was not consider in the initial country list relation and was added into the data base.   
+Additionally, the name of the country was added to the base table by merging the iso code country table via the "country" column from the base table and the "ISO2 CODE" from the "countries-code" table, therefore the final country name will be with the base API table. When loading the data, it was verified that no blank countries were found, and in this case one was not consider in the initial country list relation and was added into the data base.   
 
 A consideration to the information that has been added to the main table which could also been handled with another primary table with the corresponding information as it was done on the ranked 1v1 visualization is that when loading the data on the visualization, it would take less time to load to a full table. Take into consideration here that information would load faster if you want to present a great amount of data into a table visualization which this is the case, but if there is a smaller limit on the table visualization it would be basically the same time. This is not efficient if more tables would need to be added to the workspace. 
 
@@ -701,7 +701,7 @@ After the transformation, the final player ranking list had the following fields
 | max_rating_1m      | Integer   |                                                                                                                                                                  |
 | rank               | String    |                                                                                                                                                                  |
 | rank_level         | String    |                                                                                                                                                                  |
-| streak             | Integer   | Number of consecutive result obtained by the player (if the number is positive, that means a winning streak and if it is negative it relates to a losing streak) |
+| streak             | Integer   | Number of consecutive results obtained by the player (if the number is positive, that means a winning streak and if it is negative it relates to a losing streak) |
 | games_count        | Integer   |                                                                                                                                                                  |
 | wins_count         | Integer   |                                                                                                                                                                  |
 | loses_count        | Integer   |                                                                                                                                                                  |
@@ -729,7 +729,7 @@ Five slicers can be observed from the dashboard:
 - Opponent(s) Civ(s)
 - Season
 
-The slicers that contains the players (Player(s) Profile and Opponent(s) Profile) have the possibility to select the players by either the name or the the players ID number. 
+The slicers that contain the players (Player(s) Profile and Opponent(s) Profile) have the possibility to select the players by either the name or the players ID number. 
 
 
 #### General information from the player
@@ -963,11 +963,11 @@ opp_loss =
 
 ![](./aoe4/visualization/6.1/AOE4_6.1_Dashboard_Most_Common_Opponents.png)
 
-The most common opponents from the player from analysis can be observed. Based if the player have an above 50% win rate then the player name is displayed with green and the opponent name with red, if it is below 50% percent it would be the opposite. If the matchup between the players is exactly 50% the color yellow would be selected.
+The most common opponents from the player from analysis can be observed. Based in the player has an above 50% win rate then the player's name is displayed with green and the opponent's name with red, if it is below 50% percent, it would be the opposite. If the matchup between the players is exactly 50% the color yellow would be selected.
 
 Here the same tooltip from the Match History was used. 
 
-#### Number of Win/Loss by Civilization
+#### Amount of Win/Loss by Civilization
 
 ![](./aoe4/visualization/6.1/AOE4_6.1Dashboard_Overall_Number_of_Win_Loss_by_Civilization.png)
 
@@ -1004,12 +1004,12 @@ Player_wins =
 
 #### Filters used for this visualization
 
-For the information that was need for the player profile, only all valid games were needed. For this only games were civilizations for both players appeared as one of the valid options, and that the result for both  were either win or loss.
+For the information that was need for the player profile, only all valid games were needed. For these only games were civilizations for both players appeared as one of the valid options, and that the result for both were either win or loss.
 
 
 ### 6.2 Player ranking distribution and ranking order by country
 
-This visualization have been made with the same concept from the Ranked Teams dashboards worked but in this case the information displayed is the ranked 1v1 information. 
+This visualization has been made with the same concept from the Ranked Teams dashboards worked but in this case the information displayed is the ranked 1v1 information. 
 
 The visualization aims to achieve to show the rankings players from a country or group of them or even a continent and show their specific ranking between the selected nations as well as the rank level distribution.  
 
@@ -1045,13 +1045,13 @@ The information that can be observed in the table are:
 
 The index refers to position/ranking that the player is based on the nations or continents that have been selected. If there have not been selected any nation or continents in particular and is all the data available, the 'Index' would be the same as 'Rank'.
 
-As an example on how the 'Index' column works here is the same visualization with 'South America' as a value in the 'Continent' slicer. 
+As an example, on how the 'Index' column works here is the same visualization with 'South America' as a value in the 'Continent' slicer. 
 
 ![](./aoe4/visualization/6.2/AOE4_6.2_Dashboard_Rank_Table_1.png)
 
-The table in this case presents a new indexation based on the nations selected which would be in this case South American nations. 
+The table in this case presents a new indexation based on the nations selected which would be in this case South American countries. 
 
-Considering this points, also when a specific rank is selected, the value of the 'Index' also considers players that are above in other ranks so there is continuity between the values. This if you select the specific ranking from the bar graph or the slicer.
+Considering these points, also when a specific rank is selected, the value of the 'Index' also considers players that are above in other ranks so there is continuity between the values. This if you select the specific ranking from the bar graph or the slicer.
 ![](./aoe4/visualization/6.2/AOE4_6.2_Dashboard_Rank_Table_1_Slicer_1.png)
 
 ![](./aoe4/visualization/6.2/AOE4_6.2_Dashboard_Rank_Table_1_Slicer_2.png)
@@ -1114,11 +1114,11 @@ total_games =
 
 ![](./aoe4/visualization/6.2/AOE4_6.2_Dashboard_Rank_Level_Distribution.png)
 
-The bar graph shows the amount of player by ranking that are registered depending on the slicers used. In the top corner, a card with total amount of players can be seen. Additionally a tooltip was added to show the distribution of the specific ranking from each level. 
+The bar graph shows the amount of player by ranking that are registered depending on the slicers used. In the top corner, a card with total amount of players can be seen. Additionally, a tooltip was added to show the distribution of the specific ranking from each level. 
 
 ![](./aoe4/visualization/6.2/AOE4_6.2_Dashboard_Rank_Level_Distribution_Tooltip.png)
 
-To obtain the amount of players for both of the graphs, the distinct count of the column 'profile_id' from the 'players' table was used.
+To obtain the number of players for both of the graphs, the distinct count of the column 'profile_id' from the 'players' table was used.
 
 ### 6.4 Civilization Matchups
 
@@ -1200,7 +1200,7 @@ total_games =
 
 #### Considerations of this Dashboard
 
-This dashboard will always show the a 50% win rate in all mirror matchup without filters due to the civilizations being the same, but can have a different percentage if the rank level is used as a filter, as that would how that rank evaluates against the other ranks selected (If same ranks for the players and opponents are selected, the mirror matchup should always be 50%).  
+This dashboard will always show a 50% win rate in all mirror matchup without filters due to the civilizations being the same, but can have a different percentage if the rank level is used as a filter, as that would how that rank evaluates against the other ranks selected (If same ranks for the players and opponents are selected, the mirror matchup should always be 50%).  
 
 ### 6.5 Number of games and average - mean time per rank
 
@@ -1222,10 +1222,10 @@ Only a single slicer was used:
 
 Here general information from the data is displayed. 
 
-The number of game that have been registered from the amount of players that are selected. 
+The number of games that have been registered from the number of players that are selected. 
 
-- "Ranking Represent"  the amount of players in the specific ranking selected, and the second one in percentage represents what amount of the player base was selected. 
-- "Average Civs Used" refers to the number of civilization on average that are played by the selected ranking. 
+- "Ranking Represent" the number of players in the specific ranking selected, and the second one in percentage represents the player base was selected. 
+- "Average Civs Used" refers to the number of civilizations on average that are played by the selected ranking. 
 - "Std Dev Civs Used" is the standard deviation of the number of civilizations played. 
 - "Median Civs Used" displays the mean number of civilizations that are used by the ranks selected. 
 - "CV Civs Used" shows the calculation of the coefficient of variation of the number of civilizations that are played in corresponding ranking. 
@@ -1339,7 +1339,7 @@ Coefficient_of_variation_civs_played =
 
 #### Number of games played in total by player per rank
 
-The graph displays the frequency of the number of players that have played a specific amount of games based on their ranking.  In the X-Axis is presented the amount of games played and in the Y-Axis the frequency of the number of players that have played that total amount of games. 
+The graph displays the frequency of the number of players that have played a specific number of games based on their ranking.  In the X-Axis is presented the number of games played and in the Y-Axis the frequency of the number of players that have played that total of games. 
 
 
 The number below displays similar number than the ones show with the Number of Civilization used by the player grouping. The information is shown as follows: 
@@ -1406,12 +1406,12 @@ Coefficient_of_Variation_Games =
 
 #### Number of minutes played in all the matches based on all the players selected
 
-The graph shows all the games played by players by the rank selected and the minutes that each of their matches duration with the frequency of the length of this matches. In the X-Axis it shown the time in minutes. In the Y-Axis the frequency of each occurrence can be seen. 
+The graph shows all the games played by players by the rank selected and the minutes that each of their matches duration with the frequency of the length of these matches. In the X-Axis it shown the time in minutes. In the Y-Axis the frequency of each occurrence can be seen. 
 
 Similar to the Number of Civilizations and the Number of games played the following numbers can be seen below:
 
 - "Avg Game Time" is the average game time from all the games that were played by the selected ranking(s).
-- "Std Dev Game Time" its the standard deviation from all games played (population) based on the duration of the matches.
+- "Std Dev Game Time" it is the standard deviation from all games played (population) based on the duration of the matches.
 - "Median Game Time" is the median game duration.
 - "CV Game Time" is the coefficient of variation of the game duration. 
 
@@ -1465,7 +1465,7 @@ Here is the overall data visualization for the ranking in the team game mode:
 
 #### Slicers
 
-The only slicer that have been added to this visualization is the country. For this visualization the continent was not added as part of a potential slicer.
+The only slicer that has been added to this visualization is the country. For this visualization the continent was not added as part of a potential slicer.
 
 Next to the Country Slicer, a space to display the flag of the country selected has been added. This would only show 1 flag if only 1 country is selected. and if there are multiple country selected it would no display any flag. 
 
@@ -1486,7 +1486,7 @@ The information that can be seen in the table are:
 - Rating
 
 
-The 'Index' display the sub ranking of the player based on the slicers selected. For example if a country or group of countries are selected, the sub ranking would depend on that selection. 
+The 'Index' displays the sub ranking of the player based on the slicers selected. For example, if a country or group of countries are selected, the sub ranking would depend on that selection. 
 
 The 'Rank' displays the specific ranking of the player obtained directly from the API. 
 
@@ -1515,15 +1515,12 @@ The following is a bar graph that displays overall ranking distribution from the
 ![](./aoe4/visualization/6.7/AOE4_6.7_Dashboard_Rank_Level_Distribution.png)
 
 #### Consideration of this Dashboard
-The information for this Dashboard obtains all the information from the AOE4 World database by requesting all the information that is available at the moment from the leaderboard. As mentioned all dashboards are done to display the way to obtain the information from the site rather than requesting the information continuosly that should not be neccesary.
+The information for this Dashboard obtains all the information from the AOE4 World database by requesting all the information that is available at the moment from the leaderboard. As mentioned, all dashboards are done to display the way to obtain the information from the site rather than requesting the information continuously that should not be necessary.
 
 ## 7. Conclusions and Insights
 
 - At the time of obtaining the data there were around 32,000 players active playing the 1v1 ladder and around 39,000 playing team games.
 - Most of the player base are from China and the United States.
-- Looking at the best players considering "Conqueror 3" in 1v1 they have played an approximately 300 games compared to an "average" who would be a "Gold" player that has approximately only 99 games considering they are in "Gold 3". Also based on this rankings, a player from "Conqueror 3" would have a median game time around 21 minutes compared to their Gold counterparts that would play a median of 25 minutes. Here it needs to be noted that due to the configuration of the ranks, some players exceeds by a lot of points the "Conqueror 3" label as it is needed 1,600 points but some of the players observed had around 2,300 points. 
-- Considering the win rates it seems that Jean d'Arc and Ayyubids are some of the best civilizations to play at the time when the information was requested.
-- It was observed that some civilizations seems stronger in certain maps than others based on the data, but variables as potential civilization counter plays might still be at play when the civilizations are chosen.
-
-
-
+- Looking at the best players considering "Conqueror 3" in 1v1 they have played an approximately 300 games compared to an "average" who would be a "Gold" player that has approximately only 99 games considering they are in "Gold 3". Also based on the rankings, a player from "Conqueror 3" would have a median game time around 21 minutes compared to their Gold counterparts that would play a median of 25 minutes. Here it needs to be noted that due to the configuration of the ranks, some players exceed by a lot of points the "Conqueror 3" label as it is needed 1,600 points but some of the players observed had around 2,300 points. 
+- Considering the win rates, it seems that Jean d'Arc and Ayyubids are some of the best civilizations to play at the time when the information was requested.
+- It was observed that some civilizations seem stronger in certain maps than others based on the data, but variables as potential civilization counter plays might still be at play when the civilizations are chosen.

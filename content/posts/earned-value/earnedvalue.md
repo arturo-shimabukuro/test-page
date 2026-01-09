@@ -19,7 +19,7 @@ Present the progress in the different projects evaluating the time and cost mana
 ### 1.2 Goals
 
 - Show the earned value of the projects financially and from a scheduling perspective
-- Present general data from the companies involved, project supervisor for each  the project selected and last comments added to the project
+- Present general data from the companies involved, project supervisor for each the project selected and last comments added to the project
 - Visualize in a map where does the projects are being worked on
 
 ### 1.3 Limitations
@@ -29,12 +29,12 @@ The version of Excel is not the 365 version but the 2013 version. There is no pr
 
 ### 1.4 Consideration
 
-Initially this project was going to be worked without using Power BI and Excel's additional features as Power Query but while developing the project they were allowed in the scope of the project. This impacted in some sections of the project, as some of the functions could have been done with Power Query or DAX from Power BI but are pre-processed in Excel so the the progress that was done before was not lost. 
+Initially this project was going to be worked without using Power BI and Excel's additional features as Power Query but while developing the project they were allowed in the scope of the project. This impacted in some sections of the project, as some of the functions could have been done with Power Query or DAX from Power BI but are pre-processed in Excel so the progress that was done before was not lost. 
 
 
 ### 1.5 Points of improvement
 
-As mentioned in the consideration section all the data management and work could have been done in Power Query or DAX from Power BI directly. Similarly some of the newest formula from later version of Excel could been more useful. Also one of the primary tables for the Power BI visualization can be merge with another one for optimization of the tables.
+As mentioned in the consideration section all the data management and work could have been done in Power Query or DAX from Power BI directly. Similarly, some of the newest formula from later version of Excel could been more useful. Also, one of the primary tables for the Power BI visualization can be merge with another one for optimization of the tables.
 
 
 ### 1.6 Tools used
@@ -45,7 +45,7 @@ As mentioned in the consideration section all the data management and work could
 
 ### 2.1 Structuring Data in Excel
 
-The most important fields that wanted to be added was talked and then worked on a Excel columns for data inputs.
+The most important fields that wanted to be added was talked and then worked on Excel columns for data inputs.
 
 A first table should present the initial planning with the milestones and a second table with the progress updated data of the project. Both tables will have the same fields but will be in different sheets to help the user have separated tables for milestones initial planned values and the progress of the project.  
 
@@ -71,7 +71,7 @@ The tables will have the following fields:
 | End Date                                   | Fecha Fin                        |                                    | Date      |
 | Comments                                   | Comentario / Observaciones       |                                    | String    |
 
-In the end a table with the projects location was created for the Power BI visualization. 
+In the end a table with the project's location was created for the Power BI visualization. 
 
 | Column Name (Translation) | Original column name | Description | Data type |
 | ------------------------- | -------------------- | ----------- | --------- |
@@ -84,7 +84,7 @@ The next step is to transform this data to have what the expected progress based
 ### 2.2 Transforming Data in Excel
 
 
-The transformation part was aimed for calculating the planned value at the point of the updated data considering a linear progress. Basically a linear interpolation formula was needed. 
+The transformation part was aimed for calculating the planned value at the point of the updated data considering a linear progress. Basically, a linear interpolation formula was needed. 
 
 This is calculated for the columns:
 
@@ -104,7 +104,7 @@ To use the calculations first the data needs to be sorted correctly by Project N
 
 As for the table calculations the following was used in Excel after Power Query was used:
 
-As an example this is the Physical Progress of the Project: 
+As an example, this is the Physical Progress of the Project: 
 ``` text
 
 =IF(A2>=MAX(FILTER(VG_HItos_Sorted_1[Fecha];VG_HItos_Sorted_1[Proyecto]=VG_Programado!B2));1;+(INDEX(FILTER(VG_HItos_Sorted_1[% Avance Físico de Obra];VG_HItos_Sorted_1[Proyecto]=VG_Programado!B2);MATCH(A2;FILTER(VG_HItos_Sorted_1[Fecha];VG_HItos_Sorted_1[Proyecto]=VG_Programado!B2);1)+1)-INDEX(FILTER(VG_HItos_Sorted_1[% Avance Físico de Obra];VG_HItos_Sorted_1[Proyecto]=VG_Programado!B2);MATCH(A2;FILTER(VG_HItos_Sorted_1[Fecha];VG_HItos_Sorted_1[Proyecto]=VG_Programado!B2);1)))/DAYS(INDEX(FILTER(VG_HItos_Sorted_1[Fecha];VG_HItos_Sorted_1[Proyecto]=VG_Programado!B2);MATCH(A2;FILTER(VG_HItos_Sorted_1[Fecha];VG_HItos_Sorted_1[Proyecto]=VG_Programado!B2);1)+1);INDEX(FILTER(VG_HItos_Sorted_1[Fecha];VG_HItos_Sorted_1[Proyecto]=VG_Programado!B2);MATCH(A2;FILTER(VG_HItos_Sorted_1[Fecha];VG_HItos_Sorted_1[Proyecto]=VG_Programado!B2);1)))*DAYS(A2;INDEX(FILTER(VG_HItos_Sorted_1[Fecha];VG_HItos_Sorted_1[Proyecto]=VG_Programado!B2);MATCH(A2;FILTER(VG_HItos_Sorted_1[Fecha];VG_HItos_Sorted_1[Proyecto]=VG_Programado!B2);1)))+INDEX(FILTER(VG_HItos_Sorted_1[% Avance Físico de Obra];VG_HItos_Sorted_1[Proyecto]=VG_Programado!B2);MATCH(A2;FILTER(VG_HItos_Sorted_1[Fecha];VG_HItos_Sorted_1[Proyecto]=VG_Programado!B2);1)))
@@ -238,7 +238,7 @@ Here are the other columns formulas which have the same structure from the % Phy
 ![](./earned_value/Earned_Value_Database_connection_scheme_Power%20BI.png)
 
 
-The primary tables in this case are  'Calendar', 'Projects' and ''Project Location', where the general and unique data is added. The primary Key for "Projects" and "Project Location" were the field "Project". Here as a point of improvement of the project, the information of the two tables described before could have been stored all in one table instead. As for the calendar it standardize the dates from all tables. 
+The primary tables in this case are 'Calendar', 'Projects' and ''Project Location', where the general and unique data is added. The primary Key for "Projects" and "Project Location" were the field "Project". Here as a point of improvement of the project, the information of the two tables described before could have been stored all in one table instead. As for the calendar it standardizes the dates from all tables. 
 
 The connections of the tables are as follows: 
 
@@ -281,9 +281,9 @@ The District visualization shows all the districts from each Department from the
 
 ![](./earned_value/Earned_Value_Dashboard_S_Curve.png)
 
-For the S-Curve line graph,  measures were used to show the data. If no project is selected, no graph will show as it would not be consistent information being shown. The information will also depend on the slicer 'Financial or Execution' were the project progress and the financial progress will be shown depending on the filter. In this case it has been set up for it to only select 1 of the options. 
+For the S-Curve line graph, measures were used to show the data. If no project is selected, no graph will show as it would not be consistent information being shown. The information will also depend on the slicer 'Financial or Execution' were the project progress and the financial progress will be shown depending on the filter. In this case it has been set up for it to only select 1 of the options. 
 
-For detail for the graphs, the X-axis is composed by the Dates column. For the Y-axis it is composed by 2 measures the Programmed (Planned Values) and the Execution. This values were worked with measures so the it can be changed from the physical progress or the financial progress of the project. 
+For detail for the graphs, the X-axis is composed by the Dates column. For the Y-axis it is composed by 2 measures the Programmed (Planned Values) and the Execution. These values were worked with measures so the it can be changed from the physical progress or the financial progress of the project. 
 
 A consideration for this part is that the slicer of 'Financial or Execution' is a disconnected table from the model that help to filter the information based on the measures.
 
@@ -367,7 +367,7 @@ Avance Físico Ultimo =
 
 ![](./earned_value/Earned_Value_Dashboard_Projects_Table.png)
 
-For the table it show all the projects initially with the projects Key Performance Index (KPI) to have an overview of the project progress. The fields for the table are:
+For the table it shows all the projects initially with the projects Key Performance Index (KPI) to have an overview of the project progress. The fields for the table are:
 
 - Project Name
 - % Physical Progress
@@ -572,4 +572,4 @@ Comentario =
 	)
 ```
 
-Take into consideration that in Contractor, Supervisor and Comments is looked up with the FIRSTNONBLANK as the table sorting changes from ascending to descending when a slicer was used.  
+Take into consideration that in Contractor, Supervisor and Comments is looked up with the FIRSTNONBLANK as the table sorting changes from ascending to descending when a slicer was used.

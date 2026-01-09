@@ -9,4 +9,4 @@ tech:
   - Power BI
 ---
 
-Dashboard designed to track the earned value of multiple projects in Peru using a interactive map that contains the department and its respective districts.
+A dashboard designed to track earned value metrics of multiple projects in Peru using an interactive map that displays departments and their respective districts.

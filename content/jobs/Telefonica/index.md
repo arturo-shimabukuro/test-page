@@ -7,7 +7,6 @@ range: 'January - July 2019'
 url: 'https://telefonica.com.pe/'
 ---
 
-- Developed and adapt process workflows for new products
-- Coordination and monitoring internally and with suppliers for the development of the product
-- An agent of change to help to use the principles of the agile manifiesto
-**Achievment:** Member of one of the best projects in the "Movistar Summer Challenge 2019"
+- Designed and adapted workflows to support new product launches 
+- Coordinated and monitored the product development process internally and with suppliers
+- Contributed to one of the best projects in the “Movistar Summer Challenge 2019”
